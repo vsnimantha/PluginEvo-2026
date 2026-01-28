@@ -1,0 +1,11 @@
+{
+  "branch_coverage": 0.0,
+  "call_coverage": 0.0,
+  "coverage": 0.0,
+  "decision_coverage": 0.0,
+  "error": "Compilation failed for evaluations/temp_1765198080/program_1765198080.cpp: evaluations/temp_1765198080/program_1765198080.cpp: In function \u2018int tricky(int)\u2019:\nevaluations/temp_1765198080/program_1765198080.cpp:5:21: error: return-statement with no value, in function returning \u2018int\u2019 [-fpermissive]\n    5 | int tricky(int x) { return; }\n      |                     ^~~~~~\nevaluations/temp_1765198080/program_1765198080.cpp: In function \u2018int main()\u2019:\nevaluations/temp_1765198080/program_1765198080.cpp:34:12: error: expected \u2018;\u2019 before \u2018tricky\u2019\n   34 |   tricky(5) tricky(5) == 5 5;\n      |            ^~~~~~~\n      |            ;\n",
+  "filename": "program_1765198080.cpp",
+  "folder": "evaluations/temp_1765198080",
+  "function_coverage": 0.0,
+  "line_coverage": 0.0
+}

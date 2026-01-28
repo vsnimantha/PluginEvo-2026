@@ -1,0 +1,20 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-04-53-670.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='cstdio', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='string', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='sigmaAlpha', token_value=None, type_name='bool'
+          CXX_BOOL_LITERAL_EXPR: spelling='', token_value='true', type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='0', type_name=None

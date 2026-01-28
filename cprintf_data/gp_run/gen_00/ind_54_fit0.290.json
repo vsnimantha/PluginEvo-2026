@@ -1,0 +1,10 @@
+{
+  "branch_coverage": 21.6,
+  "call_coverage": 20.1,
+  "coverage": 0.28,
+  "decision_coverage": 17.3,
+  "filename": "generated_program_2025-12-08_13-04-53-670.cpp",
+  "foldername": "Generated_Seeds/batch_20251208_130743",
+  "function_coverage": 51.9,
+  "line_coverage": 29.5
+}

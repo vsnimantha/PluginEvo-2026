@@ -1,0 +1,11 @@
+{
+  "branch_coverage": 0.0,
+  "call_coverage": 0.0,
+  "coverage": 0.0,
+  "decision_coverage": 0.0,
+  "error": "Compilation failed for evaluations/temp_1765198529/program_1765198529.cpp: evaluations/temp_1765198529/program_1765198529.cpp:5:1: error: expected unqualified-id before \u2018{\u2019 token\n    5 | { printf(\"Nested %d\\n\", 10); }\n      | ^\nevaluations/temp_1765198529/program_1765198529.cpp:12:1: error: expected unqualified-id before \u2018{\u2019 token\n   12 | { printf(\"Template %d\\n\", static_cast<int>(v)); }\n      | ^\nevaluations/temp_1765198529/program_1765198529.cpp: In function \u2018int main()\u2019:\nevaluations/temp_1765198529/program_1765198529.cpp:14:3: error: \u2018test\u2019 has not been declared\n   14 |   test ::nested();\n      |   ^~~~\nevaluations/temp_1765198529/program_1765198529.cpp:17:14: error: cannot call member function \u2018void Test::stat()\u2019 without object\n   17 |   Test ::stat();\n      |   ~~~~~~~~~~~^~\nevaluations/temp_1765198529/program_1765198529.cpp:18:3: error: \u2018tpl\u2019 was not declared in this scope\n   18 |   tpl(42);\n      |   ^~~\n",
+  "filename": "program_1765198529.cpp",
+  "folder": "evaluations/temp_1765198529",
+  "function_coverage": 0.0,
+  "line_coverage": 0.0
+}

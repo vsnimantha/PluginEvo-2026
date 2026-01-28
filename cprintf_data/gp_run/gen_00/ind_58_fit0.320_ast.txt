@@ -1,0 +1,206 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-06-28-640.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='cstdio', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='tauFunc', token_value=None, type_name='float'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='omicron', token_value=None, type_name='string[5]'
+          TYPE_REF: spelling='std::string', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='5', type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='{ "EtherealGlow" , "AzureFlame" , "AzureFlame" , "GoldenPhoenix" , "MysticHarmony" }', type_name=None
+            INIT_LIST_EXPR: spelling='', token_value=None, type_name=None
+              STRING_LITERAL: spelling='"EtherealGlow"', token_value='"EtherealGlow"', type_name=None
+              STRING_LITERAL: spelling='"AzureFlame"', token_value='"AzureFlame"', type_name=None
+              STRING_LITERAL: spelling='"AzureFlame"', token_value='"AzureFlame"', type_name=None
+              STRING_LITERAL: spelling='"GoldenPhoenix"', token_value='"GoldenPhoenix"', type_name=None
+              STRING_LITERAL: spelling='"MysticHarmony"', token_value='"MysticHarmony"', type_name=None
+      FOR_STMT: spelling='', token_value=None, type_name=None
+        DECL_STMT: spelling='', token_value=None, type_name=None
+          VAR_DECL: spelling='i', token_value=None, type_name='int'
+            INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='i < 5', type_name=None
+          UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+            DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='5', type_name=None
+        UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+          DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          CALL_EXPR: spelling='operator<<', token_value='std :: cout << omicron [ i ] << std :: endl', type_name=None
+            CALL_EXPR: spelling='operator<<', token_value='std :: cout << omicron [ i ]', type_name=None
+              DECL_REF_EXPR: spelling='cout', token_value=None, type_name=None
+                NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+              UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+                DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+              UNEXPOSED_EXPR: spelling='', token_value='omicron [ i ]', type_name=None
+                ARRAY_SUBSCRIPT_EXPR: spelling='', token_value=None, type_name=None
+                  UNEXPOSED_EXPR: spelling='omicron', token_value='omicron', type_name=None
+                    DECL_REF_EXPR: spelling='omicron', token_value=None, type_name=None
+                  UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                    DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+              DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='endl', token_value='std :: endl', type_name=None
+              DECL_REF_EXPR: spelling='endl', token_value=None, type_name=None
+                NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        FLOATING_LITERAL: spelling='', token_value='81.57976220643506f', type_name=None
+  FUNCTION_DECL: spelling='deltaFunc', token_value=None, type_name='int'
+    PARM_DECL: spelling='rhoParam', token_value=None, type_name='bool'
+    PARM_DECL: spelling='nuPiParam', token_value=None, type_name='int'
+    PARM_DECL: spelling='zetaParam', token_value=None, type_name='float'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='lambdaPi', token_value=None, type_name='double'
+          FLOATING_LITERAL: spelling='', token_value='53.24990322311065', type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    PARM_DECL: spelling='', token_value=None, type_name='int'
+    PARM_DECL: spelling='', token_value=None, type_name='char **'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      CALL_EXPR: spelling='tauFunc', token_value='tauFunc ( )', type_name=None
+        UNEXPOSED_EXPR: spelling='tauFunc', token_value='tauFunc', type_name=None
+          DECL_REF_EXPR: spelling='tauFunc', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='rhoParam', token_value=None, type_name='bool'
+          CXX_BOOL_LITERAL_EXPR: spelling='', token_value='false', type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='nuPiParam', token_value=None, type_name='int'
+          INTEGER_LITERAL: spelling='', token_value='43', type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='zetaParam', token_value=None, type_name='float'
+          FLOATING_LITERAL: spelling='', token_value='32.16704976496493f', type_name=None
+      CALL_EXPR: spelling='deltaFunc', token_value='deltaFunc ( rhoParam , nuPiParam , zetaParam )', type_name=None
+        UNEXPOSED_EXPR: spelling='deltaFunc', token_value='deltaFunc', type_name=None
+          DECL_REF_EXPR: spelling='deltaFunc', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='rhoParam', token_value='rhoParam', type_name=None
+          DECL_REF_EXPR: spelling='rhoParam', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='nuPiParam', token_value='nuPiParam', type_name=None
+          DECL_REF_EXPR: spelling='nuPiParam', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='zetaParam', token_value='zetaParam', type_name=None
+          DECL_REF_EXPR: spelling='zetaParam', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='upsilon', token_value=None, type_name='float'
+          FLOATING_LITERAL: spelling='', token_value='33.29213237393554f', type_name=None
+      IF_STMT: spelling='', token_value=None, type_name=None
+        CXX_BOOL_LITERAL_EXPR: spelling='', token_value='false', type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          CALL_EXPR: spelling='operator<<', token_value='std :: cout << "WLQO1B0CN299R5T8ZE2K" << std :: endl', type_name=None
+            CALL_EXPR: spelling='operator<<', token_value='std :: cout << "WLQO1B0CN299R5T8ZE2K"', type_name=None
+              DECL_REF_EXPR: spelling='cout', token_value=None, type_name=None
+                NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+              UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+                DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+              UNEXPOSED_EXPR: spelling='', token_value='"WLQO1B0CN299R5T8ZE2K"', type_name=None
+                STRING_LITERAL: spelling='"WLQO1B0CN299R5T8ZE2K"', token_value='"WLQO1B0CN299R5T8ZE2K"', type_name=None
+            UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+              DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='endl', token_value='std :: endl', type_name=None
+              DECL_REF_EXPR: spelling='endl', token_value=None, type_name=None
+                NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='kappaAlpha', token_value=None, type_name='double[14]'
+              INTEGER_LITERAL: spelling='', token_value='14', type_name=None
+              INIT_LIST_EXPR: spelling='', token_value=None, type_name=None
+                FLOATING_LITERAL: spelling='', token_value='20.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='47.308343448827436', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='3.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='15.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='3.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='14.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='12.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='19.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='7.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='12.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='13.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='11.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='7.0', type_name=None
+                FLOATING_LITERAL: spelling='', token_value='1.0', type_name=None
+          FOR_STMT: spelling='', token_value=None, type_name=None
+            DECL_STMT: spelling='', token_value=None, type_name=None
+              VAR_DECL: spelling='i', token_value=None, type_name='int'
+                INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+            BINARY_OPERATOR: spelling='', token_value='i < 14', type_name=None
+              UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+              INTEGER_LITERAL: spelling='', token_value='14', type_name=None
+            UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+              DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+            COMPOUND_STMT: spelling='', token_value=None, type_name=None
+              CALL_EXPR: spelling='operator<<', token_value='std :: cout << kappaAlpha [ i ] << std :: endl', type_name=None
+                CALL_EXPR: spelling='operator<<', token_value='std :: cout << kappaAlpha [ i ]', type_name=None
+                  DECL_REF_EXPR: spelling='cout', token_value=None, type_name=None
+                    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+                  UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+                    DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+                  UNEXPOSED_EXPR: spelling='', token_value='kappaAlpha [ i ]', type_name=None
+                    ARRAY_SUBSCRIPT_EXPR: spelling='', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='kappaAlpha', token_value='kappaAlpha', type_name=None
+                        DECL_REF_EXPR: spelling='kappaAlpha', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                        DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+                  DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+                UNEXPOSED_EXPR: spelling='endl', token_value='std :: endl', type_name=None
+                  DECL_REF_EXPR: spelling='endl', token_value=None, type_name=None
+                    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+              RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='phi', token_value=None, type_name='double'
+          UNEXPOSED_EXPR: spelling='', token_value='12 - 6', type_name=None
+            BINARY_OPERATOR: spelling='', token_value='12 - 6', type_name=None
+              INTEGER_LITERAL: spelling='', token_value='12', type_name=None
+              INTEGER_LITERAL: spelling='', token_value='6', type_name=None
+      WHILE_STMT: spelling='', token_value=None, type_name=None
+        CXX_BOOL_LITERAL_EXPR: spelling='', token_value='true', type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='omegaTau', token_value=None, type_name='double'
+              UNEXPOSED_EXPR: spelling='', token_value='18 - 13', type_name=None
+                BINARY_OPERATOR: spelling='', token_value='18 - 13', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='18', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='13', type_name=None
+          RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+      CALL_EXPR: spelling='operator<<', token_value='std :: cout << "Entering main loop" << std :: endl', type_name=None
+        CALL_EXPR: spelling='operator<<', token_value='std :: cout << "Entering main loop"', type_name=None
+          DECL_REF_EXPR: spelling='cout', token_value=None, type_name=None
+            NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+            DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"Entering main loop"', type_name=None
+            STRING_LITERAL: spelling='"Entering main loop"', token_value='"Entering main loop"', type_name=None
+        UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+          DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='endl', token_value='std :: endl', type_name=None
+          DECL_REF_EXPR: spelling='endl', token_value=None, type_name=None
+            NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+      CALL_EXPR: spelling='operator<<', token_value='std :: cout << "This is a sample print statement" << std :: endl', type_name=None
+        CALL_EXPR: spelling='operator<<', token_value='std :: cout << "This is a sample print statement"', type_name=None
+          DECL_REF_EXPR: spelling='cout', token_value=None, type_name=None
+            NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+            DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"This is a sample print statement"', type_name=None
+            STRING_LITERAL: spelling='"This is a sample print statement"', token_value='"This is a sample print statement"', type_name=None
+        UNEXPOSED_EXPR: spelling='operator<<', token_value='<<', type_name=None
+          DECL_REF_EXPR: spelling='operator<<', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='endl', token_value='std :: endl', type_name=None
+          DECL_REF_EXPR: spelling='endl', token_value=None, type_name=None
+            NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; ; ; ; ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='0', type_name=None

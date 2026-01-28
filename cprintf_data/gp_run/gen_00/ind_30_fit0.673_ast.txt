@@ -1,0 +1,89 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-04-38-942.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdio.h', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  NAMESPACE: spelling='test', token_value=None, type_name=None
+    FUNCTION_DECL: spelling='nested', token_value=None, type_name='void'
+      COMPOUND_STMT: spelling='', token_value=None, type_name=None
+        CALL_EXPR: spelling='printf', token_value='printf ( "Nested %d\\n" , 10 )', type_name=None
+          UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+            DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"Nested %d\\n"', type_name=None
+            STRING_LITERAL: spelling='"Nested %d\\n"', token_value='"Nested %d\\n"', type_name=None
+          INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+        RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+  CLASS_DECL: spelling='Test', token_value=None, type_name=None
+    CXX_ACCESS_SPEC_DECL: spelling='public', token_value=None, type_name=None
+    CXX_METHOD: spelling='member', token_value=None, type_name='void'
+      COMPOUND_STMT: spelling='', token_value=None, type_name=None
+        CALL_EXPR: spelling='printf', token_value='printf ( "Member %s\\n" , "ok" )', type_name=None
+          UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+            DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"Member %s\\n"', type_name=None
+            STRING_LITERAL: spelling='"Member %s\\n"', token_value='"Member %s\\n"', type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"ok"', type_name=None
+            STRING_LITERAL: spelling='"ok"', token_value='"ok"', type_name=None
+        RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+    CXX_METHOD: spelling='stat', token_value=None, type_name='void'
+      COMPOUND_STMT: spelling='', token_value=None, type_name=None
+        CALL_EXPR: spelling='printf', token_value='printf ( "Static %c\\n" , \'S\' )', type_name=None
+          UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+            DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"Static %c\\n"', type_name=None
+            STRING_LITERAL: spelling='"Static %c\\n"', token_value='"Static %c\\n"', type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value="'S'", type_name=None
+            CHARACTER_LITERAL: spelling='', token_value="'S'", type_name=None
+        RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+  FUNCTION_TEMPLATE: spelling='tpl', token_value=None, type_name=None
+    TEMPLATE_TYPE_PARAMETER: spelling='T', token_value=None, type_name=None
+    PARM_DECL: spelling='v', token_value=None, type_name='T'
+      TYPE_REF: spelling='T', token_value=None, type_name=None
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      CALL_EXPR: spelling='printf', token_value='printf ( "Template %d\\n" , static_cast < int > ( v ) )', type_name=None
+        UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+          DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='', token_value='"Template %d\\n"', type_name=None
+          STRING_LITERAL: spelling='"Template %d\\n"', token_value='"Template %d\\n"', type_name=None
+        CXX_STATIC_CAST_EXPR: spelling='', token_value=None, type_name=None
+          DECL_REF_EXPR: spelling='v', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      CALL_EXPR: spelling='nested', token_value='test :: nested ( )', type_name=None
+        UNEXPOSED_EXPR: spelling='nested', token_value='test :: nested', type_name=None
+          DECL_REF_EXPR: spelling='nested', token_value=None, type_name=None
+            NAMESPACE_REF: spelling='test', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='t', token_value=None, type_name='Test'
+          TYPE_REF: spelling='Test', token_value=None, type_name=None
+          CALL_EXPR: spelling='Test', token_value='t', type_name=None
+      CALL_EXPR: spelling='member', token_value='t . member ( )', type_name=None
+        MEMBER_REF_EXPR: spelling='member', token_value=None, type_name=None
+          DECL_REF_EXPR: spelling='t', token_value=None, type_name=None
+      CALL_EXPR: spelling='stat', token_value='Test :: stat ( )', type_name=None
+        UNEXPOSED_EXPR: spelling='stat', token_value='Test :: stat', type_name=None
+          DECL_REF_EXPR: spelling='stat', token_value=None, type_name=None
+            TYPE_REF: spelling='Test', token_value=None, type_name=None
+      CALL_EXPR: spelling='tpl', token_value='tpl ( 42 )', type_name=None
+        UNEXPOSED_EXPR: spelling='tpl', token_value='tpl', type_name=None
+          DECL_REF_EXPR: spelling='tpl', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='42', type_name=None
+      CALL_EXPR: spelling='tpl', token_value='tpl ( 3.14 )', type_name=None
+        UNEXPOSED_EXPR: spelling='tpl', token_value='tpl', type_name=None
+          DECL_REF_EXPR: spelling='tpl', token_value=None, type_name=None
+        FLOATING_LITERAL: spelling='', token_value='3.14', type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='xi', token_value=None, type_name='int'
+          BINARY_OPERATOR: spelling='', token_value='16 / 6', type_name=None
+            INTEGER_LITERAL: spelling='', token_value='16', type_name=None
+            INTEGER_LITERAL: spelling='', token_value='6', type_name=None
+      RAW_TOKENS: spelling='{ ; ; ; ; ; ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='0', type_name=None

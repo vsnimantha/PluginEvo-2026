@@ -1,0 +1,11 @@
+{
+  "branch_coverage": 0.0,
+  "call_coverage": 0.0,
+  "coverage": 0.0,
+  "decision_coverage": 0.0,
+  "error": "Compilation failed for evaluations/temp_1765198346/program_1765198346.cpp: evaluations/temp_1765198346/program_1765198346.cpp: In function \u2018int main()\u2019:\nevaluations/temp_1765198346/program_1765198346.cpp:41:4: error: expected \u2018;\u2019 before \u2018x\u2019\n   41 |   x x = x++ + ++x x++ + ++x;\n      |    ^~\n      |    ;\n",
+  "filename": "program_1765198346.cpp",
+  "folder": "evaluations/temp_1765198346",
+  "function_coverage": 0.0,
+  "line_coverage": 0.0
+}

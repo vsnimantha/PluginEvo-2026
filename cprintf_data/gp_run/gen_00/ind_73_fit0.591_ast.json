@@ -1,0 +1,1879 @@
+{
+  "children": [
+    {
+      "children": [],
+      "kind": "INCLUSION_DIRECTIVE",
+      "spelling": "cstdio",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "INCLUSION_DIRECTIVE",
+      "spelling": "iostream",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "MACRO_INSTANTIATION",
+      "spelling": "__cplusplus",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "MACRO_INSTANTIATION",
+      "spelling": "_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "INCLUSION_DIRECTIVE",
+      "spelling": "stdlib.h",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "MACRO_INSTANTIATION",
+      "spelling": "__cplusplus",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "MACRO_INSTANTIATION",
+      "spelling": "_GLIBCXX_INCLUDE_NEXT_C_HEADERS",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "INCLUSION_DIRECTIVE",
+      "spelling": "stdlib.h",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [],
+      "kind": "INCLUSION_DIRECTIVE",
+      "spelling": "stdlib.h",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "kind": "NAMESPACE_REF",
+          "spelling": "std",
+          "token_value": null,
+          "type_name": null
+        }
+      ],
+      "kind": "USING_DIRECTIVE",
+      "spelling": "",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "kind": "INTEGER_LITERAL",
+              "spelling": "",
+              "token_value": "1",
+              "type_name": null
+            }
+          ],
+          "kind": "FIELD_DECL",
+          "spelling": "a",
+          "token_value": null,
+          "type_name": "int"
+        }
+      ],
+      "kind": "STRUCT_DECL",
+      "spelling": "Base1",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "kind": "INTEGER_LITERAL",
+              "spelling": "",
+              "token_value": "2",
+              "type_name": null
+            }
+          ],
+          "kind": "FIELD_DECL",
+          "spelling": "b",
+          "token_value": null,
+          "type_name": "int"
+        }
+      ],
+      "kind": "STRUCT_DECL",
+      "spelling": "Base2",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [],
+              "kind": "TYPE_REF",
+              "spelling": "Base1",
+              "token_value": null,
+              "type_name": null
+            }
+          ],
+          "kind": "CXX_BASE_SPECIFIER",
+          "spelling": "Base1",
+          "token_value": null,
+          "type_name": null
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "kind": "TYPE_REF",
+              "spelling": "Base2",
+              "token_value": null,
+              "type_name": null
+            }
+          ],
+          "kind": "CXX_BASE_SPECIFIER",
+          "spelling": "Base2",
+          "token_value": null,
+          "type_name": null
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "kind": "INTEGER_LITERAL",
+              "spelling": "",
+              "token_value": "3",
+              "type_name": null
+            }
+          ],
+          "kind": "FIELD_DECL",
+          "spelling": "c",
+          "token_value": null,
+          "type_name": "int"
+        }
+      ],
+      "kind": "STRUCT_DECL",
+      "spelling": "Derived",
+      "token_value": null,
+      "type_name": null
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "kind": "PARM_DECL",
+          "spelling": "num",
+          "token_value": null,
+          "type_name": "int"
+        },
+        {
+          "children": [],
+          "kind": "PARM_DECL",
+          "spelling": "index",
+          "token_value": null,
+          "type_name": "int"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "20",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "VAR_DECL",
+                  "spelling": "kl",
+                  "token_value": null,
+                  "type_name": "int"
+                }
+              ],
+              "kind": "DECL_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "INTEGER_LITERAL",
+                              "spelling": "",
+                              "token_value": "6",
+                              "type_name": null
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "20",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "7",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "15",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "14",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "14",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "3",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "INIT_LIST_EXPR",
+                              "spelling": "",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "VAR_DECL",
+                          "spelling": "gammaOmicron",
+                          "token_value": null,
+                          "type_name": "int[6]"
+                        }
+                      ],
+                      "kind": "DECL_STMT",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "kl",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNARY_OPERATOR",
+                      "spelling": "++",
+                      "token_value": "postfix",
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "0",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "VAR_DECL",
+                              "spelling": "i",
+                              "token_value": null,
+                              "type_name": "int"
+                            }
+                          ],
+                          "kind": "DECL_STMT",
+                          "spelling": "",
+                          "token_value": null,
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "DECL_REF_EXPR",
+                                  "spelling": "i",
+                                  "token_value": null,
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "UNEXPOSED_EXPR",
+                              "spelling": "i",
+                              "token_value": "i",
+                              "type_name": null
+                            },
+                            {
+                              "children": [],
+                              "kind": "INTEGER_LITERAL",
+                              "spelling": "",
+                              "token_value": "6",
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "BINARY_OPERATOR",
+                          "spelling": "",
+                          "token_value": "i < 6",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "i",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNARY_OPERATOR",
+                          "spelling": "++",
+                          "token_value": "postfix",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [],
+                                          "kind": "NAMESPACE_REF",
+                                          "spelling": "std",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "DECL_REF_EXPR",
+                                      "spelling": "cout",
+                                      "token_value": null,
+                                      "type_name": null
+                                    },
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [],
+                                          "kind": "DECL_REF_EXPR",
+                                          "spelling": "operator<<",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "UNEXPOSED_EXPR",
+                                      "spelling": "operator<<",
+                                      "token_value": "<<",
+                                      "type_name": null
+                                    },
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [],
+                                                  "kind": "DECL_REF_EXPR",
+                                                  "spelling": "gammaOmicron",
+                                                  "token_value": null,
+                                                  "type_name": null
+                                                }
+                                              ],
+                                              "kind": "UNEXPOSED_EXPR",
+                                              "spelling": "gammaOmicron",
+                                              "token_value": "gammaOmicron",
+                                              "type_name": null
+                                            },
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [],
+                                                  "kind": "DECL_REF_EXPR",
+                                                  "spelling": "i",
+                                                  "token_value": null,
+                                                  "type_name": null
+                                                }
+                                              ],
+                                              "kind": "UNEXPOSED_EXPR",
+                                              "spelling": "i",
+                                              "token_value": "i",
+                                              "type_name": null
+                                            }
+                                          ],
+                                          "kind": "ARRAY_SUBSCRIPT_EXPR",
+                                          "spelling": "",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "UNEXPOSED_EXPR",
+                                      "spelling": "",
+                                      "token_value": "gammaOmicron [ i ]",
+                                      "type_name": null
+                                    }
+                                  ],
+                                  "kind": "CALL_EXPR",
+                                  "spelling": "operator<<",
+                                  "token_value": "std :: cout << gammaOmicron [ i ]",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "children": [],
+                                      "kind": "DECL_REF_EXPR",
+                                      "spelling": "operator<<",
+                                      "token_value": null,
+                                      "type_name": null
+                                    }
+                                  ],
+                                  "kind": "UNEXPOSED_EXPR",
+                                  "spelling": "operator<<",
+                                  "token_value": "<<",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [],
+                                          "kind": "NAMESPACE_REF",
+                                          "spelling": "std",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "DECL_REF_EXPR",
+                                      "spelling": "endl",
+                                      "token_value": null,
+                                      "type_name": null
+                                    }
+                                  ],
+                                  "kind": "UNEXPOSED_EXPR",
+                                  "spelling": "endl",
+                                  "token_value": "std :: endl",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "CALL_EXPR",
+                              "spelling": "operator<<",
+                              "token_value": "std :: cout << gammaOmicron [ i ] << std :: endl",
+                              "type_name": null
+                            },
+                            {
+                              "children": [],
+                              "kind": "RAW_TOKENS",
+                              "spelling": "{ ; }",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "COMPOUND_STMT",
+                          "spelling": "",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "FOR_STMT",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "RAW_TOKENS",
+                      "spelling": "{ ; }",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "COMPOUND_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "kl",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "kl",
+                      "token_value": "kl",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "5",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "BINARY_OPERATOR",
+                  "spelling": "",
+                  "token_value": "kl < 5",
+                  "type_name": null
+                }
+              ],
+              "kind": "DO_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "index",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "index",
+                      "token_value": "index",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "5",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "BINARY_OPERATOR",
+                  "spelling": "",
+                  "token_value": "index >= 5",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "RAW_TOKENS",
+                      "spelling": "{ ; }",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "num",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNEXPOSED_EXPR",
+                          "spelling": "num",
+                          "token_value": "num",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "RETURN_STMT",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "COMPOUND_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                }
+              ],
+              "kind": "IF_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [],
+              "kind": "RAW_TOKENS",
+              "spelling": "{ ; ; }",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "muFunc",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "muFunc",
+                      "token_value": "muFunc",
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "num",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "num",
+                      "token_value": "num",
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "index",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNEXPOSED_EXPR",
+                          "spelling": "index",
+                          "token_value": "index",
+                          "type_name": null
+                        },
+                        {
+                          "children": [],
+                          "kind": "INTEGER_LITERAL",
+                          "spelling": "",
+                          "token_value": "1",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "BINARY_OPERATOR",
+                      "spelling": "",
+                      "token_value": "index - 1",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "CALL_EXPR",
+                  "spelling": "muFunc",
+                  "token_value": "muFunc ( num , index - 1 )",
+                  "type_name": null
+                }
+              ],
+              "kind": "RETURN_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            }
+          ],
+          "kind": "COMPOUND_STMT",
+          "spelling": "",
+          "token_value": null,
+          "type_name": null
+        }
+      ],
+      "kind": "FUNCTION_DECL",
+      "spelling": "muFunc",
+      "token_value": null,
+      "type_name": "int"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "INTEGER_LITERAL",
+                          "spelling": "",
+                          "token_value": "15",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "VAR_DECL",
+                      "spelling": "i",
+                      "token_value": null,
+                      "type_name": "int"
+                    }
+                  ],
+                  "kind": "DECL_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "i",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "i",
+                      "token_value": "i",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "5",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "BINARY_OPERATOR",
+                  "spelling": "",
+                  "token_value": "i > 5",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "i",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNARY_OPERATOR",
+                  "spelling": "++",
+                  "token_value": "postfix",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "NAMESPACE_REF",
+                                  "spelling": "std",
+                                  "token_value": null,
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "cout",
+                              "token_value": null,
+                              "type_name": null
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "DECL_REF_EXPR",
+                                  "spelling": "operator<<",
+                                  "token_value": null,
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "UNEXPOSED_EXPR",
+                              "spelling": "operator<<",
+                              "token_value": "<<",
+                              "type_name": null
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "STRING_LITERAL",
+                                  "spelling": "\"MJ7A4OCC0OMKRPKCP5ZD\"",
+                                  "token_value": "\"MJ7A4OCC0OMKRPKCP5ZD\"",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "UNEXPOSED_EXPR",
+                              "spelling": "",
+                              "token_value": "\"MJ7A4OCC0OMKRPKCP5ZD\"",
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "CALL_EXPR",
+                          "spelling": "operator<<",
+                          "token_value": "std :: cout << \"MJ7A4OCC0OMKRPKCP5ZD\"",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "operator<<",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNEXPOSED_EXPR",
+                          "spelling": "operator<<",
+                          "token_value": "<<",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "NAMESPACE_REF",
+                                  "spelling": "std",
+                                  "token_value": null,
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "endl",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNEXPOSED_EXPR",
+                          "spelling": "endl",
+                          "token_value": "std :: endl",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "CALL_EXPR",
+                      "spelling": "operator<<",
+                      "token_value": "std :: cout << \"MJ7A4OCC0OMKRPKCP5ZD\" << std :: endl",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "RAW_TOKENS",
+                      "spelling": "{ ; ; }",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "FLOATING_LITERAL",
+                          "spelling": "",
+                          "token_value": "5.200404179393258f",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "RETURN_STMT",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "COMPOUND_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                }
+              ],
+              "kind": "FOR_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [],
+              "kind": "RAW_TOKENS",
+              "spelling": "{ ; }",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "kind": "FLOATING_LITERAL",
+                  "spelling": "",
+                  "token_value": "87.46489231726454f",
+                  "type_name": null
+                }
+              ],
+              "kind": "RETURN_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            }
+          ],
+          "kind": "COMPOUND_STMT",
+          "spelling": "",
+          "token_value": null,
+          "type_name": null
+        }
+      ],
+      "kind": "FUNCTION_DECL",
+      "spelling": "muFunc",
+      "token_value": null,
+      "type_name": "float"
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "kind": "PARM_DECL",
+          "spelling": "alphaEpsilonParam",
+          "token_value": null,
+          "type_name": "int"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "printf",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "printf",
+                  "token_value": "printf",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "STRING_LITERAL",
+                      "spelling": "\"L7K9SFQ0N099XL6S2OHX\"",
+                      "token_value": "\"L7K9SFQ0N099XL6S2OHX\"",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "",
+                  "token_value": "\"L7K9SFQ0N099XL6S2OHX\"",
+                  "type_name": null
+                }
+              ],
+              "kind": "CALL_EXPR",
+              "spelling": "printf",
+              "token_value": "printf ( \"L7K9SFQ0N099XL6S2OHX\" )",
+              "type_name": null
+            },
+            {
+              "children": [],
+              "kind": "RAW_TOKENS",
+              "spelling": "{ ; ; }",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [],
+                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                  "spelling": "",
+                  "token_value": "false",
+                  "type_name": null
+                }
+              ],
+              "kind": "RETURN_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            }
+          ],
+          "kind": "COMPOUND_STMT",
+          "spelling": "",
+          "token_value": null,
+          "type_name": null
+        }
+      ],
+      "kind": "FUNCTION_DECL",
+      "spelling": "kappaFunc",
+      "token_value": null,
+      "type_name": "bool"
+    },
+    {
+      "children": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "muFunc",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "muFunc",
+                  "token_value": "muFunc",
+                  "type_name": null
+                },
+                {
+                  "children": [],
+                  "kind": "INTEGER_LITERAL",
+                  "spelling": "",
+                  "token_value": "10",
+                  "type_name": null
+                },
+                {
+                  "children": [],
+                  "kind": "INTEGER_LITERAL",
+                  "spelling": "",
+                  "token_value": "20",
+                  "type_name": null
+                }
+              ],
+              "kind": "CALL_EXPR",
+              "spelling": "muFunc",
+              "token_value": "muFunc ( 10 , 20 )",
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "10",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "VAR_DECL",
+                  "spelling": "kl",
+                  "token_value": null,
+                  "type_name": "int"
+                }
+              ],
+              "kind": "DECL_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "printf",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNEXPOSED_EXPR",
+                          "spelling": "printf",
+                          "token_value": "printf",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "STRING_LITERAL",
+                              "spelling": "\"Memory allocation complete\"",
+                              "token_value": "\"Memory allocation complete\"",
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNEXPOSED_EXPR",
+                          "spelling": "",
+                          "token_value": "\"Memory allocation complete\"",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "CALL_EXPR",
+                      "spelling": "printf",
+                      "token_value": "printf ( \"Memory allocation complete\" )",
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "kl",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNARY_OPERATOR",
+                      "spelling": "++",
+                      "token_value": "postfix",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "RAW_TOKENS",
+                      "spelling": "{ ; ; }",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "COMPOUND_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "kl",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "kl",
+                      "token_value": "kl",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "5",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "BINARY_OPERATOR",
+                  "spelling": "",
+                  "token_value": "kl <= 5",
+                  "type_name": null
+                }
+              ],
+              "kind": "DO_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "INTEGER_LITERAL",
+                          "spelling": "",
+                          "token_value": "20",
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "VAR_DECL",
+                      "spelling": "i",
+                      "token_value": null,
+                      "type_name": "int"
+                    }
+                  ],
+                  "kind": "DECL_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "i",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "i",
+                      "token_value": "i",
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "5",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "BINARY_OPERATOR",
+                  "spelling": "",
+                  "token_value": "i < 5",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "i",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNARY_OPERATOR",
+                  "spelling": "++",
+                  "token_value": "postfix",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "INTEGER_LITERAL",
+                              "spelling": "",
+                              "token_value": "7",
+                              "type_name": null
+                            },
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "true",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "false",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "false",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "false",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "false",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "true",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [],
+                                  "kind": "CXX_BOOL_LITERAL_EXPR",
+                                  "spelling": "",
+                                  "token_value": "true",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "INIT_LIST_EXPR",
+                              "spelling": "",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "VAR_DECL",
+                          "spelling": "deltaEpsilon",
+                          "token_value": null,
+                          "type_name": "bool[7]"
+                        }
+                      ],
+                      "kind": "DECL_STMT",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "INTEGER_LITERAL",
+                                  "spelling": "",
+                                  "token_value": "0",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "VAR_DECL",
+                              "spelling": "i",
+                              "token_value": null,
+                              "type_name": "int"
+                            }
+                          ],
+                          "kind": "DECL_STMT",
+                          "spelling": "",
+                          "token_value": null,
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [],
+                                  "kind": "DECL_REF_EXPR",
+                                  "spelling": "i",
+                                  "token_value": null,
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "UNEXPOSED_EXPR",
+                              "spelling": "i",
+                              "token_value": "i",
+                              "type_name": null
+                            },
+                            {
+                              "children": [],
+                              "kind": "INTEGER_LITERAL",
+                              "spelling": "",
+                              "token_value": "7",
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "BINARY_OPERATOR",
+                          "spelling": "",
+                          "token_value": "i < 7",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "i",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "UNARY_OPERATOR",
+                          "spelling": "++",
+                          "token_value": "postfix",
+                          "type_name": null
+                        },
+                        {
+                          "children": [
+                            {
+                              "children": [
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [],
+                                          "kind": "NAMESPACE_REF",
+                                          "spelling": "std",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "DECL_REF_EXPR",
+                                      "spelling": "cout",
+                                      "token_value": null,
+                                      "type_name": null
+                                    },
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [],
+                                          "kind": "DECL_REF_EXPR",
+                                          "spelling": "operator<<",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "UNEXPOSED_EXPR",
+                                      "spelling": "operator<<",
+                                      "token_value": "<<",
+                                      "type_name": null
+                                    },
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [],
+                                                  "kind": "DECL_REF_EXPR",
+                                                  "spelling": "deltaEpsilon",
+                                                  "token_value": null,
+                                                  "type_name": null
+                                                }
+                                              ],
+                                              "kind": "UNEXPOSED_EXPR",
+                                              "spelling": "deltaEpsilon",
+                                              "token_value": "deltaEpsilon",
+                                              "type_name": null
+                                            },
+                                            {
+                                              "children": [
+                                                {
+                                                  "children": [],
+                                                  "kind": "DECL_REF_EXPR",
+                                                  "spelling": "i",
+                                                  "token_value": null,
+                                                  "type_name": null
+                                                }
+                                              ],
+                                              "kind": "UNEXPOSED_EXPR",
+                                              "spelling": "i",
+                                              "token_value": "i",
+                                              "type_name": null
+                                            }
+                                          ],
+                                          "kind": "ARRAY_SUBSCRIPT_EXPR",
+                                          "spelling": "",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "UNEXPOSED_EXPR",
+                                      "spelling": "",
+                                      "token_value": "deltaEpsilon [ i ]",
+                                      "type_name": null
+                                    }
+                                  ],
+                                  "kind": "CALL_EXPR",
+                                  "spelling": "operator<<",
+                                  "token_value": "std :: cout << deltaEpsilon [ i ]",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "children": [],
+                                      "kind": "DECL_REF_EXPR",
+                                      "spelling": "operator<<",
+                                      "token_value": null,
+                                      "type_name": null
+                                    }
+                                  ],
+                                  "kind": "UNEXPOSED_EXPR",
+                                  "spelling": "operator<<",
+                                  "token_value": "<<",
+                                  "type_name": null
+                                },
+                                {
+                                  "children": [
+                                    {
+                                      "children": [
+                                        {
+                                          "children": [],
+                                          "kind": "NAMESPACE_REF",
+                                          "spelling": "std",
+                                          "token_value": null,
+                                          "type_name": null
+                                        }
+                                      ],
+                                      "kind": "DECL_REF_EXPR",
+                                      "spelling": "endl",
+                                      "token_value": null,
+                                      "type_name": null
+                                    }
+                                  ],
+                                  "kind": "UNEXPOSED_EXPR",
+                                  "spelling": "endl",
+                                  "token_value": "std :: endl",
+                                  "type_name": null
+                                }
+                              ],
+                              "kind": "CALL_EXPR",
+                              "spelling": "operator<<",
+                              "token_value": "std :: cout << deltaEpsilon [ i ] << std :: endl",
+                              "type_name": null
+                            },
+                            {
+                              "children": [],
+                              "kind": "RAW_TOKENS",
+                              "spelling": "{ ; }",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "COMPOUND_STMT",
+                          "spelling": "",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "FOR_STMT",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "RAW_TOKENS",
+                      "spelling": "{ }",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "COMPOUND_STMT",
+                  "spelling": "",
+                  "token_value": null,
+                  "type_name": null
+                }
+              ],
+              "kind": "FOR_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "muFunc",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "muFunc",
+                  "token_value": "muFunc",
+                  "type_name": null
+                }
+              ],
+              "kind": "CALL_EXPR",
+              "spelling": "muFunc",
+              "token_value": "muFunc ( )",
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "INTEGER_LITERAL",
+                      "spelling": "",
+                      "token_value": "96",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "VAR_DECL",
+                  "spelling": "alphaEpsilonParam",
+                  "token_value": null,
+                  "type_name": "int"
+                }
+              ],
+              "kind": "DECL_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "kappaFunc",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "kappaFunc",
+                  "token_value": "kappaFunc",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "alphaEpsilonParam",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "alphaEpsilonParam",
+                  "token_value": "alphaEpsilonParam",
+                  "type_name": null
+                }
+              ],
+              "kind": "CALL_EXPR",
+              "spelling": "kappaFunc",
+              "token_value": "kappaFunc ( alphaEpsilonParam )",
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "TYPE_REF",
+                      "spelling": "Derived",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [],
+                      "kind": "CALL_EXPR",
+                      "spelling": "Derived",
+                      "token_value": "d",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "VAR_DECL",
+                  "spelling": "d",
+                  "token_value": null,
+                  "type_name": "Derived"
+                }
+              ],
+              "kind": "DECL_STMT",
+              "spelling": "",
+              "token_value": null,
+              "type_name": null
+            },
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "NAMESPACE_REF",
+                          "spelling": "std",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "cout",
+                      "token_value": null,
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [],
+                          "kind": "DECL_REF_EXPR",
+                          "spelling": "operator<<",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "UNEXPOSED_EXPR",
+                      "spelling": "operator<<",
+                      "token_value": "<<",
+                      "type_name": null
+                    },
+                    {
+                      "children": [
+                        {
+                          "children": [
+                            {
+                              "children": [],
+                              "kind": "DECL_REF_EXPR",
+                              "spelling": "d",
+                              "token_value": null,
+                              "type_name": null
+                            }
+                          ],
+                          "kind": "PAREN_EXPR",
+                          "spelling": "",
+                          "token_value": null,
+                          "type_name": null
+                        }
+                      ],
+                      "kind": "CXX_UNARY_EXPR",
+                      "spelling": "",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "CALL_EXPR",
+                  "spelling": "operator<<",
+                  "token_value": "std :: cout << sizeof ( d )",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "DECL_REF_EXPR",
+                      "spelling": "operator<<",
+                      "token_value": null,
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "operator<<",
+                  "token_value": "<<",
+                  "type_name": null
+                },
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "kind": "STRING_LITERAL",
+                      "spelling": "\"\\n\"",
+                      "token_value": "\"\\n\"",
+                      "type_name": null
+                    }
+                  ],
+                  "kind": "UNEXPOSED_EXPR",
+                  "spelling": "",
+                  "token_value": "\"\\n\"",
+                  "type_name": null
+                }
+              ],
+              "kind": "CALL_EXPR",
+              "spelling": "operator<<",
+              "token_value": "std :: cout << sizeof ( d ) << \"\\n\"",
+              "type_name": null
+            },
+            {
+              "children": [],
+              "kind": "RAW_TOKENS",
+              "spelling": "{ ; ; ; ; ; }",
+              "token_value": null,
+              "type_name": null
+            }
+          ],
+          "kind": "COMPOUND_STMT",
+          "spelling": "",
+          "token_value": null,
+          "type_name": null
+        }
+      ],
+      "kind": "FUNCTION_DECL",
+      "spelling": "main",
+      "token_value": null,
+      "type_name": "int"
+    }
+  ],
+  "kind": "TRANSLATION_UNIT",
+  "spelling": "seeds/run_1765196641/generated_program_2025-12-08_13-05-50-411.cpp",
+  "token_value": null,
+  "type_name": null
+}

@@ -1,0 +1,632 @@
+[2025-12-08 13:25:23] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-08 13:25:23] [Information] [DEBUG] Generation 0: Best index = 9, Current best = 0.677900, Historical best = 0.677900
+[2025-12-08 13:25:23] [Information] Gen 00 | best=0.678
+[2025-12-08 13:25:49] [Information] [DEBUG] Population size = 100, Valid = 90, Filtered out = 10
+[2025-12-08 13:25:49] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 13:57:39] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-08 13:57:39] [Information] [DEBUG] Generation 1: Best index = 0, Current best = 0.677900, Historical best = 0.677900
+[2025-12-08 13:57:39] [Information] Gen 01 | best=0.678
+[2025-12-08 13:58:05] [Information] [DEBUG] Population size = 100, Valid = 87, Filtered out = 13
+[2025-12-08 13:58:05] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 14:26:39] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-08 14:26:39] [Information] [DEBUG] Generation 2: Best index = 0, Current best = 0.677900, Historical best = 0.677900
+[2025-12-08 14:26:39] [Information] Gen 02 | best=0.678
+[2025-12-08 14:27:09] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 14:27:09] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 14:54:29] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-08 14:54:29] [Information] [DEBUG] Generation 3: Best index = 0, Current best = 0.677900, Historical best = 0.677900
+[2025-12-08 14:54:29] [Information] Gen 03 | best=0.678
+[2025-12-08 14:54:58] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 14:54:58] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 15:22:44] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-08 15:22:44] [Information] [DEBUG] Generation 4: Best index = 5, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 15:22:44] [Information] Gen 04 | best=0.703
+[2025-12-08 15:23:13] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 15:23:13] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 15:50:47] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-08 15:50:47] [Information] [DEBUG] Generation 5: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 15:50:47] [Information] Gen 05 | best=0.703
+[2025-12-08 15:51:17] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 15:51:17] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 16:18:33] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-08 16:18:33] [Information] [DEBUG] Generation 6: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 16:18:33] [Information] Gen 06 | best=0.703
+[2025-12-08 16:19:03] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 16:19:03] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 16:47:37] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-08 16:47:37] [Information] [DEBUG] Generation 7: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 16:47:37] [Information] Gen 07 | best=0.703
+[2025-12-08 16:48:07] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 16:48:07] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 17:17:05] [Information] [DEBUG] Stagnation counter = 4/50
+[2025-12-08 17:17:05] [Information] [DEBUG] Generation 8: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 17:17:05] [Information] Gen 08 | best=0.703
+[2025-12-08 17:17:35] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 17:17:35] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 17:45:28] [Information] [DEBUG] Stagnation counter = 5/50
+[2025-12-08 17:45:28] [Information] [DEBUG] Generation 9: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 17:45:28] [Information] Gen 09 | best=0.703
+[2025-12-08 17:45:58] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 17:45:58] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 18:14:16] [Information] [DEBUG] Stagnation counter = 6/50
+[2025-12-08 18:14:16] [Information] [DEBUG] Generation 10: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 18:14:16] [Information] Gen 10 | best=0.703
+[2025-12-08 18:14:45] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 18:14:45] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 18:42:36] [Information] [DEBUG] Stagnation counter = 7/50
+[2025-12-08 18:42:36] [Information] [DEBUG] Generation 11: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 18:42:36] [Information] Gen 11 | best=0.703
+[2025-12-08 18:43:05] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 18:43:05] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 19:10:34] [Information] [DEBUG] Stagnation counter = 8/50
+[2025-12-08 19:10:34] [Information] [DEBUG] Generation 12: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 19:10:34] [Information] Gen 12 | best=0.703
+[2025-12-08 19:11:03] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 19:11:03] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 19:39:05] [Information] [DEBUG] Stagnation counter = 9/50
+[2025-12-08 19:39:05] [Information] [DEBUG] Generation 13: Best index = 0, Current best = 0.702500, Historical best = 0.702500
+[2025-12-08 19:39:05] [Information] Gen 13 | best=0.703
+[2025-12-08 19:39:34] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 19:39:34] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 20:07:19] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-08 20:07:19] [Information] [DEBUG] Generation 14: Best index = 61, Current best = 0.707600, Historical best = 0.707600
+[2025-12-08 20:07:19] [Information] Gen 14 | best=0.708
+[2025-12-08 20:07:48] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 20:07:48] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 20:35:39] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-08 20:35:39] [Information] [DEBUG] Generation 15: Best index = 90, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 20:35:39] [Information] Gen 15 | best=0.709
+[2025-12-08 20:36:08] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 20:36:08] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 21:03:24] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-08 21:03:24] [Information] [DEBUG] Generation 16: Best index = 0, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 21:03:24] [Information] Gen 16 | best=0.709
+[2025-12-08 21:03:53] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 21:03:53] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 21:31:11] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-08 21:31:11] [Information] [DEBUG] Generation 17: Best index = 0, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 21:31:11] [Information] Gen 17 | best=0.709
+[2025-12-08 21:31:40] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 21:31:40] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 21:59:32] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-08 21:59:32] [Information] [DEBUG] Generation 18: Best index = 0, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 21:59:32] [Information] Gen 18 | best=0.709
+[2025-12-08 22:00:01] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 22:00:01] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 22:27:27] [Information] [DEBUG] Stagnation counter = 4/50
+[2025-12-08 22:27:27] [Information] [DEBUG] Generation 19: Best index = 0, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 22:27:27] [Information] Gen 19 | best=0.709
+[2025-12-08 22:27:56] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 22:27:56] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 22:55:52] [Information] [DEBUG] Stagnation counter = 5/50
+[2025-12-08 22:55:52] [Information] [DEBUG] Generation 20: Best index = 0, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 22:55:52] [Information] Gen 20 | best=0.709
+[2025-12-08 22:56:21] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 22:56:21] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 23:24:07] [Information] [DEBUG] Stagnation counter = 6/50
+[2025-12-08 23:24:07] [Information] [DEBUG] Generation 21: Best index = 0, Current best = 0.709400, Historical best = 0.709400
+[2025-12-08 23:24:07] [Information] Gen 21 | best=0.709
+[2025-12-08 23:24:36] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 23:24:36] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-08 23:52:28] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-08 23:52:28] [Information] [DEBUG] Generation 22: Best index = 36, Current best = 0.711600, Historical best = 0.711600
+[2025-12-08 23:52:28] [Information] Gen 22 | best=0.712
+[2025-12-08 23:52:56] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-08 23:52:56] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 00:19:59] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-09 00:19:59] [Information] [DEBUG] Generation 23: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 00:19:59] [Information] Gen 23 | best=0.712
+[2025-12-09 00:20:28] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 00:20:28] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 00:48:04] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-09 00:48:04] [Information] [DEBUG] Generation 24: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 00:48:04] [Information] Gen 24 | best=0.712
+[2025-12-09 00:48:33] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 00:48:33] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 01:16:22] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-09 01:16:22] [Information] [DEBUG] Generation 25: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 01:16:22] [Information] Gen 25 | best=0.712
+[2025-12-09 01:16:51] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 01:16:51] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 01:44:28] [Information] [DEBUG] Stagnation counter = 4/50
+[2025-12-09 01:44:28] [Information] [DEBUG] Generation 26: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 01:44:28] [Information] Gen 26 | best=0.712
+[2025-12-09 01:44:57] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 01:44:57] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 02:12:35] [Information] [DEBUG] Stagnation counter = 5/50
+[2025-12-09 02:12:35] [Information] [DEBUG] Generation 27: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 02:12:35] [Information] Gen 27 | best=0.712
+[2025-12-09 02:13:04] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 02:13:04] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 02:40:50] [Information] [DEBUG] Stagnation counter = 6/50
+[2025-12-09 02:40:50] [Information] [DEBUG] Generation 28: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 02:40:50] [Information] Gen 28 | best=0.712
+[2025-12-09 02:41:20] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 02:41:20] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 03:09:03] [Information] [DEBUG] Stagnation counter = 7/50
+[2025-12-09 03:09:03] [Information] [DEBUG] Generation 29: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 03:09:03] [Information] Gen 29 | best=0.712
+[2025-12-09 03:09:33] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 03:09:33] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 03:37:37] [Information] [DEBUG] Stagnation counter = 8/50
+[2025-12-09 03:37:37] [Information] [DEBUG] Generation 30: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 03:37:37] [Information] Gen 30 | best=0.712
+[2025-12-09 03:38:06] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 03:38:06] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 04:05:13] [Information] [DEBUG] Stagnation counter = 9/50
+[2025-12-09 04:05:13] [Information] [DEBUG] Generation 31: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 04:05:13] [Information] Gen 31 | best=0.712
+[2025-12-09 04:05:42] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 04:05:42] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 04:33:17] [Information] [DEBUG] Stagnation counter = 10/50
+[2025-12-09 04:33:17] [Information] [DEBUG] Generation 32: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 04:33:17] [Information] Gen 32 | best=0.712
+[2025-12-09 04:33:47] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 04:33:47] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 05:01:34] [Information] [DEBUG] Stagnation counter = 11/50
+[2025-12-09 05:01:34] [Information] [DEBUG] Generation 33: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 05:01:34] [Information] Gen 33 | best=0.712
+[2025-12-09 05:02:03] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 05:02:03] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 05:29:37] [Information] [DEBUG] Stagnation counter = 12/50
+[2025-12-09 05:29:37] [Information] [DEBUG] Generation 34: Best index = 0, Current best = 0.711600, Historical best = 0.711600
+[2025-12-09 05:29:37] [Information] Gen 34 | best=0.712
+[2025-12-09 05:30:06] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 05:30:06] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 05:58:08] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-09 05:58:08] [Information] [DEBUG] Generation 35: Best index = 40, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 05:58:08] [Information] Gen 35 | best=0.713
+[2025-12-09 05:58:38] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 05:58:38] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 06:26:04] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-09 06:26:04] [Information] [DEBUG] Generation 36: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 06:26:04] [Information] Gen 36 | best=0.713
+[2025-12-09 06:26:34] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 06:26:34] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 06:54:46] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-09 06:54:46] [Information] [DEBUG] Generation 37: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 06:54:46] [Information] Gen 37 | best=0.713
+[2025-12-09 06:55:15] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 06:55:15] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 07:23:05] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-09 07:23:05] [Information] [DEBUG] Generation 38: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 07:23:05] [Information] Gen 38 | best=0.713
+[2025-12-09 07:23:35] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 07:23:35] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 07:50:51] [Information] [DEBUG] Stagnation counter = 4/50
+[2025-12-09 07:50:51] [Information] [DEBUG] Generation 39: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 07:50:51] [Information] Gen 39 | best=0.713
+[2025-12-09 07:51:22] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 07:51:22] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 08:19:24] [Information] [DEBUG] Stagnation counter = 5/50
+[2025-12-09 08:19:24] [Information] [DEBUG] Generation 40: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 08:19:24] [Information] Gen 40 | best=0.713
+[2025-12-09 08:19:54] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 08:19:54] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 08:47:04] [Information] [DEBUG] Stagnation counter = 6/50
+[2025-12-09 08:47:04] [Information] [DEBUG] Generation 41: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 08:47:04] [Information] Gen 41 | best=0.713
+[2025-12-09 08:47:33] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 08:47:33] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 09:15:36] [Information] [DEBUG] Stagnation counter = 7/50
+[2025-12-09 09:15:36] [Information] [DEBUG] Generation 42: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 09:15:36] [Information] Gen 42 | best=0.713
+[2025-12-09 09:16:10] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 09:16:10] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 09:43:43] [Information] [DEBUG] Stagnation counter = 8/50
+[2025-12-09 09:43:43] [Information] [DEBUG] Generation 43: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 09:43:43] [Information] Gen 43 | best=0.713
+[2025-12-09 09:44:14] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 09:44:14] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 10:12:46] [Information] [DEBUG] Stagnation counter = 9/50
+[2025-12-09 10:12:46] [Information] [DEBUG] Generation 44: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 10:12:46] [Information] Gen 44 | best=0.713
+[2025-12-09 10:13:18] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 10:13:18] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 10:40:37] [Information] [DEBUG] Stagnation counter = 10/50
+[2025-12-09 10:40:37] [Information] [DEBUG] Generation 45: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 10:40:37] [Information] Gen 45 | best=0.713
+[2025-12-09 10:41:09] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 10:41:09] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 11:08:53] [Information] [DEBUG] Stagnation counter = 11/50
+[2025-12-09 11:08:53] [Information] [DEBUG] Generation 46: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 11:08:53] [Information] Gen 46 | best=0.713
+[2025-12-09 11:09:25] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 11:09:25] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 11:38:13] [Information] [DEBUG] Stagnation counter = 12/50
+[2025-12-09 11:38:13] [Information] [DEBUG] Generation 47: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 11:38:13] [Information] Gen 47 | best=0.713
+[2025-12-09 11:38:43] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 11:38:43] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 12:07:11] [Information] [DEBUG] Stagnation counter = 13/50
+[2025-12-09 12:07:11] [Information] [DEBUG] Generation 48: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 12:07:11] [Information] Gen 48 | best=0.713
+[2025-12-09 12:07:43] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 12:07:43] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 12:36:14] [Information] [DEBUG] Stagnation counter = 14/50
+[2025-12-09 12:36:14] [Information] [DEBUG] Generation 49: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 12:36:14] [Information] Gen 49 | best=0.713
+[2025-12-09 12:36:46] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 12:36:46] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 13:06:04] [Information] [DEBUG] Stagnation counter = 15/50
+[2025-12-09 13:06:04] [Information] [DEBUG] Generation 50: Best index = 0, Current best = 0.713200, Historical best = 0.713200
+[2025-12-09 13:06:04] [Information] Gen 50 | best=0.713
+[2025-12-09 13:06:36] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 13:06:36] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 13:35:16] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-09 13:35:16] [Information] [DEBUG] Generation 51: Best index = 2, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 13:35:16] [Information] Gen 51 | best=0.716
+[2025-12-09 13:35:48] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 13:35:48] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 14:03:38] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-09 14:03:38] [Information] [DEBUG] Generation 52: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 14:03:38] [Information] Gen 52 | best=0.716
+[2025-12-09 14:04:14] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 14:04:14] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 14:32:51] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-09 14:32:51] [Information] [DEBUG] Generation 53: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 14:32:51] [Information] Gen 53 | best=0.716
+[2025-12-09 14:33:23] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 14:33:23] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 15:01:40] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-09 15:01:40] [Information] [DEBUG] Generation 54: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 15:01:40] [Information] Gen 54 | best=0.716
+[2025-12-09 15:02:11] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 15:02:11] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 15:30:55] [Information] [DEBUG] Stagnation counter = 4/50
+[2025-12-09 15:30:55] [Information] [DEBUG] Generation 55: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 15:30:55] [Information] Gen 55 | best=0.716
+[2025-12-09 15:31:26] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 15:31:26] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 15:59:44] [Information] [DEBUG] Stagnation counter = 5/50
+[2025-12-09 15:59:44] [Information] [DEBUG] Generation 56: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 15:59:44] [Information] Gen 56 | best=0.716
+[2025-12-09 16:00:15] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 16:00:15] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 16:28:20] [Information] [DEBUG] Stagnation counter = 6/50
+[2025-12-09 16:28:20] [Information] [DEBUG] Generation 57: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 16:28:20] [Information] Gen 57 | best=0.716
+[2025-12-09 16:28:51] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 16:28:51] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 16:57:17] [Information] [DEBUG] Stagnation counter = 7/50
+[2025-12-09 16:57:17] [Information] [DEBUG] Generation 58: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 16:57:17] [Information] Gen 58 | best=0.716
+[2025-12-09 16:57:48] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 16:57:48] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 17:25:48] [Information] [DEBUG] Stagnation counter = 8/50
+[2025-12-09 17:25:48] [Information] [DEBUG] Generation 59: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 17:25:48] [Information] Gen 59 | best=0.716
+[2025-12-09 17:26:19] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 17:26:19] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 17:54:28] [Information] [DEBUG] Stagnation counter = 9/50
+[2025-12-09 17:54:28] [Information] [DEBUG] Generation 60: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 17:54:28] [Information] Gen 60 | best=0.716
+[2025-12-09 17:55:00] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 17:55:00] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 18:23:35] [Information] [DEBUG] Stagnation counter = 10/50
+[2025-12-09 18:23:35] [Information] [DEBUG] Generation 61: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 18:23:35] [Information] Gen 61 | best=0.716
+[2025-12-09 18:24:07] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 18:24:07] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 18:52:37] [Information] [DEBUG] Stagnation counter = 11/50
+[2025-12-09 18:52:37] [Information] [DEBUG] Generation 62: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 18:52:37] [Information] Gen 62 | best=0.716
+[2025-12-09 18:53:08] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 18:53:08] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 19:21:50] [Information] [DEBUG] Stagnation counter = 12/50
+[2025-12-09 19:21:50] [Information] [DEBUG] Generation 63: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 19:21:50] [Information] Gen 63 | best=0.716
+[2025-12-09 19:22:21] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 19:22:21] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 19:51:36] [Information] [DEBUG] Stagnation counter = 13/50
+[2025-12-09 19:51:36] [Information] [DEBUG] Generation 64: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 19:51:36] [Information] Gen 64 | best=0.716
+[2025-12-09 19:52:07] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 19:52:07] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 20:20:35] [Information] [DEBUG] Stagnation counter = 14/50
+[2025-12-09 20:20:35] [Information] [DEBUG] Generation 65: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 20:20:35] [Information] Gen 65 | best=0.716
+[2025-12-09 20:21:06] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 20:21:06] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 20:49:02] [Information] [DEBUG] Stagnation counter = 15/50
+[2025-12-09 20:49:02] [Information] [DEBUG] Generation 66: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 20:49:02] [Information] Gen 66 | best=0.716
+[2025-12-09 20:49:33] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 20:49:33] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 21:17:58] [Information] [DEBUG] Stagnation counter = 16/50
+[2025-12-09 21:17:58] [Information] [DEBUG] Generation 67: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 21:17:58] [Information] Gen 67 | best=0.716
+[2025-12-09 21:18:29] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 21:18:29] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 21:46:28] [Information] [DEBUG] Stagnation counter = 17/50
+[2025-12-09 21:46:28] [Information] [DEBUG] Generation 68: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 21:46:28] [Information] Gen 68 | best=0.716
+[2025-12-09 21:47:00] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 21:47:00] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 22:15:24] [Information] [DEBUG] Stagnation counter = 18/50
+[2025-12-09 22:15:24] [Information] [DEBUG] Generation 69: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 22:15:24] [Information] Gen 69 | best=0.716
+[2025-12-09 22:15:55] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 22:15:55] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 22:44:27] [Information] [DEBUG] Stagnation counter = 19/50
+[2025-12-09 22:44:27] [Information] [DEBUG] Generation 70: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 22:44:27] [Information] Gen 70 | best=0.716
+[2025-12-09 22:44:59] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 22:44:59] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 23:14:04] [Information] [DEBUG] Stagnation counter = 20/50
+[2025-12-09 23:14:04] [Information] [DEBUG] Generation 71: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 23:14:04] [Information] Gen 71 | best=0.716
+[2025-12-09 23:14:35] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 23:14:35] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-09 23:43:05] [Information] [DEBUG] Stagnation counter = 21/50
+[2025-12-09 23:43:05] [Information] [DEBUG] Generation 72: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-09 23:43:05] [Information] Gen 72 | best=0.716
+[2025-12-09 23:43:36] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-09 23:43:36] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 00:11:42] [Information] [DEBUG] Stagnation counter = 22/50
+[2025-12-10 00:11:42] [Information] [DEBUG] Generation 73: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-10 00:11:42] [Information] Gen 73 | best=0.716
+[2025-12-10 00:12:14] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 00:12:14] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 00:40:23] [Information] [DEBUG] Stagnation counter = 23/50
+[2025-12-10 00:40:23] [Information] [DEBUG] Generation 74: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-10 00:40:23] [Information] Gen 74 | best=0.716
+[2025-12-10 00:40:54] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 00:40:54] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 01:09:26] [Information] [DEBUG] Stagnation counter = 24/50
+[2025-12-10 01:09:26] [Information] [DEBUG] Generation 75: Best index = 0, Current best = 0.716000, Historical best = 0.716000
+[2025-12-10 01:09:26] [Information] Gen 75 | best=0.716
+[2025-12-10 01:09:58] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 01:09:58] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 01:38:21] [Information] [DEBUG] Stagnation counter = 0/50
+[2025-12-10 01:38:21] [Information] [DEBUG] Generation 76: Best index = 75, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 01:38:21] [Information] Gen 76 | best=0.722
+[2025-12-10 01:38:52] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 01:38:52] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 02:07:32] [Information] [DEBUG] Stagnation counter = 1/50
+[2025-12-10 02:07:32] [Information] [DEBUG] Generation 77: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 02:07:32] [Information] Gen 77 | best=0.722
+[2025-12-10 02:08:04] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 02:08:04] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 02:36:07] [Information] [DEBUG] Stagnation counter = 2/50
+[2025-12-10 02:36:07] [Information] [DEBUG] Generation 78: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 02:36:07] [Information] Gen 78 | best=0.722
+[2025-12-10 02:36:38] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 02:36:38] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 03:04:09] [Information] [DEBUG] Stagnation counter = 3/50
+[2025-12-10 03:04:09] [Information] [DEBUG] Generation 79: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 03:04:09] [Information] Gen 79 | best=0.722
+[2025-12-10 03:04:41] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 03:04:41] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 03:33:10] [Information] [DEBUG] Stagnation counter = 4/50
+[2025-12-10 03:33:10] [Information] [DEBUG] Generation 80: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 03:33:10] [Information] Gen 80 | best=0.722
+[2025-12-10 03:33:41] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 03:33:41] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 04:01:58] [Information] [DEBUG] Stagnation counter = 5/50
+[2025-12-10 04:01:58] [Information] [DEBUG] Generation 81: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 04:01:58] [Information] Gen 81 | best=0.722
+[2025-12-10 04:02:30] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 04:02:30] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 04:30:35] [Information] [DEBUG] Stagnation counter = 6/50
+[2025-12-10 04:30:35] [Information] [DEBUG] Generation 82: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 04:30:35] [Information] Gen 82 | best=0.722
+[2025-12-10 04:31:07] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 04:31:07] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 04:59:45] [Information] [DEBUG] Stagnation counter = 7/50
+[2025-12-10 04:59:45] [Information] [DEBUG] Generation 83: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 04:59:45] [Information] Gen 83 | best=0.722
+[2025-12-10 05:00:17] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 05:00:17] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 05:28:17] [Information] [DEBUG] Stagnation counter = 8/50
+[2025-12-10 05:28:17] [Information] [DEBUG] Generation 84: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 05:28:17] [Information] Gen 84 | best=0.722
+[2025-12-10 05:28:49] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 05:28:49] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 05:56:26] [Information] [DEBUG] Stagnation counter = 9/50
+[2025-12-10 05:56:26] [Information] [DEBUG] Generation 85: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 05:56:26] [Information] Gen 85 | best=0.722
+[2025-12-10 05:56:58] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 05:56:58] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 06:25:26] [Information] [DEBUG] Stagnation counter = 10/50
+[2025-12-10 06:25:26] [Information] [DEBUG] Generation 86: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 06:25:26] [Information] Gen 86 | best=0.722
+[2025-12-10 06:25:57] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 06:25:57] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 06:53:57] [Information] [DEBUG] Stagnation counter = 11/50
+[2025-12-10 06:53:57] [Information] [DEBUG] Generation 87: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 06:53:57] [Information] Gen 87 | best=0.722
+[2025-12-10 06:54:28] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 06:54:28] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 07:22:44] [Information] [DEBUG] Stagnation counter = 12/50
+[2025-12-10 07:22:44] [Information] [DEBUG] Generation 88: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 07:22:44] [Information] Gen 88 | best=0.722
+[2025-12-10 07:23:16] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 07:23:16] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 07:51:48] [Information] [DEBUG] Stagnation counter = 13/50
+[2025-12-10 07:51:48] [Information] [DEBUG] Generation 89: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 07:51:48] [Information] Gen 89 | best=0.722
+[2025-12-10 07:52:20] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 07:52:20] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 08:21:01] [Information] [DEBUG] Stagnation counter = 14/50
+[2025-12-10 08:21:01] [Information] [DEBUG] Generation 90: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 08:21:01] [Information] Gen 90 | best=0.722
+[2025-12-10 08:21:33] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 08:21:33] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 08:50:12] [Information] [DEBUG] Stagnation counter = 15/50
+[2025-12-10 08:50:12] [Information] [DEBUG] Generation 91: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 08:50:12] [Information] Gen 91 | best=0.722
+[2025-12-10 08:50:44] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 08:50:44] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 09:19:18] [Information] [DEBUG] Stagnation counter = 16/50
+[2025-12-10 09:19:18] [Information] [DEBUG] Generation 92: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 09:19:18] [Information] Gen 92 | best=0.722
+[2025-12-10 09:19:51] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 09:19:51] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 09:47:54] [Information] [DEBUG] Stagnation counter = 17/50
+[2025-12-10 09:47:54] [Information] [DEBUG] Generation 93: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 09:47:54] [Information] Gen 93 | best=0.722
+[2025-12-10 09:48:27] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 09:48:27] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 10:17:35] [Information] [DEBUG] Stagnation counter = 18/50
+[2025-12-10 10:17:35] [Information] [DEBUG] Generation 94: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 10:17:35] [Information] Gen 94 | best=0.722
+[2025-12-10 10:18:08] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 10:18:08] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 10:47:30] [Information] [DEBUG] Stagnation counter = 19/50
+[2025-12-10 10:47:30] [Information] [DEBUG] Generation 95: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 10:47:30] [Information] Gen 95 | best=0.722
+[2025-12-10 10:48:05] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 10:48:05] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 11:18:29] [Information] [DEBUG] Stagnation counter = 20/50
+[2025-12-10 11:18:29] [Information] [DEBUG] Generation 96: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 11:18:29] [Information] Gen 96 | best=0.722
+[2025-12-10 11:19:03] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 11:19:03] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 11:48:14] [Information] [DEBUG] Stagnation counter = 21/50
+[2025-12-10 11:48:14] [Information] [DEBUG] Generation 97: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 11:48:14] [Information] Gen 97 | best=0.722
+[2025-12-10 11:48:46] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 11:48:46] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 12:17:47] [Information] [DEBUG] Stagnation counter = 22/50
+[2025-12-10 12:17:47] [Information] [DEBUG] Generation 98: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 12:17:47] [Information] Gen 98 | best=0.722
+[2025-12-10 12:18:20] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 12:18:20] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 12:47:48] [Information] [DEBUG] Stagnation counter = 23/50
+[2025-12-10 12:47:48] [Information] [DEBUG] Generation 99: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 12:47:48] [Information] Gen 99 | best=0.722
+[2025-12-10 12:48:20] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 12:48:20] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 13:16:34] [Information] [DEBUG] Stagnation counter = 24/50
+[2025-12-10 13:16:34] [Information] [DEBUG] Generation 100: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 13:16:34] [Information] Gen 100 | best=0.722
+[2025-12-10 13:17:07] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 13:17:07] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 13:45:59] [Information] [DEBUG] Stagnation counter = 25/50
+[2025-12-10 13:45:59] [Information] [DEBUG] Generation 101: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 13:45:59] [Information] Gen 101 | best=0.722
+[2025-12-10 13:46:33] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 13:46:33] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 14:14:56] [Information] [DEBUG] Stagnation counter = 26/50
+[2025-12-10 14:14:56] [Information] [DEBUG] Generation 102: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 14:14:56] [Information] Gen 102 | best=0.722
+[2025-12-10 14:15:30] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 14:15:30] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 14:43:36] [Information] [DEBUG] Stagnation counter = 27/50
+[2025-12-10 14:43:36] [Information] [DEBUG] Generation 103: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 14:43:36] [Information] Gen 103 | best=0.722
+[2025-12-10 14:44:10] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 14:44:10] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 15:12:52] [Information] [DEBUG] Stagnation counter = 28/50
+[2025-12-10 15:12:52] [Information] [DEBUG] Generation 104: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 15:12:52] [Information] Gen 104 | best=0.722
+[2025-12-10 15:13:25] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 15:13:25] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 15:42:05] [Information] [DEBUG] Stagnation counter = 29/50
+[2025-12-10 15:42:05] [Information] [DEBUG] Generation 105: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 15:42:05] [Information] Gen 105 | best=0.722
+[2025-12-10 15:42:39] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 15:42:39] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 16:10:27] [Information] [DEBUG] Stagnation counter = 30/50
+[2025-12-10 16:10:27] [Information] [DEBUG] Generation 106: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 16:10:27] [Information] Gen 106 | best=0.722
+[2025-12-10 16:11:01] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 16:11:01] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 16:39:09] [Information] [DEBUG] Stagnation counter = 31/50
+[2025-12-10 16:39:09] [Information] [DEBUG] Generation 107: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 16:39:09] [Information] Gen 107 | best=0.722
+[2025-12-10 16:39:42] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 16:39:42] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 17:08:07] [Information] [DEBUG] Stagnation counter = 32/50
+[2025-12-10 17:08:07] [Information] [DEBUG] Generation 108: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 17:08:07] [Information] Gen 108 | best=0.722
+[2025-12-10 17:08:39] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 17:08:39] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 17:36:26] [Information] [DEBUG] Stagnation counter = 33/50
+[2025-12-10 17:36:26] [Information] [DEBUG] Generation 109: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 17:36:26] [Information] Gen 109 | best=0.722
+[2025-12-10 17:36:58] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 17:36:58] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 18:05:53] [Information] [DEBUG] Stagnation counter = 34/50
+[2025-12-10 18:05:53] [Information] [DEBUG] Generation 110: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 18:05:53] [Information] Gen 110 | best=0.722
+[2025-12-10 18:06:26] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 18:06:26] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 18:34:39] [Information] [DEBUG] Stagnation counter = 35/50
+[2025-12-10 18:34:39] [Information] [DEBUG] Generation 111: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 18:34:39] [Information] Gen 111 | best=0.722
+[2025-12-10 18:35:11] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 18:35:11] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 19:03:54] [Information] [DEBUG] Stagnation counter = 36/50
+[2025-12-10 19:03:54] [Information] [DEBUG] Generation 112: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 19:03:54] [Information] Gen 112 | best=0.722
+[2025-12-10 19:04:26] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 19:04:26] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 19:32:56] [Information] [DEBUG] Stagnation counter = 37/50
+[2025-12-10 19:32:56] [Information] [DEBUG] Generation 113: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 19:32:56] [Information] Gen 113 | best=0.722
+[2025-12-10 19:33:29] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 19:33:29] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 20:01:34] [Information] [DEBUG] Stagnation counter = 38/50
+[2025-12-10 20:01:34] [Information] [DEBUG] Generation 114: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 20:01:34] [Information] Gen 114 | best=0.722
+[2025-12-10 20:02:07] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 20:02:07] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 20:30:35] [Information] [DEBUG] Stagnation counter = 39/50
+[2025-12-10 20:30:35] [Information] [DEBUG] Generation 115: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 20:30:35] [Information] Gen 115 | best=0.722
+[2025-12-10 20:31:08] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 20:31:08] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 21:01:05] [Information] [DEBUG] Stagnation counter = 40/50
+[2025-12-10 21:01:05] [Information] [DEBUG] Generation 116: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 21:01:05] [Information] Gen 116 | best=0.722
+[2025-12-10 21:01:39] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 21:01:39] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 21:30:22] [Information] [DEBUG] Stagnation counter = 41/50
+[2025-12-10 21:30:22] [Information] [DEBUG] Generation 117: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 21:30:22] [Information] Gen 117 | best=0.722
+[2025-12-10 21:30:55] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 21:30:55] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 21:59:28] [Information] [DEBUG] Stagnation counter = 42/50
+[2025-12-10 21:59:28] [Information] [DEBUG] Generation 118: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 21:59:28] [Information] Gen 118 | best=0.722
+[2025-12-10 22:00:02] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 22:00:02] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 22:29:13] [Information] [DEBUG] Stagnation counter = 43/50
+[2025-12-10 22:29:13] [Information] [DEBUG] Generation 119: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 22:29:13] [Information] Gen 119 | best=0.722
+[2025-12-10 22:29:48] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 22:29:48] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 22:58:45] [Information] [DEBUG] Stagnation counter = 44/50
+[2025-12-10 22:58:45] [Information] [DEBUG] Generation 120: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 22:58:45] [Information] Gen 120 | best=0.722
+[2025-12-10 22:59:19] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 22:59:19] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 23:28:13] [Information] [DEBUG] Stagnation counter = 45/50
+[2025-12-10 23:28:13] [Information] [DEBUG] Generation 121: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 23:28:13] [Information] Gen 121 | best=0.722
+[2025-12-10 23:28:47] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 23:28:47] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-10 23:57:49] [Information] [DEBUG] Stagnation counter = 46/50
+[2025-12-10 23:57:49] [Information] [DEBUG] Generation 122: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-10 23:57:49] [Information] Gen 122 | best=0.722
+[2025-12-10 23:58:24] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-10 23:58:24] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-11 00:27:31] [Information] [DEBUG] Stagnation counter = 47/50
+[2025-12-11 00:27:31] [Information] [DEBUG] Generation 123: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-11 00:27:31] [Information] Gen 123 | best=0.722
+[2025-12-11 00:28:06] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-11 00:28:06] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-11 00:58:00] [Information] [DEBUG] Stagnation counter = 48/50
+[2025-12-11 00:58:00] [Information] [DEBUG] Generation 124: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-11 00:58:00] [Information] Gen 124 | best=0.722
+[2025-12-11 00:58:35] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-11 00:58:35] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-11 01:27:32] [Information] [DEBUG] Stagnation counter = 49/50
+[2025-12-11 01:27:32] [Information] [DEBUG] Generation 125: Best index = 0, Current best = 0.721500, Historical best = 0.721500
+[2025-12-11 01:27:32] [Information] Gen 125 | best=0.722
+[2025-12-11 01:28:09] [Information] [DEBUG] Population size = 100, Valid = 100, Filtered out = 0
+[2025-12-11 01:28:09] [Information] [DEBUG] Building mating pool from valid individuals.
+[2025-12-11 01:57:19] [Stagnation stop - Patience Exceeded] Stagnation detected after 50 generations (best_fit=0.721500).
+[2025-12-11 02:16:26] [Final GP Result] Final evaluation completed. Best individual index = 0, Best fitness = 0.721500

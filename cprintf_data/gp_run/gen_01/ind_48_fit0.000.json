@@ -1,0 +1,11 @@
+{
+  "branch_coverage": 0.0,
+  "call_coverage": 0.0,
+  "coverage": 0.0,
+  "decision_coverage": 0.0,
+  "error": "Compilation failed for evaluations/temp_1765198089/program_1765198089.cpp: evaluations/temp_1765198089/program_1765198089.cpp:8:1: error: expected unqualified-id before \u2018{\u2019 token\n    8 | {}\n      | ^\nevaluations/temp_1765198089/program_1765198089.cpp: In function \u2018int main()\u2019:\nevaluations/temp_1765198089/program_1765198089.cpp:43:11: error: \u2018A\u2019 was not declared in this scope\n   43 |   Wrapper<A> w;\n      |           ^\nevaluations/temp_1765198089/program_1765198089.cpp:43:12: error: template argument 1 is invalid\n   43 |   Wrapper<A> w;\n      |            ^\nevaluations/temp_1765198089/program_1765198089.cpp:44:5: error: request for member \u2018foo\u2019 in \u2018w\u2019, which is of non-class type \u2018int\u2019\n   44 |   w.foo();\n      |     ^~~\n",
+  "filename": "program_1765198089.cpp",
+  "folder": "evaluations/temp_1765198089",
+  "function_coverage": 0.0,
+  "line_coverage": 0.0
+}
