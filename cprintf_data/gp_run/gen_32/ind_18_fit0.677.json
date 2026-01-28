@@ -1,0 +1,11 @@
+{
+  "branch_coverage": 63.4,
+  "call_coverage": 56.2,
+  "coverage": 0.67,
+  "decision_coverage": 61.5,
+  "error": null,
+  "filename": "program_1765250282.cpp",
+  "folder": "evaluations/temp_1765250282",
+  "function_coverage": 82.7,
+  "line_coverage": 68.7
+}

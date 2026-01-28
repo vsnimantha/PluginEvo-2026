@@ -1,0 +1,145 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-04-30-047.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdio.h', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      RAW_TOKENS: spelling=';', token_value=None, type_name=None
+      IF_STMT: spelling='', token_value=None, type_name=None
+        CXX_BOOL_LITERAL_EXPR: spelling='', token_value='false', type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          FOR_STMT: spelling='', token_value=None, type_name=None
+            DECL_STMT: spelling='', token_value=None, type_name=None
+              VAR_DECL: spelling='i', token_value=None, type_name='int'
+                INTEGER_LITERAL: spelling='', token_value='2', type_name=None
+            INTEGER_LITERAL: spelling='', token_value='8', type_name=None
+            UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+              DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+            COMPOUND_STMT: spelling='', token_value=None, type_name=None
+              RAW_TOKENS: spelling=';', token_value=None, type_name=None
+              RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+              STRING_LITERAL: spelling='"1VM9ZAV2TZMXSRCTLLC0"', token_value='"1VM9ZAV2TZMXSRCTLLC0"', type_name=None
+          RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          RAW_TOKENS: spelling=';', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+              COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                IF_STMT: spelling='', token_value=None, type_name=None
+                  CXX_BOOL_LITERAL_EXPR: spelling='', token_value='true', type_name=None
+                  COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                    DECL_STMT: spelling='', token_value=None, type_name=None
+                      FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+                        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                          INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+                          DECL_STMT: spelling='', token_value=None, type_name=None
+                            VAR_DECL: spelling='sigmaNu', token_value=None, type_name='float[1]'
+                              INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+                              INIT_LIST_EXPR: spelling='', token_value=None, type_name=None
+                                FLOATING_LITERAL: spelling='', token_value='8.0f', type_name=None
+                          FOR_STMT: spelling='', token_value=None, type_name=None
+                            DECL_STMT: spelling='', token_value=None, type_name=None
+                              VAR_DECL: spelling='i', token_value=None, type_name='int'
+                                INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+                            CALL_EXPR: spelling='printf', token_value='printf ( "Hex: %x\\n" , 255 )', type_name=None
+                              UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+                                DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+                              UNEXPOSED_EXPR: spelling='', token_value='"Hex: %x\\n"', type_name=None
+                                STRING_LITERAL: spelling='"Hex: %x\\n"', token_value='"Hex: %x\\n"', type_name=None
+                              INTEGER_LITERAL: spelling='', token_value='255', type_name=None
+                            UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+                              DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                            COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                              INTEGER_LITERAL: spelling='', token_value='13', type_name=None
+                              RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+                          RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+                          RETURN_STMT: spelling='', token_value=None, type_name=None
+                            INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+                    RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+                    RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+                  COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                    CALL_EXPR: spelling='printf', token_value='printf ( "Debug output generated" )', type_name=None
+                      UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+                        DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='', token_value='"Debug output generated"', type_name=None
+                        STRING_LITERAL: spelling='"Debug output generated"', token_value='"Debug output generated"', type_name=None
+                    RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+                FOR_STMT: spelling='', token_value=None, type_name=None
+                  DECL_STMT: spelling='', token_value=None, type_name=None
+                    VAR_DECL: spelling='i', token_value=None, type_name='int'
+                      INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+                  BINARY_OPERATOR: spelling='', token_value='i < 3', type_name=None
+                    UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                      DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+                  UNARY_OPERATOR: spelling='--', token_value='postfix', type_name=None
+                    DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                  COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                    CALL_EXPR: spelling='printf', token_value='printf ( "Loop %d\\n" , i )', type_name=None
+                      UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+                        DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='', token_value='"Loop %d\\n"', type_name=None
+                        STRING_LITERAL: spelling='"Loop %d\\n"', token_value='"Loop %d\\n"', type_name=None
+                      UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                        DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                    RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+                IF_STMT: spelling='', token_value=None, type_name=None
+                  UNEXPOSED_EXPR: spelling='printf', token_value='printf ( "Conditional %s\\n" , "branch" )', type_name=None
+                    CALL_EXPR: spelling='printf', token_value='printf ( "Conditional %s\\n" , "branch" )', type_name=None
+                      UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+                        DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='', token_value='"Conditional %s\\n"', type_name=None
+                        STRING_LITERAL: spelling='"%d"', token_value='"%d"', type_name=None
+                      UNEXPOSED_EXPR: spelling='', token_value='"branch"', type_name=None
+                        STRING_LITERAL: spelling='"branch"', token_value='"branch"', type_name=None
+                  COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                    CALL_EXPR: spelling='printf', token_value='printf ( "Inside if\\n" )', type_name=None
+                      UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+                        DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='', token_value='"Inside if\\n"', type_name=None
+                        STRING_LITERAL: spelling='"Inside if\\n"', token_value='"Inside if\\n"', type_name=None
+                    RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+                RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+                RETURN_STMT: spelling='', token_value=None, type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+          RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+      FOR_STMT: spelling='', token_value=None, type_name=None
+        DECL_STMT: spelling='', token_value=None, type_name=None
+          VAR_DECL: spelling='i', token_value=None, type_name='int'
+            INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='i < 3', type_name=None
+          UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+            DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='3', type_name=None
+        UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+          DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          CALL_EXPR: spelling='printf', token_value='printf ( "Loop %d\\n" , i )', type_name=None
+            UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+              DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"Loop %d\\n"', type_name=None
+              STRING_LITERAL: spelling='"Loop %d\\n"', token_value='"Loop %d\\n"', type_name=None
+            UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+              DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      IF_STMT: spelling='', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='printf', token_value='printf ( "Conditional %s\\n" , "branch" )', type_name=None
+          CALL_EXPR: spelling='printf', token_value='printf ( "Conditional %s\\n" , "branch" )', type_name=None
+            UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+              DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"Conditional %s\\n"', type_name=None
+              STRING_LITERAL: spelling='"Conditional %s\\n"', token_value='"Conditional %s\\n"', type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"branch"', type_name=None
+              STRING_LITERAL: spelling='"branch"', token_value='"branch"', type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='1', type_name=None
