@@ -1,0 +1,35 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-06-06-967.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdio.h', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='sigmaAlpha', token_value=None, type_name='float'
+          FLOATING_LITERAL: spelling='', token_value='76.19556471919267f', type_name=None
+      CALL_EXPR: spelling='printf', token_value='printf ( "End\\n" )', type_name=None
+        UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+          DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='', token_value='"End\\n"', type_name=None
+          STRING_LITERAL: spelling='"End\\n"', token_value='"End\\n"', type_name=None
+      CALL_EXPR: spelling='printf', token_value='printf ( "Mix: %s %d %c %%\\n" , "mix" , - 42 , \'Z\' )', type_name=None
+        UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+          DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='', token_value='"Mix: %s %d %c %%\\n"', type_name=None
+          STRING_LITERAL: spelling='"Mix: %s %d %c %%\\n"', token_value='"Mix: %s %d %c %%\\n"', type_name=None
+        UNEXPOSED_EXPR: spelling='', token_value='"mix"', type_name=None
+          STRING_LITERAL: spelling='"mix"', token_value='"mix"', type_name=None
+        UNARY_OPERATOR: spelling='', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='42', type_name=None
+        UNEXPOSED_EXPR: spelling='', token_value="'Z'", type_name=None
+          CHARACTER_LITERAL: spelling='', token_value="'Z'", type_name=None
+      INTEGER_LITERAL: spelling='', token_value='5', type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='2', type_name=None

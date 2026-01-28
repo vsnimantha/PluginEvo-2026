@@ -1,0 +1,164 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-05-19-830.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='cstdio', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='muFunc', token_value=None, type_name='int'
+    PARM_DECL: spelling='num', token_value=None, type_name='int'
+    PARM_DECL: spelling='index', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='tauPi', token_value=None, type_name='int'
+          BINARY_OPERATOR: spelling='', token_value='15 / 10', type_name=None
+            INTEGER_LITERAL: spelling='', token_value='15', type_name=None
+            INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+      IF_STMT: spelling='', token_value=None, type_name=None
+        BINARY_OPERATOR: spelling='', token_value='index >= 5', type_name=None
+          UNEXPOSED_EXPR: spelling='index', token_value='index', type_name=None
+            DECL_REF_EXPR: spelling='index', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='5', type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+          RETURN_STMT: spelling='', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='num', token_value='num', type_name=None
+              DECL_REF_EXPR: spelling='num', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        CALL_EXPR: spelling='muFunc', token_value='muFunc ( num , index - 1 )', type_name=None
+          UNEXPOSED_EXPR: spelling='muFunc', token_value='muFunc', type_name=None
+            DECL_REF_EXPR: spelling='muFunc', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='num', token_value='num', type_name=None
+            DECL_REF_EXPR: spelling='num', token_value=None, type_name=None
+          BINARY_OPERATOR: spelling='', token_value='index - 1', type_name=None
+            UNEXPOSED_EXPR: spelling='index', token_value='index', type_name=None
+              DECL_REF_EXPR: spelling='index', token_value=None, type_name=None
+            INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+  FUNCTION_DECL: spelling='betaFunc', token_value=None, type_name='float'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='kl', token_value=None, type_name='int'
+          INTEGER_LITERAL: spelling='', token_value='22', type_name=None
+      DO_STMT: spelling='', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='delta', token_value=None, type_name='double'
+              UNEXPOSED_EXPR: spelling='', token_value='15 * 20', type_name=None
+                BINARY_OPERATOR: spelling='', token_value='15 * 20', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='15', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+          UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+          RETURN_STMT: spelling='', token_value=None, type_name=None
+            FLOATING_LITERAL: spelling='', token_value='0.0f', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='kl < 5', type_name=None
+          UNEXPOSED_EXPR: spelling='kl', token_value='kl', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='5', type_name=None
+      RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        FLOATING_LITERAL: spelling='', token_value='3.255787884192285f', type_name=None
+  FUNCTION_DECL: spelling='piFunc', token_value=None, type_name='double'
+    PARM_DECL: spelling='omicronParam', token_value=None, type_name='bool'
+    PARM_DECL: spelling='alphaUpsilonParam', token_value=None, type_name='float'
+    PARM_DECL: spelling='sigmaParam', token_value=None, type_name='double'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='kl', token_value=None, type_name='int'
+          INTEGER_LITERAL: spelling='', token_value='15', type_name=None
+      DO_STMT: spelling='', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='phiBeta', token_value=None, type_name='double'
+              UNEXPOSED_EXPR: spelling='', token_value='20 * 17', type_name=None
+                BINARY_OPERATOR: spelling='', token_value='20 * 17', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='17', type_name=None
+          UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+          RETURN_STMT: spelling='', token_value=None, type_name=None
+            FLOATING_LITERAL: spelling='', token_value='0.0', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='kl < 20', type_name=None
+          UNEXPOSED_EXPR: spelling='kl', token_value='kl', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+      RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        FLOATING_LITERAL: spelling='', token_value='81.47035013085114', type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    PARM_DECL: spelling='', token_value=None, type_name='int'
+    PARM_DECL: spelling='', token_value=None, type_name='char **'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      CALL_EXPR: spelling='muFunc', token_value='muFunc ( 10 , 20 )', type_name=None
+        UNEXPOSED_EXPR: spelling='muFunc', token_value='muFunc', type_name=None
+          DECL_REF_EXPR: spelling='muFunc', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+        INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='kl', token_value=None, type_name='int'
+          INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+      DO_STMT: spelling='', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='omegaZeta', token_value=None, type_name='double'
+              UNEXPOSED_EXPR: spelling='', token_value='11 / 8', type_name=None
+                BINARY_OPERATOR: spelling='', token_value='11 / 8', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='11', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='8', type_name=None
+          UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+        BINARY_OPERATOR: spelling='', token_value='kl < 20', type_name=None
+          UNEXPOSED_EXPR: spelling='kl', token_value='kl', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+      FOR_STMT: spelling='', token_value=None, type_name=None
+        DECL_STMT: spelling='', token_value=None, type_name=None
+          VAR_DECL: spelling='i', token_value=None, type_name='int'
+            INTEGER_LITERAL: spelling='', token_value='15', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='i >= 10', type_name=None
+          UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+            DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+        UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+          DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='betaKappa', token_value=None, type_name='double'
+              UNEXPOSED_EXPR: spelling='', token_value='13 / 10', type_name=None
+                BINARY_OPERATOR: spelling='', token_value='13 / 10', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='13', type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+          RAW_TOKENS: spelling='{ }', token_value=None, type_name=None
+      CALL_EXPR: spelling='betaFunc', token_value='betaFunc ( )', type_name=None
+        UNEXPOSED_EXPR: spelling='betaFunc', token_value='betaFunc', type_name=None
+          DECL_REF_EXPR: spelling='betaFunc', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='omicronParam', token_value=None, type_name='bool'
+          CXX_BOOL_LITERAL_EXPR: spelling='', token_value='true', type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='alphaUpsilonParam', token_value=None, type_name='float'
+          FLOATING_LITERAL: spelling='', token_value='81.79381109735925f', type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='sigmaParam', token_value=None, type_name='double'
+          FLOATING_LITERAL: spelling='', token_value='58.10156686647845', type_name=None
+      CALL_EXPR: spelling='piFunc', token_value='piFunc ( omicronParam , alphaUpsilonParam , sigmaParam )', type_name=None
+        UNEXPOSED_EXPR: spelling='piFunc', token_value='piFunc', type_name=None
+          DECL_REF_EXPR: spelling='piFunc', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='omicronParam', token_value='omicronParam', type_name=None
+          DECL_REF_EXPR: spelling='omicronParam', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='alphaUpsilonParam', token_value='alphaUpsilonParam', type_name=None
+          DECL_REF_EXPR: spelling='alphaUpsilonParam', token_value=None, type_name=None
+        UNEXPOSED_EXPR: spelling='sigmaParam', token_value='sigmaParam', type_name=None
+          DECL_REF_EXPR: spelling='sigmaParam', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; ; ; ; ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='0', type_name=None
