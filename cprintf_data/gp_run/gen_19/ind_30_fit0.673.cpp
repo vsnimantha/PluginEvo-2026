@@ -1,0 +1,13 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+using namespace std;
+void putint(int i) { printf("%d", i); }
+int main() {
+  printf("Hello %s %d %c\n", "world", 42, '!');
+  float sigmaNu[1] = {8.0f};
+  for (int i = 0; i < 1; 8.0f) {
+    std ::cout << sigmaNu[i] << std ::endl;
+  }
+  return -1;
+}
