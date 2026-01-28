@@ -1,0 +1,188 @@
+TRANSLATION_UNIT: spelling='seeds/run_1765196641/generated_program_2025-12-08_13-07-32-747.cpp', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='cstdio', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='iostream', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='__cplusplus', token_value=None, type_name=None
+  MACRO_INSTANTIATION: spelling='_GLIBCXX_INCLUDE_NEXT_C_HEADERS', token_value=None, type_name=None
+  INCLUSION_DIRECTIVE: spelling='stdlib.h', token_value=None, type_name=None
+  USING_DIRECTIVE: spelling='', token_value=None, type_name=None
+    NAMESPACE_REF: spelling='std', token_value=None, type_name=None
+  FUNCTION_DECL: spelling='kappaFunc', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='kl', token_value=None, type_name='int'
+          INTEGER_LITERAL: spelling='', token_value='6', type_name=None
+      DO_STMT: spelling='', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          STRING_LITERAL: spelling='"RadiantEcho"', token_value='"RadiantEcho"', type_name=None
+          RETURN_STMT: spelling='', token_value=None, type_name=None
+            INTEGER_LITERAL: spelling='', token_value='65', type_name=None
+          RAW_TOKENS: spelling='{ ; ; ; }', token_value=None, type_name=None
+        BINARY_OPERATOR: spelling='', token_value='kl < 20', type_name=None
+          BINARY_OPERATOR: spelling='', token_value='i < 8', type_name=None
+            UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+              DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+            BINARY_OPERATOR: spelling='', token_value='i < 10', type_name=None
+              INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+              UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='kl', token_value='kl', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+      DO_STMT: spelling='', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          RAW_TOKENS: spelling=';', token_value=None, type_name=None
+          RAW_TOKENS: spelling=';', token_value=None, type_name=None
+          CALL_EXPR: spelling='printf', token_value='printf ( "AYJE1T88GRYZ8BLYWD60" )', type_name=None
+            UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+              DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"AYJE1T88GRYZ8BLYWD60"', type_name=None
+              STRING_LITERAL: spelling='"AYJE1T88GRYZ8BLYWD60"', token_value='"AYJE1T88GRYZ8BLYWD60"', type_name=None
+          UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          RAW_TOKENS: spelling='{ ; ; ; }', token_value=None, type_name=None
+          RETURN_STMT: spelling='', token_value=None, type_name=None
+            INTEGER_LITERAL: spelling='', token_value='66', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='kl < 20', type_name=None
+          UNEXPOSED_EXPR: spelling='kl', token_value='kl', type_name=None
+            DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+  FUNCTION_DECL: spelling='upsilonFunc', token_value=None, type_name='float'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      FOR_STMT: spelling='', token_value=None, type_name=None
+        DECL_STMT: spelling='', token_value=None, type_name=None
+          VAR_DECL: spelling='i', token_value=None, type_name='int'
+            INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+        BINARY_OPERATOR: spelling='', token_value='i <= 10', type_name=None
+          UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+            DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='9', type_name=None
+        UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+          DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          CALL_EXPR: spelling='printf', token_value='printf ( "Data processed successfully" )', type_name=None
+            UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+              DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"Data processed successfully"', type_name=None
+              STRING_LITERAL: spelling='"Data processed successfully"', token_value='"Data processed successfully"', type_name=None
+          RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+          RETURN_STMT: spelling='', token_value=None, type_name=None
+            FLOATING_LITERAL: spelling='', token_value='13.669553995231453f', type_name=None
+      RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RETURN_STMT: spelling='', token_value=None, type_name=None
+        FLOATING_LITERAL: spelling='', token_value='0.0f', type_name=None
+  FUNCTION_DECL: spelling='main', token_value=None, type_name='int'
+    COMPOUND_STMT: spelling='', token_value=None, type_name=None
+      CALL_EXPR: spelling='kappaFunc', token_value='kappaFunc ( )', type_name=None
+        UNEXPOSED_EXPR: spelling='kappaFunc', token_value='kappaFunc', type_name=None
+          DECL_REF_EXPR: spelling='kappaFunc', token_value=None, type_name=None
+      CALL_EXPR: spelling='upsilonFunc', token_value='upsilonFunc ( )', type_name=None
+        UNEXPOSED_EXPR: spelling='upsilonFunc', token_value='upsilonFunc', type_name=None
+          DECL_REF_EXPR: spelling='upsilonFunc', token_value=None, type_name=None
+      DECL_STMT: spelling='', token_value=None, type_name=None
+        VAR_DECL: spelling='iota', token_value=None, type_name='string'
+          TYPE_REF: spelling='std::string', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"SEJLLHHBHE"', type_name=None
+            UNEXPOSED_EXPR: spelling='basic_string', token_value='"SEJLLHHBHE"', type_name=None
+              CALL_EXPR: spelling='basic_string', token_value='"SEJLLHHBHE"', type_name=None
+                UNEXPOSED_EXPR: spelling='', token_value='"SEJLLHHBHE"', type_name=None
+                  STRING_LITERAL: spelling='"SEJLLHHBHE"', token_value='"SEJLLHHBHE"', type_name=None
+                UNEXPOSED_EXPR: spelling='', token_value=None, type_name=None
+      IF_STMT: spelling='', token_value=None, type_name=None
+        CXX_BOOL_LITERAL_EXPR: spelling='', token_value='false', type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          CALL_EXPR: spelling='printf', token_value='printf ( "B4UL4WYWRUIM490JW3SH" )', type_name=None
+            UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+              DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"B4UL4WYWRUIM490JW3SH"', type_name=None
+              STRING_LITERAL: spelling='"B4UL4WYWRUIM490JW3SH"', token_value='"B4UL4WYWRUIM490JW3SH"', type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+        COMPOUND_STMT: spelling='', token_value=None, type_name=None
+          DECL_STMT: spelling='', token_value=None, type_name=None
+            VAR_DECL: spelling='kl', token_value=None, type_name='int'
+              INTEGER_LITERAL: spelling='', token_value='15', type_name=None
+          DO_STMT: spelling='', token_value=None, type_name=None
+            COMPOUND_STMT: spelling='', token_value=None, type_name=None
+              DECL_STMT: spelling='', token_value=None, type_name=None
+                VAR_DECL: spelling='nu', token_value=None, type_name='int[10]'
+                  INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+                  INIT_LIST_EXPR: spelling='', token_value=None, type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='14', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+                    CALL_EXPR: spelling='printf', token_value='printf ( "Empty string\\n" )', type_name=None
+                      UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+                        DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+                      UNEXPOSED_EXPR: spelling='', token_value='"Empty string\\n"', type_name=None
+                        STRING_LITERAL: spelling='"Empty string\\n"', token_value='"Empty string\\n"', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='12', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='17', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='6', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='8', type_name=None
+                    INTEGER_LITERAL: spelling='', token_value='12', type_name=None
+              UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+                DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+              FOR_STMT: spelling='', token_value=None, type_name=None
+                DECL_STMT: spelling='', token_value=None, type_name=None
+                  VAR_DECL: spelling='i', token_value=None, type_name='int'
+                    INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+                BINARY_OPERATOR: spelling='', token_value='i < 10', type_name=None
+                  UNEXPOSED_EXPR: spelling='i', token_value='i', type_name=None
+                    DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                  INTEGER_LITERAL: spelling='', token_value='10', type_name=None
+                UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+                  DECL_REF_EXPR: spelling='i', token_value=None, type_name=None
+                COMPOUND_STMT: spelling='', token_value=None, type_name=None
+                  RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+              RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+            BINARY_OPERATOR: spelling='', token_value='kl <= 20', type_name=None
+              UNEXPOSED_EXPR: spelling='kl', token_value='kl', type_name=None
+                DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+              INTEGER_LITERAL: spelling='', token_value='20', type_name=None
+          RAW_TOKENS: spelling='{ ; }', token_value=None, type_name=None
+      RAW_TOKENS: spelling='{ ; ; ; }', token_value=None, type_name=None
+      COMPOUND_STMT: spelling='', token_value=None, type_name=None
+        DECL_STMT: spelling='', token_value=None, type_name=None
+          VAR_DECL: spelling='kl', token_value=None, type_name='int'
+            INTEGER_LITERAL: spelling='', token_value='15', type_name=None
+        DO_STMT: spelling='', token_value=None, type_name=None
+          COMPOUND_STMT: spelling='', token_value=None, type_name=None
+            INTEGER_LITERAL: spelling='', token_value='16', type_name=None
+            UNARY_OPERATOR: spelling='++', token_value='postfix', type_name=None
+              DECL_REF_EXPR: spelling='kl', token_value=None, type_name=None
+            RAW_TOKENS: spelling='{ ; ; }', token_value=None, type_name=None
+          CALL_EXPR: spelling='printf', token_value='printf ( "Hex: %x\\n" , 255 )', type_name=None
+            UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+              DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+            UNEXPOSED_EXPR: spelling='', token_value='"Hex: %x\\n"', type_name=None
+              STRING_LITERAL: spelling='"Hex: %x\\n"', token_value='"Hex: %x\\n"', type_name=None
+            INTEGER_LITERAL: spelling='', token_value='253', type_name=None
+        INTEGER_LITERAL: spelling='', token_value='18', type_name=None
+        CALL_EXPR: spelling='printf', token_value='printf ( "One int: %d\\n" , 1 )', type_name=None
+          UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+            DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"One int: %d\\n"', type_name=None
+            STRING_LITERAL: spelling='"One int: %d\\n"', token_value='"One int: %d\\n"', type_name=None
+          INTEGER_LITERAL: spelling='', token_value='3', type_name=None
+        CALL_EXPR: spelling='printf', token_value='printf ( "Two ints: %d %d\\n" , 1 , 2 )', type_name=None
+          UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+            DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"Two ints: %d %d\\n"', type_name=None
+            STRING_LITERAL: spelling='"Two ints: %d %d\\n"', token_value='"Two ints: %d %d\\n"', type_name=None
+          INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+          INTEGER_LITERAL: spelling='', token_value='0', type_name=None
+        CALL_EXPR: spelling='printf', token_value='printf ( "Extra args ignored: %d %d\\n" , 1 , 2 )', type_name=None
+          UNEXPOSED_EXPR: spelling='printf', token_value='printf', type_name=None
+            DECL_REF_EXPR: spelling='printf', token_value=None, type_name=None
+          UNEXPOSED_EXPR: spelling='', token_value='"Extra args ignored: %d %d\\n"', type_name=None
+            STRING_LITERAL: spelling='"Extra args ignored: %d %d\\n"', token_value='"Extra args ignored: %d %d\\n"', type_name=None
+          INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+          INTEGER_LITERAL: spelling='', token_value='1', type_name=None
+        RAW_TOKENS: spelling='{ ; ; ; ; ; ; }', token_value=None, type_name=None
+        RETURN_STMT: spelling='', token_value=None, type_name=None
+          INTEGER_LITERAL: spelling='', token_value='0', type_name=None
