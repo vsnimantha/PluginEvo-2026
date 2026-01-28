@@ -1,0 +1,22 @@
+
+
+// Template_43.tmpl
+#include <cstdio>
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+// Handler for %c
+void putchar(char c) { fputc(c, stdout); }
+
+// Handler for %s
+void putstring(const char *s) { fputs(s, stdout); }
+
+// Handler for %d
+void putint(int i) { printf("%d", i); }
+
+int main(void) {
+  printf("Hello %s %d %c\n", "world", 42, '!');
+  return 0;
+}
