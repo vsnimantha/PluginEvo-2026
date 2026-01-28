@@ -1,0 +1,1 @@
+<math_expression> ::= <math_data_type>  <identifier>  = <math_number> <math_operation> <math_number> ;

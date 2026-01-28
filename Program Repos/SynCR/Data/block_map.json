@@ -1,0 +1,17 @@
+{
+    "INCLUDES": "<include_statement>",
+    "FUNCTION_DEFINITION_NON_PARAM": "<function>",
+    "FUNCTION_DEFINITION_RECURSIVE": "<function_recursive>",
+    "FUNCTION_DEFINITION": "<function>", 
+    "FUNCTION_DEFINITION_PARAM": "<function_parameterised_single>|<function_parameterised_multi>",
+    "IF_STATEMENTS": "<if_statement>",
+    "VAR_DECLARATION": "<var_declaration>",
+    "FOR_LOOP": "<for_loop>",
+    "WHILE_LOOP": "<while_loop>|<while_loop_conditional>",
+    "DO_WHILE_LOOP": "<do_while_loop>",
+    "PRINT_STATEMENT": "<print_statement>",
+    "MATH_EXPRESSION":"<math_expression>"
+
+}
+
+

@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+
+{{fid_1,generateRandomNumber:FUNCTION_DEFINITION}}
+
+int main() {
+    srand(time(0)); // Seed the random number generator
+
+    {{var_1,min:VAR_DECLARATION}}
+    {{var_2,max:VAR_DECLARATION}}
+
+    {{prnt_1:PRINT_STATEMENT}}
+    {{input_1:INPUT_STATEMENT}}
+
+    {{var_3,randomNumber:VAR_DECLARATION}}
+    {{fid_1,generateRandomNumber:FUNCTION_CALL@p1[[ref#var1]],p2[[ref#var2]]}}
+
+    {{prnt_2:PRINT_STATEMENT}}
+    {{prnt_1:PRINT_STATEMENT_ENDLINE}}
+
+    return 0;
+}

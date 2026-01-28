@@ -1,0 +1,5 @@
+anytree==2.12.1
+fastapi==0.115.12
+graphviz==0.20.3
+Requests==2.32.3
+uvicorn==0.34.0

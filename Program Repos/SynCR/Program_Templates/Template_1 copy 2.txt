@@ -1,0 +1,19 @@
+// main_template.tmpl
+#include <iostream>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+
+int main() {
+    {{var_1:VAR_DECLARATION}}
+    // Function calls
+    {{fid_1:FUNCTION_CALL@p1[[ref#var1]],p2,p3}}
+
+    return 0;
+}
+

@@ -1,0 +1,1 @@
+<math_expressions_multiplication> ::= <math_data_type>  <identifier>  = <math_numbers> * <math_numbers> ;

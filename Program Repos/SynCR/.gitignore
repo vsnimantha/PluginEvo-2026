@@ -1,0 +1,15 @@
+# Ignore node_modules directory
+/Data/AST/
+/Output
+
+# Ignore log files
+#*.log
+
+# Ignore compiled output
+#*.o
+#*.out
+#*.class
+
+# Ignore operating system files
+.DS_Store
+Thumbs.db

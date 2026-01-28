@@ -1,0 +1,25 @@
+<program>       ::= "#include <iostream>\nusing namespace std;\n\n" <functions> "int main() {\n" <statements> "return 0;\n}"
+<functions>     ::= <function> | <function> "\n" <functions>
+<function>      ::= <return_type> " " <identifier> "(" <parameters> ") {\n" <statements> "}\n"
+<return_type>   ::= "int" | "double" | "void"
+<parameters>    ::= <parameter> | <parameter> ", " <parameter>
+<parameter>     ::= <type> " " <identifier>
+<type>          ::= "int" | "double" | "bool"
+<statements>    ::= <statement> | <statement> "\n" <statements>
+<statement>     ::= <declaration> | <assignment> | <output> | <if_statement> | <while_loop> | <function_call> | <return_statement>
+<declaration>   ::= <type> " " <identifier> ";" | <type> " " <identifier> "[" <number> "];"
+<assignment>    ::= <identifier> " = " <expression> ";" | <identifier> "[" <expression> "] = " <expression> ";"
+<output>        ::= "cout << " <expression> " << endl;"
+<if_statement>  ::= "if (" <condition> ") {\n" <statements> "}\n" <else_statement>
+<else_statement>::= "else {\n" <statements> "}\n" | ""
+<while_loop>    ::= "while (" <condition> ") {\n" <statements> "}\n"
+<function_call> ::= <identifier> "(" <arguments> ");"
+<arguments>     ::= <expression> | <expression> ", " <expression>
+<return_statement> ::= "return " <expression> ";"
+<condition>     ::= <expression> " " <comparison> " " <expression>
+<comparison>    ::= "==" | "!=" | "<" | ">" | "<=" | ">="
+<expression>    ::= <term> " + " <expression> | <term> " - " <expression> | <term>
+<term>          ::= <factor> " * " <term> | <factor> " / " <term> | <factor>
+<factor>        ::= <number> | <identifier> | <identifier> "[" <expression> "]" | "(" <expression> ")" | <function_call>
+<identifier>    ::= "a" | "b" | "c" | "d" | "e" | "f" | "g" | "h" | "i" | "j"
+<number>        ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"

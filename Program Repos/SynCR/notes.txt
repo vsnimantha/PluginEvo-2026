@@ -1,0 +1,14 @@
+pipreqs /Users/nimanthakariyakarawana/Desktop/KUL_App_Gen/Grammar_based_program_generator_release_app --force
+pipreqs can be used to generate the requirements file which contains your external libraries
+
+(if it is already there ignore the above step)
+
+then use the following to install all the dependencies on a new computer.
+pip install -r requirements.txt
+
+
+clang-format is needed to make the code pretty, so installation of clang is necessary
+
+brew install clang-format - for macOS
+sudo apt install clang-format - for Linux
+
