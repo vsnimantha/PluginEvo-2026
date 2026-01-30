@@ -1,0 +1,27 @@
+// Template_6.tmpl
+#include <stdio.h>
+#include <iostream>
+#include <cstdarg>
+#include <cstdio>
+using namespace std;
+
+void print_str_level(int lvl, const char *s)   { std::printf("S[%d]:%s", lvl, s); }
+void print_char_level(int lvl, char c)        { std::printf("C[%d]:%c", lvl, c); }
+void print_raw_level(int lvl, void *p, std::size_t sz, std::size_t nmemb) {
+    std::printf("R[%d]:%zu*%zu@%p", lvl, sz, nmemb, p);
+}
+
+void print_on_level(int lvl, const char *fmt, ...) {
+    va_list ap;
+    va_start(ap, fmt);
+    std::vprintf(fmt, ap);
+    va_end(ap);
+}
+
+int main() {
+        {{if_1:IF_STATEMENTS}}
+            {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+    print_on_level(1, "str=%s char=%c raw=%%%% end\n", "x", 'y');
+    return 0;
+}

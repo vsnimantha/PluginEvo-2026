@@ -1,0 +1,28 @@
+/* Template_30.tmpl */
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <math.h>
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    volatile double x = 0.1;
+    volatile double y = 0.2;
+    volatile double z = 0.3;
+
+    // This should print 1 if (x + y) == z, but due to FP rounding it may differ
+    printf("%d\n", (x + y) == z);
+
+    return 0;
+}

@@ -1,0 +1,29 @@
+// Template_44.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <vector>
+using namespace std;
+
+
+int f(int x) {
+    std::cout << "f(" << x << ")\n";
+    return x;
+}
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    int a = f(1) + f(2) * f(3);
+
+}

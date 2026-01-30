@@ -1,0 +1,44 @@
+// Template_21.tmpl
+//std::optional-like pattern (manual)
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+struct MaybeInt {
+    bool has;
+    int value;
+};
+
+MaybeInt make(int x) {
+    if (x < 0) return {false, 0};
+    return {true, x * 3};
+}
+
+int use(const MaybeInt &m) {
+    return m.has ? m.value : -5;
+}
+
+int main(void)
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+        int res = 0;
+    for (int i = -2; i <= 3; ++i) {
+        res = res * 7 + use(make(i));
+    }
+    std::cout << res;
+
+    return 0;
+}
+

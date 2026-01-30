@@ -1,0 +1,18 @@
+// Template_1.tmpl
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    {{var_1:VAR_DECLARATION}}
+    int a = 1, b = 2, c = 3;
+    double d = 4.0;
+    const char *s = "str";
+
+    std::printf("a=%d b=%d c=%d d=%f s=%s tail=%d\n",
+                a, b, c, d, s);
+
+    std::printf("only one: %d\n", a, b, c, d);
+
+    return 0;
+}

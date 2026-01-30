@@ -1,7 +1,7 @@
 import random
 import string
 from Utilities.utils import Constants, differentiate_list_type
-
+from Config.global_config import config
 
 def process_variable_data_type(variable_data_type, grammar):
     grammar_element = f'<value_{variable_data_type}>'
@@ -16,6 +16,9 @@ def process_variable_data_type(variable_data_type, grammar):
         elif variable_data_type == 'float':
             return_data = f'{random.uniform(0, 100)}f'
         elif variable_data_type == 'string':
+            random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+            return_data=f'"{str(random_string)}"'
+        elif variable_data_type == 'char[]':
             random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
             return_data=f'"{str(random_string)}"'
         elif variable_data_type == 'char':
@@ -34,7 +37,6 @@ def process_variable_data_type(variable_data_type, grammar):
 def process_return_type(return_type, grammar):
     grammar_element = f'<function_return_{return_type}>'
     element_data = [d[grammar_element] for d in grammar if grammar_element in d]
-
     data = process_element_data(element_data)
     return_data = None
     if data == '<rand>':
@@ -43,6 +45,9 @@ def process_return_type(return_type, grammar):
         elif return_type == 'float':
             return_data = f'{random.uniform(0, 100)}f'
         elif return_type == 'string':
+            random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+            return_data=f'"{str(random_string)}"'
+        elif return_type == 'char[]':
             random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
             return_data=f'"{str(random_string)}"'
         elif return_type == 'char':
@@ -71,6 +76,33 @@ def process_param_values(param_data_type):
     elif param_data_type == 'float':
         return_data = f'{random.uniform(0, 100)}f'
     elif param_data_type == 'string':
+        random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+        return_data=f'"{str(random_string)}"'
+    elif param_data_type == 'char[]':
+        random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+        return_data=f'"{str(random_string)}"'
+    elif param_data_type == 'char':
+        random_char = random.choice(string.ascii_uppercase)
+        return_data=f"'{random_char}'"
+    elif param_data_type == 'bool':
+        return_data = random.choice(['true', 'false'])
+    elif param_data_type == 'double':
+        return_data = str(random.uniform(0, 100))
+    else:
+        return_data = None
+
+    return return_data
+
+def process_random_data_values(param_data_type):
+    return_data = None
+    if param_data_type == 'int':
+        return_data = str(random.randint(0, 100))
+    elif param_data_type == 'float':
+        return_data = f'{random.uniform(0, 100)}f'
+    elif param_data_type == 'string':
+        random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
+        return_data=f'"{str(random_string)}"'
+    elif param_data_type == 'char[]':
         random_string = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
         return_data=f'"{str(random_string)}"'
     elif param_data_type == 'char':
@@ -122,7 +154,7 @@ def process_element_data_for_strings(element_data, message=None):
         print(f"{element_data} not found.")
     return ""  # Return empty string if no data found
 
-def process_element_data_for_array(element_data,array_length,identifier,grammar):
+def process_element_data_for_array(element_data,array_length,identifier,grammar,data_type=None):
     if element_data:
         for item in element_data:
             list_type = differentiate_list_type(item)
@@ -140,7 +172,23 @@ def process_element_data_for_array(element_data,array_length,identifier,grammar)
                     elif inner_item=="<for_loop_update>":
                         result+=f"i++"
                     elif inner_item=="<for_loop_body>":
-                        grammar_element = '<print_statement>'
+                        if config.PROGRAM_GENERATION.programming_language.lower() == Constants.PROGRAMMING_LANGUAGE_C: 
+                            # print(f"Generating for loop body for C with identifier {identifier} and data type {data_type}") #Debug Print
+                            if data_type: 
+                                if  data_type == "char":
+                                    grammar_element = '<print_statement_char>'
+                                elif  data_type == "double":
+                                    grammar_element = '<print_statement_double>'
+                                elif  data_type == "float":
+                                    grammar_element = '<print_statement_float>'
+                                elif  data_type == "int":
+                                    grammar_element = '<print_statement_int>'
+                                elif  data_type == "bool":
+                                    grammar_element = '<print_statement_bool>'
+                                else:
+                                    grammar_element = '<print_statement>'
+                        else:
+                            grammar_element = '<print_statement>'    
                         element_data = [d[grammar_element] for d in grammar if grammar_element in d]
                         processed_element = process_element_data_for_strings(element_data,f"{identifier}[i]")
                         result+= processed_element
@@ -163,10 +211,6 @@ def ast_to_list(node):
         result.append(ast_to_list(child))
     return result
 
-import random
-
-
-import random
 
 def check_duplicate_params(param_list, str_item, available_param_names):
     """Check for duplicate parameter names and return a unique name from available options.
@@ -265,18 +309,22 @@ def process_params_data(param_list, grammar):
 
 
 def generate_array_data(data_type, identifier,length,grammar):
+    # print(f"Generating array data of type {data_type} with identifier {identifier} and length {length}") #Debug Print
     data_array = []
-
     for _ in range(length):
         random_data=process_variable_data_type(data_type,grammar)
+        # print(f"Random data generated: {random_data}")
         if random_data is not None:
             data_array.append(random_data)       
 
-    grammar_element = '<for_loop>'
-    element_data = [d[grammar_element] for d in grammar if grammar_element in d]
-    iterative_data_loop = process_element_data_for_array(element_data,length,identifier,grammar)
-    
-    # print(f"Generate for loop: {iterative_data_loop}") #Debug Print
+    iterative_data_loop=""
+    if config.PROGRAM_GENERATION.print_array_data:
+        grammar_element = '<for_loop>'
+        element_data = [d[grammar_element] for d in grammar if grammar_element in d]
+        iterative_data_loop = process_element_data_for_array(element_data,length,identifier,grammar,data_type)
+        
+        # print(f"Generate for loop: {iterative_data_loop}") #Debug Print
 
-    # Join the array into a single string with proper formatting
+        # Join the array into a single string with proper formatting
     return f"{{{','.join(data_array)}}}",iterative_data_loop
+

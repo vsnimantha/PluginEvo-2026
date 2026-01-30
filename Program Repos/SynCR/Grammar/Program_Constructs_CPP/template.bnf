@@ -1,0 +1,1 @@
+<template> ::= template < typename <template_type_param> > <template_type> <template_type_name> { <template_member_decl> } ;

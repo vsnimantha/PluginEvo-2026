@@ -1,0 +1,35 @@
+// Template_40.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+std::vector<int> v = {1, 3, 5, 7, 9, 11, 13};
+    int keys[4] = {0, 3, 10, 14};
+
+    int checksum = 0;
+    for (int k : keys) {
+        auto it = std::lower_bound(v.begin(), v.end(), k);
+        int idx = (it == v.end()) ? -1 : int(it - v.begin());
+        checksum = checksum * 17 + idx;
+    }
+    std::cout << checksum;
+    return 0;
+
+}

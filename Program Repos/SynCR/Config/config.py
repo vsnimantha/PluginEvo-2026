@@ -77,6 +77,29 @@ class ConfigManager:
         if name in self._data:
             return SectionProxy(self._data[name])
         raise AttributeError(f"No such config section: '{name}'")
+    
+    def update_config_value(self, section: str, key: str, value: Any) -> None:
+        """
+        Update a configuration value both in memory and in the config file
+        
+        Args:
+            section: The section name in the config file
+            key: The key to update
+            value: The new value to set
+        """
+        # Update in-memory data
+        if section not in self._data:
+            self._data[section] = {}
+        self._data[section][key] = value
+        
+        # Update the configparser object
+        if not self._config.has_section(section):
+            self._config.add_section(section)
+        self._config.set(section, key, str(value))
+        
+        # Write changes back to file
+        with open(self.config_file, 'w') as configfile:
+            self._config.write(configfile)
 
 class SectionProxy:
     """

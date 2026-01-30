@@ -1,0 +1,33 @@
+// Template_7.tmpl
+#include <iostream>
+#include <stdio.h>
+#include <cstdio>
+
+using namespace std;
+
+// Handler for %c
+void putchar(char c) {
+    fputc(c, stdout);
+}
+
+int main(void) {
+    int a = 1, b = 2, c = 3, d = 4, e = 5;
+    const char *s1 = "alpha";
+    const char *s2 = "beta";
+
+    std::printf(
+        "A=%d B=%d C=%d D=%d E=%d | %s %s | %c %c %c | %h$up %h$up %h$up \n",
+        a, b, c, d, e,
+        s1, s2,
+        'x', 'y', 'z',
+        10, 20, 30
+    );
+
+            {{arr_1:ARRAY}}
+        {{arr_2:ARRAY}}
+        {{arr_3:ARRAY}}
+        {{arr_4:ARRAY}}
+
+    return 0;
+    return 0;
+}

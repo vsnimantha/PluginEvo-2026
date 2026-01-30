@@ -1,0 +1,155 @@
+Smart Code Generator - Complete Technical Specification
+=====================================================
+
+1. System Overview
+------------------
+1.1 Purpose
+Generates context-aware code snippets with:
+- Grammar-conforming syntax
+- Type-safe semantics
+- Balanced production coverage
+- Support for functions/recursion/loops
+
+1.2 Architecture Components
+[Based on Pierce 2002, Ch.10]
+┌───────────────────────┐
+│  Grammar Parser       │
+└──────────┬────────────┘
+           ↓
+┌───────────────────────┐
+│  SmartCodeGenerator   │
+│  - Coverage tracker   │ ← Church 2000
+│  - Context manager    │ ← Pierce 2002
+│  - AST builder        │ ← Gamma 1994
+└──────────┬────────────┘
+           ↓
+┌───────────────────────┐
+│  Validated Code       │
+│  Output               │
+└───────────────────────┘
+
+2. Core Algorithms
+------------------
+2.1 Main Generation Loop [Purdom 1972]
+flowchart TD
+    Start --> ResetState
+    ResetState --> SelectProduction
+    SelectProduction --> GenerateNode
+    GenerateNode --> ValidateSemantics
+    ValidateSemantics -->|Pass| UpdateCoverage
+    ValidateSemantics -->|Fail| RetryWithFallback
+
+2.2 Weighted Selection [Vose 1991]
+For N options with usage counts u_i:
+Selection probability p_i = (1/(u_i + 1)) / Σ(1/(u_j + 1))
+
+Implementation:
+def select_option(options, usage_counts):
+    weights = [1/(usage_counts.get(o,0)+1) for o in options]
+    return random.choices(options, weights=weights)[0]
+
+3. Detailed Workflows
+---------------------
+3.1 Node Processing
+[Knuth 1968, §3]
+1. Receive grammar node
+2. Classify node type:
+   - Terminal → emit literal
+   - Non-terminal → expand production
+   - Special form → context handler
+3. Validate against context frame
+
+3.2 Context Management
+[Pierce 2002, §10.3]
+Stack-based frames containing:
+- Current scope symbols
+- Type constraints
+- Parent frame reference
+
+Example Frame:
+{
+  "scope": "function_body",
+  "types": {"x": "int"},
+  "parent": {...}
+}
+
+4. AST Construction
+-------------------
+4.1 Node Types [Gamma 1994]
+│ Type        │ Attributes               │
+├─────────────┼──────────────────────────┤
+│ Rule        │ production_name, children│
+│ Terminal    │ literal_value            │
+│ Context     │ scope_type, symbols      │
+
+4.2 Building Process
+1. Root node created
+2. For each production:
+   - Push new AST node
+   - Process child elements
+   - Attach to parent
+3. Final validation:
+   - Type consistency
+   - Scope validity
+
+5. Special Cases Handling
+-------------------------
+5.1 Functions [Pierce 2002, §11]
+- Name generation with usage tracking
+- Return type inference
+- Parameter scope isolation
+
+5.2 Arrays [Knuth 1968, §5]
+- Size determination:
+  if <rand> → random.randint(1,100)
+  else → grammar-specified
+- Initialization loops:
+  for(i=0; i<size; i++) {...}
+
+6. Error Recovery
+-----------------
+6.1 Fallback Hierarchy [Church 2000]
+1. Context-aware generation (type-specific)
+2. Grammar-conforming random
+3. Hardcoded defaults:
+   - Identifiers: "alpha", "beta"...
+   - Literals: 0, "", null
+
+7. Output Specification
+-----------------------
+7.1 Data Structure
+{
+  "code": str,
+  "ast": [AST_NODES],
+  "metadata": {
+    "is_function": bool,
+    "is_recursive": bool,
+    "parameters": [
+      {
+        "type": str,
+        "name": str,
+        "value": any
+      }
+    ]
+  }
+}
+
+8. References
+-------------
+[1] Vose, M. D. (1991). IEEE Trans. Softw. Eng. 17(9)
+[2] Purdom, P. (1972). BIT 12(3)
+[3] Pierce, B. (2002). Types and Programming Languages
+[4] Knuth, D. E. (1968). Math. Sys. Theory 2(2)
+[5] Church, K. W. (2000). ACL
+[6] Gamma et al. (1994). Design Patterns
+
+9. Appendices
+-------------
+Appendix A: Grammar Specification
+<function> ::= <type> <identifier> "(" <params> ")" "{" <body> "}"
+
+Appendix B: Weight Calculation Example
+Options: ["int","float","string"]
+Usage: {"int":3, "float":1}
+Weights: [1/4, 1/2, 1/1]
+Probabilities: ~[0.21, 0.43, 0.36]

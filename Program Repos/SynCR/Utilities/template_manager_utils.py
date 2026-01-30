@@ -17,9 +17,13 @@ def generate_id(place_holder):
     elif place_holder== 'DO_WHILE_LOOP':
         return f"dwlp_{id_number}:"
     elif place_holder == 'PRINT_STATEMENT':
-        return f"pstm_{id_number}:"
+        return f"pstm_{id_number}:"    
+    elif place_holder == 'PRINTF_STATEMENT':
+        return f"psftm_{id_number}:"
     elif place_holder == 'MATH_EXPRESSION':
         return f"mexpr_{id_number}:"
+    elif place_holder == 'ARRAY':
+        return f"arr_{id_number}:"
     else:
         return ""
 

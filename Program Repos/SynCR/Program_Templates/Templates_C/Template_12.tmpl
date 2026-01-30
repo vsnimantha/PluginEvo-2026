@@ -1,0 +1,17 @@
+/* Template_12.tmpl */
+struct LargeStruct {
+    int data[1000];
+};
+
+int main() {
+    struct LargeStruct arr[100000]; 
+    
+        {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+    return 0;
+}

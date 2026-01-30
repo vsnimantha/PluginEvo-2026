@@ -1,0 +1,37 @@
+// Template_10.tmpl
+#include <iostream>
+#include <stdio.h>
+#include <cstdarg>
+#include <cstdio>
+
+using namespace std;
+
+void log_info(const char *fmt, ...) {
+    va_list ap;
+    va_start(ap, fmt);
+    std::vprintf(fmt, ap);
+    va_end(ap);
+}
+
+void log_debug(int subsystem, const char *fmt, ...) {
+    va_list ap;
+    va_start(ap, fmt);
+    std::vprintf(fmt, ap);
+    va_end(ap);
+}
+
+
+int main(void) {
+            {{arr_1:ARRAY}}
+        {{arr_2:ARRAY}}
+        {{arr_3:ARRAY}}
+        {{arr_4:ARRAY}}
+    {{wlp_1:WHILE_LOOP}}
+    printf("Bad spec: %q\n", 123);
+    int code = 7;
+
+    log_info("info code=%d\n", code);
+    log_debug(42, "debug[%d]=%s\n", code, "ok");
+
+    return 0;
+}

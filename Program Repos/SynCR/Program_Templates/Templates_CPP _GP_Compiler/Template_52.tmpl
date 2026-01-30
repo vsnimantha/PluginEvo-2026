@@ -1,0 +1,28 @@
+// Template_52.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <ctime>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+
+    std::time_t t = std::time(nullptr);
+    if (t % 2 == 0) {
+        std::cout << "Even second.\n";
+        return 0;
+    } else {
+        std::cerr << "Odd second.\n";
+        return 77;
+    }
+
+}

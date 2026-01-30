@@ -1,0 +1,35 @@
+// Template_45.tmpl
+//Arithmetic & promotions
+#include <iostream>
+#include <bitset>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+{{tmpl_1:TEMPLATE}}
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+
+    std::bitset<8> bits{0b10110110};
+
+    bits.flip(0);
+    bits.set(3);
+    bits.reset(5);
+
+    unsigned long value = bits.to_ulong();
+    std::size_t cnt = bits.count();
+
+    unsigned long result = value * 10u + static_cast<unsigned long>(cnt);
+    std::cout << result;
+    return 0;
+}
+

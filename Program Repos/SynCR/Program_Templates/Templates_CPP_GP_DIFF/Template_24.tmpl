@@ -1,0 +1,32 @@
+// Template_24.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main(int, char**)
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+        int sum = 0;
+    for (int i = 0; i < 20; ++i) {
+        if (i % 5 == 0) continue;
+        sum += i;
+        if (sum > 50) break;
+    }
+    std::cout << sum;
+
+    return 0;
+
+}
+

@@ -1,0 +1,24 @@
+// Template_12.tmpl
+#include <iostream>
+#include <cstdio>
+#include <cstddef>
+using namespace std;
+
+using F = int(*)(int);
+
+int inc(int x) { return x + 1; }
+int dec(int x) { return x - 1; }
+
+int apply(F f, int x, std::size_t n) {
+    int r = x;
+    for (std::size_t i = 0; i < n; ++i) {
+        r = f(r);
+    }
+    return r;
+}
+
+int main() {
+    int a = apply(inc, 0, 10);
+    int b = apply(dec, a, 5);
+    return b;
+}

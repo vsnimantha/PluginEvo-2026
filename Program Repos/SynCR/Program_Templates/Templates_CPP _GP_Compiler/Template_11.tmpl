@@ -1,0 +1,35 @@
+// Template_11.tmpl
+#include <iostream>
+#include <tuple>
+#include <utility>
+using namespace std;
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+template<typename Tuple, std::size_t... Is>
+int sum_impl(const Tuple& t, std::index_sequence<Is...>) {
+    return (0 + ... + static_cast<int>(std::get<Is>(t)));
+}
+
+template<typename... Ts>
+int sum_tuple(const std::tuple<Ts...>& t) {
+    return sum_impl(t, std::index_sequence_for<Ts...>{});
+}
+
+int main(){
+    
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+        auto t = std::make_tuple(1, 2, 3, 4);
+    return sum_tuple(t);
+
+
+}

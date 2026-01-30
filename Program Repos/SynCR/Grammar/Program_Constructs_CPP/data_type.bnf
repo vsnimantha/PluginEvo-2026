@@ -1,0 +1,1 @@
+<data_type> ::= bool | int | double | float | string

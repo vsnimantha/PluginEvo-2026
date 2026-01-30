@@ -1,0 +1,52 @@
+<program> ::= <function_declaration> | <program> <function_declaration>
+
+<function_declaration> ::= <type> <identifier> "(" <parameters>? ")" "{" <statement_list> "}"
+
+<parameters> ::= <parameter> | <parameters> "," <parameter>
+<parameter> ::= <type> <identifier>
+
+<type> ::= "int" | "float" | "char" | "void" | "double" | "bool"
+
+<statement_list> ::= <statement> | <statement_list> <statement>
+
+<statement> ::= <declaration> ";"
+              | <assignment> ";"
+              | <if_statement>
+              | <while_statement>
+              | <for_statement>
+              | <return_statement> ";"
+              | <function_call> ";"
+              | "{" <statement_list> "}"
+
+<declaration> ::= <type> <identifier> | <type> <identifier> "=" <expression>
+
+<assignment> ::= <identifier> "=" <expression>
+
+<if_statement> ::= "if" "(" <expression> ")" <statement> ("else" <statement>)?
+
+<while_statement> ::= "while" "(" <expression> ")" <statement>
+
+<for_statement> ::= "for" "(" <assignment>? ";" <expression>? ";" <assignment>? ")" <statement>
+
+<return_statement> ::= "return" <expression>?
+
+<function_call> ::= <identifier> "(" <arguments>? ")"
+<arguments> ::= <expression> | <arguments> "," <expression>
+
+<expression> ::= <logical_or_expression>
+<logical_or_expression> ::= <logical_and_expression> | <logical_or_expression> "||" <logical_and_expression>
+<logical_and_expression> ::= <equality_expression> | <logical_and_expression> "&&" <equality_expression>
+<equality_expression> ::= <relational_expression> | <equality_expression> "==" <relational_expression> | <equality_expression> "!=" <relational_expression>
+<relational_expression> ::= <additive_expression> | <relational_expression> "<" <additive_expression> | <relational_expression> ">" <additive_expression> | <relational_expression> "<=" <additive_expression> | <relational_expression> ">=" <additive_expression>
+<additive_expression> ::= <multiplicative_expression> | <additive_expression> "+" <multiplicative_expression> | <additive_expression> "-" <multiplicative_expression>
+<multiplicative_expression> ::= <unary_expression> | <multiplicative_expression> "*" <unary_expression> | <multiplicative_expression> "/" <unary_expression> | <multiplicative_expression> "%" <unary_expression>
+<unary_expression> ::= <primary_expression> | "!" <unary_expression> | "-" <unary_expression> | "++" <unary_expression> | "--" <unary_expression>
+<primary_expression> ::= <identifier> | <constant> | "(" <expression> ")" | <function_call>
+
+<constant> ::= <integer> | <float> | <character> | <string>
+<integer> ::= [0-9]+
+<float> ::= [0-9]+ "." [0-9]*
+<character> ::= "'" <any_char> "'"
+<string> ::= '"' <any_char>* '"'
+
+<identifier> ::= [a-zA-Z_][a-zA-Z0-9_]*

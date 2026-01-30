@@ -1,0 +1,21 @@
+// Template_12.tmpl
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120155
+// Triggers ICEc
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+void fun()
+{
+    [](auto t) -> decltype(
+        ({
+            int a = t;
+        })
+    ) {};
+}
+int main() {
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+    {{arr_1:ARRAY}}
+    return 0;
+}

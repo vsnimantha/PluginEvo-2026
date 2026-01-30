@@ -1,0 +1,25 @@
+/* Template_8.tmpl */
+/* TRIGGERS ICES*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <limits.h>
+
+/*Crashes the compiler*/
+struct Base {
+    virtual void func() {}
+};
+
+struct Derived : public Base {
+    Derived() : Derived() {} 
+};
+
+int main() {
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+ struct Derived d;
+    return 0;
+}
+

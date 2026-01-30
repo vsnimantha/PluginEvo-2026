@@ -1,0 +1,35 @@
+// Template_31.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+int f1(int x) { return x + 1; }
+int f2(int x) { return x * 2; }
+int f3(int x) { return x * x; }
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+int (*funcs[3])(int) = {f1, f2, f3};
+    int res = 0;
+    for (int i = 0; i < 3; ++i) {
+        res = res * 11 + funcs[i](i + 2);
+    }
+    std::cout << res;
+
+    return 0;
+
+}

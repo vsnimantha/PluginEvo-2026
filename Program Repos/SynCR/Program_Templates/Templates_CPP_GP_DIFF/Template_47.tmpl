@@ -1,0 +1,33 @@
+// Template_47.tmpl
+#include <iostream>
+#include <array>
+#include <algorithm>
+#include <numeric>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+{{fid_1:FUNCTION_DEFINITION_PARAM}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{wlp_1:WHILE_LOOP}}
+
+    std::array<int, 6> arr = {{3, 1, 4, 1, 5, 9}};
+
+    std::sort(arr.begin(), arr.end());
+    int sum = std::accumulate(arr.begin(), arr.end(), 0);
+
+    int checksum = 0;
+    for (std::size_t i = 0; i < arr.size(); ++i) {
+        checksum = checksum * 17 + arr[i] * (int(i) + 1);
+    }
+    checksum += sum * 13;
+
+    std::cout << checksum;
+    return 0;
+}

@@ -1,0 +1,40 @@
+// Template_4.tmpl
+#include <iostream>
+#include <typeinfo>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+
+struct Base {
+    virtual ~Base() = default;
+    virtual int f() const { return 1; }
+};
+
+template<typename T>
+struct DerivedT : Base {
+    T value;
+    explicit DerivedT(T v) : value(v) {}
+    int f() const override { return static_cast<int>(value) * 2; }
+};
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+    DerivedT<int> d{5};
+    Base* b = &d;
+    int r = b->f();
+    if (typeid(*b) == typeid(DerivedT<int>)) {
+        r += 3;
+    }
+    return r;
+}
+

@@ -1,0 +1,14 @@
+// Template_16.tmpl
+// Triggers ICE - Segmentation fault
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120126
+#include <iostream>
+#include <functional>
+template <typename... Args>
+auto sum(Args... args){
+        return [args...] {
+                typename std::remove_reference<decltype(args)>::type temp{std::move(args)...};
+        };
+}
+int main() {
+  auto min = sum(1, 10);
+}

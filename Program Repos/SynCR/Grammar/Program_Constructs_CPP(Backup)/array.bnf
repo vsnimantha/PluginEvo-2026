@@ -1,0 +1,1 @@
+<array> ::= <data_type> <identifier> [ <array_size> ] = <array_values> 

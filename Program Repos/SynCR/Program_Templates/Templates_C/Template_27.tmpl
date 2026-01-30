@@ -1,0 +1,27 @@
+/* Template_27.tmpl */
+/* GCC Bug */
+/*https://gcc.gnu.org/bugzilla/show_bug.cgi?id=97957*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+typedef long __gcc_host_wide_int__;
+typedef long __gcc_host_wide_int__;
+__attribute__ ((__format__ (__gcc_diag__, 1, 2)))
+void f () {}
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    return 0;
+}

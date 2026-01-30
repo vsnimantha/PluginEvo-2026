@@ -1,0 +1,55 @@
+// Template_13.tmpl
+//Bit-fields & enums
+#include<iostream>
+#include <cstdio>
+#include <stdio.h>
+using namespace std;
+
+enum class Mode : unsigned {
+    Read  = 1u << 0,
+    Write = 1u << 1,
+    Exec  = 1u << 2
+};
+
+struct Flags {
+    unsigned read : 1;
+    unsigned write : 1;
+    unsigned exec : 1;
+    unsigned unused : 29;
+};
+
+unsigned pack_bitfields(const Flags &f) {
+    unsigned m = 0;
+    if (f.read)  m |= static_cast<unsigned>(Mode::Read);
+    if (f.write) m |= static_cast<unsigned>(Mode::Write);
+    if (f.exec)  m |= static_cast<unsigned>(Mode::Exec);
+    return m;
+}
+
+
+int main() {
+Flags f{};
+    f.read = 1;
+    f.write = 0;
+    f.exec = 1;
+
+    unsigned mask = pack_bitfields(f);
+    unsigned manual = static_cast<unsigned>(Mode::Read) |
+                      static_cast<unsigned>(Mode::Exec);
+
+    unsigned result = mask * 17u + manual;
+    std::cout << result;
+
+
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+    {{pnt_2:PRINT_STATEMENT}}
+    {{pnt_3:PRINT_STATEMENT}}
+    {{pnt_4:PRINT_STATEMENT}}
+    {{var_2:VAR_DECLARATION}}
+
+    return 0;
+}

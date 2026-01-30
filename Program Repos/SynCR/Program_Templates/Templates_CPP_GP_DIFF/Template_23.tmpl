@@ -1,0 +1,39 @@
+// Template_23.tmpl
+//Inline namespace and overloads
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+namespace api {
+inline namespace v1 {
+    int f(int x) { return x + 1; }
+}
+namespace v2 {
+    int f(int x) { return x * 2; }
+}
+}
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+
+int main(int, char**)
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    int a = api::f(10);      // v1 by default
+    int b = api::v2::f(10);  // explicitly v2
+    std::cout << a * 100 + b;
+
+return 0;
+
+}
+

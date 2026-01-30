@@ -1,0 +1,45 @@
+// Template_32.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+enum class Color {
+    Red,
+    Green,
+    Blue,
+    Unknown
+};
+
+int score(Color c) {
+    switch (c) {
+        case Color::Red:   return 3;
+        case Color::Green: return 5;
+        case Color::Blue:  return 7;
+        default:           return -1;
+    }
+}
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+Color arr[4] = {Color::Red, Color::Green, Color::Blue, Color::Unknown};
+    int res = 0;
+    for (int i = 0; i < 4; ++i) {
+        res = res * 13 + score(arr[i]);
+    }
+    std::cout << res;
+
+    return 0;
+
+}

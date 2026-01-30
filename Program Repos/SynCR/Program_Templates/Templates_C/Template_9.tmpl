@@ -1,0 +1,17 @@
+/* Template_10.tmpl */
+/*TRIGGER ICES*/
+
+struct Deep {
+    struct Deep *next;
+};
+
+int main() {
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    struct Deep d[10000]; 
+    return 0;
+}

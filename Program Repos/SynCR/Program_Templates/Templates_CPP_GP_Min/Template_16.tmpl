@@ -1,0 +1,52 @@
+// Template_16.tmpl
+#include <iostream>
+#include <functional>
+#include <cstdio>
+
+using namespace std;
+
+template <typename T>
+struct Accum {
+    static int apply(const T *data, int n) {
+        int s = 0;
+        for (int i = 0; i < n; ++i) s += data[i];
+        return s;
+    }
+};
+
+template <>
+struct Accum<bool> {
+    static int apply(const bool *data, int n) {
+        int s = 0;
+        for (int i = 0; i < n; ++i) s += data[i] ? 2 : -1;
+        return s;
+    }
+};
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main() {
+    
+    int a[5]  = {1, 2, 3, 4, 5};
+    bool b[5] = {true, false, true, true, false};
+
+    int r1 = Accum<int>::apply(a, 5);
+    int r2 = Accum<bool>::apply(b, 5);
+
+    std::cout << r1 * 10 + r2;
+
+    {{arr_1:ARRAY}}
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+}

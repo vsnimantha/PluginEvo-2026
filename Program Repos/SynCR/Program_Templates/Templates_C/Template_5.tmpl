@@ -1,0 +1,206 @@
+/* Template_5.tmpl */
+#include <stdio.h>
+#include <stdbool.h>
+#include <limits.h>
+#include <stddef.h>
+#include <string.h>
+#include <math.h>
+#include <pthread.h>
+
+/* Function definitions */
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int foo() { return 42; }
+
+void recurse(int depth) {
+    if (depth > 0) recurse(depth - 1);
+}
+
+void *race(void *arg) { 
+    extern int shared_var;
+    shared_var++; 
+    return NULL; 
+}
+
+int *dangerous_function() {
+    static int local_var = 42; /* Keeps memory valid */
+    return &local_var;
+}
+
+void test() { printf("Function called!\n"); }
+
+int main() {
+    /* Function calls */
+    {{arr_1:ARRAY}}
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    /* 1. Test integer overflow behavior */
+    printf("1. Testing integer overflow...\n");
+    int a = INT_MAX;
+    printf("INT_MAX + 1 = %d (UB)\n", a + 1);
+
+    /* 2. Test division by zero */
+    printf("\n2. Testing division by zero...\n");
+    int b = 0;
+    printf("1 / 0 = %d (UB)\n", 1 / b); // Would crash
+
+    /* 3. Test pointer arithmetic with NULL */
+    printf("\n3. Testing NULL pointer arithmetic...\n");
+    int *ptr = NULL;
+    printf("NULL + 1 = %p (UB)\n", (void *)(ptr + 1));
+
+    /* 4. Test array out of bounds access */
+    printf("\n4. Testing array bounds...\n");
+    int arr[5] = {0};
+    printf("arr[5] = %d (UB)\n", arr[5]); // Stack corruption possibility
+
+    /* 5. Test uninitialized variable */
+    printf("\n5. Testing uninitialized variable...\n");
+    int uninit;
+    printf("uninit = %d (UB)\n", uninit); // Undefined value
+
+    /* 6. Test strict aliasing violation */
+    printf("\n6. Testing strict aliasing...\n");
+    float f = 1.0f;
+    unsigned int *u = (unsigned int *)&f;
+    printf("Float bits: 0x%x\n", *u);
+
+    /* 7. Test switch fall-through */
+    printf("\n7. Testing switch fall-through...\n");
+    switch (a) {
+        case 0: printf("Case 0\n"); break;
+        default: printf("Default case\n");
+    }
+
+    /* 8. Test sizeof with side effects */
+    printf("\n8. Testing sizeof with side effects...\n");
+    int i = 0;
+    size_t s = sizeof(i++);
+    printf("sizeof(i++): %zu, i=%d\n", s, i);
+
+    /* 9. Test signed/unsigned comparison */
+    printf("\n9. Testing signed/unsigned comparison...\n");
+    int si = -1;
+    unsigned int ui = 1;
+    printf("-1 > 1U? %d\n", si > ui);
+
+    /* 10. Test offsetof with non-POD types */
+    printf("\n10. Testing offsetof...\n");
+    struct weird {
+        char c;
+        int i;
+    } w;
+    printf("offsetof i: %zu\n", offsetof(struct weird, i));
+
+    /* 11. Test cyclic macro expansion */
+    #define X 10 // Explicit value instead of cyclic expansion
+    #define Y 20
+    int var = X;
+
+    /* 12. Test volatile memory reads */
+    printf("\n12. Testing volatile memory reads...\n");
+    volatile int x = 5;
+    x = x; 
+    printf("Volatile test: %d\n", x);
+
+    /* 13. Test floating-point NaN comparisons */
+    printf("\n13. Testing floating-point NaN comparisons...\n");
+    float nan_value = NAN;
+    printf("NaN == NaN? %d\n", nan_value == nan_value);
+
+    /* 14. Test signed integer overflow */
+    printf("\n14. Testing signed integer overflow...\n");
+    int large = INT_MAX;
+    printf("Signed overflow: %d\n", large + 1);
+
+    /* 15. Test misaligned struct access */
+    printf("\n15. Testing misaligned struct access...\n");
+    #pragma pack(1)
+    struct Packed { char c; int i; };
+    struct Packed p;
+    printf("Misaligned access: %d\n", p.i);
+
+    /* 16. Test dereferencing invalid pointers */
+    printf("\n16. Testing invalid pointer dereference...\n");
+    int *invalid_ptr = NULL;
+    printf("%d\n", *invalid_ptr); // Would crash
+
+    /* 17. Test extreme memory usage with VLAs */
+    int large_arr[INT_MAX]; // Possible compiler failure
+
+    /* 18. Test overlapping memcpy */
+    printf("\n18. Testing overlapping memcpy...\n");
+    char src[] = "Hello World";
+    memcpy(src + 3, src, 5);
+    printf("Overlapping memcpy result: %s\n", src);
+
+    /* 19. Test unreachable code */
+    printf("\n19. Testing unreachable code...\n");
+    if (0) { printf("You will never see this!\n"); }
+
+    /* 20. Test sizeof function call */
+    printf("\n20. Testing sizeof on function call...\n");
+    printf("Sizeof function call: %zu\n", sizeof(foo()));
+
+    /* 21. Test stack overflow via recursion */
+    printf("\n21. Testing stack overflow...\n");
+    recurse(1000000); // Excessive recursion
+
+    /* 22. Test floating-point precision errors */
+    printf("\n22. Testing floating-point precision...\n");
+    double fp_test = 0.1 + 0.2;
+    printf("0.1 + 0.2 == 0.3? %d\n", fp_test == 0.3);
+
+    /* 23. Test unexpected side effects in macros */
+    printf("\n23. Testing macro side effects...\n");
+    #define INC(x) ((x) += 1) // Parentheses prevent expansion issues
+    int val = 5;
+    printf("INC(val * 2): %d\n", INC(val * 2));
+
+    /* 24. Test race condition in threads */
+    printf("\n24. Testing thread race condition...\n");
+    extern int shared_var;
+    pthread_t t1, t2;
+    pthread_create(&t1, NULL, race, NULL);
+    pthread_create(&t2, NULL, race, NULL);
+    pthread_join(t1, NULL);
+    pthread_join(t2, NULL);
+    printf("Shared variable: %d\n", shared_var);
+
+    /* 25. Test function pointer mismatch */
+    printf("\n25. Testing function pointer mismatch...\n");
+    int (*fp)() = (int (*)())test;
+    fp();
+
+    /* 26. Test unexpected signed overflow in loops */
+    printf("\n26. Testing signed overflow in loops...\n");
+    for (int j = 0; j < 100; j++) {
+        if (j < 0) printf("Unexpected condition met!\n");
+    }
+
+    /* 27. Test returning local variable address */
+    printf("\n27. Testing returning local variable address...\n");
+    int *bad_ptr = dangerous_function();
+    printf("Dereferencing bad pointer: %d\n", *bad_ptr);
+
+    /* 28. Test modifying const variable */
+    printf("\n28. Testing modifying const variable...\n");
+    const int const_var = 5;
+    int *ptr_const = (int *)&const_var;
+    *ptr_const = 10;
+    printf("Modified const_var: %d\n", const_var);
+
+    /* 29. Test unexpected `goto` behavior */
+    printf("\n29. Testing goto control flow...\n");
+    int goto_x = 0; 
+    goto skip_init;
+    goto_x = 5;
+    skip_init:
+    printf("Goto x: %d\n", goto_x);
+
+    return 0;
+}

@@ -1,13 +1,16 @@
 import subprocess
 import os
 import Code_Formatter.c_lang_installation_checker as clang_installation_checker
+import Utilities.program_generator_utils as program_generator_utils
+
 
 def format_cpp_code_with_clang_format(cpp_code):
     installed, message = clang_installation_checker.is_clang_installed()
-    if installed:
+    clang_format_installed,message=clang_installation_checker.is_clang_format_installed()
+    if installed and clang_format_installed:
         try:
             # Save the code to a temporary file
-            temp_file_path = "temp_code.cpp"
+            temp_file_path = f"temp_code{program_generator_utils.get_the_generated_program_exstension()}"
             with open(temp_file_path, "w") as temp_file:
                 temp_file.write(cpp_code)
 
@@ -23,11 +26,13 @@ def format_cpp_code_with_clang_format(cpp_code):
             os.remove(temp_file_path)
 
             return formatted_code
-        except Exception:
-            print("An error occured while formatting the code")
+        except Exception as e:
+            print(f"An error occured while formatting the code {e}")
             return cpp_code
     else:
-        print("clang is not available... install and try again")
+        print("clang or clang format is not available... install and try again")
+        print(f"clang installation status {installed} ")
+        print(f"clang format installation status {clang_format_installed} ")
 
 
 

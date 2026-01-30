@@ -1,0 +1,39 @@
+// Template_20.tmpl
+//std::tuple and structured computation
+#include <cstdio>
+#include <iostream>
+#include <tuple>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+std::tuple<int,int,int> compute(int a, int b) {
+    int s = a + b;
+    int d = a - b;
+    int p = a * b;
+    return std::make_tuple(s, d, p);
+}
+
+
+int main() {
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    auto t = compute(7, 4);
+    int s = std::get<0>(t);
+    int d = std::get<1>(t);
+    int p = std::get<2>(t);
+    int result = s * 101 + d * 17 + p;
+    std::cout << result;
+
+  return 0;
+}
+
+
+

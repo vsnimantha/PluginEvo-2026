@@ -1,0 +1,43 @@
+// Template_22.tmpl
+//Friend function and hidden-friend operator
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+class Counter {
+    int value;
+public:
+    explicit Counter(int v) : value(v) {}
+    friend Counter operator+(const Counter &a, const Counter &b);
+    int get() const { return value; }
+};
+
+Counter operator+(const Counter &a, const Counter &b) {
+    return Counter(a.value + b.value + 1);
+}
+
+
+int main(int argc, char* argv[])
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+
+      Counter a(5);
+    Counter b(7);
+    Counter c = a + b;   // uses friend
+    std::cout << c.get() * 3;
+
+    return 0;
+
+}
+

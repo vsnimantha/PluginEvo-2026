@@ -96,15 +96,12 @@ class GrammarParser(ABC):
 
         try:
             for filename in os.listdir(folder_path):
-                # print(filename)
                 if file_extension is not None and not filename.endswith(file_extension):
                     continue 
 
                 file_path = os.path.join(folder_path, filename)
-                # print(file_path)
                 file_contents.append(self.read_bnf_grammar(file_path))
-                # print(file_contents)
-
+                
         except Exception as e:
             print(f"Error listing directory '{folder_path}': {e}")
 

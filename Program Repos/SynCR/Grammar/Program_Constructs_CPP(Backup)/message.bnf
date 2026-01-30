@@ -1,0 +1,1 @@
+<message> ::= "This is a sample print statement" | <rand_messages> | <rand_strings>

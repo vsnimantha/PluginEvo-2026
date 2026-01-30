@@ -1,0 +1,125 @@
+Algorithm Comparison: Smart Code Generator vs. Alternative Approaches
+===================================================================
+
+1. Weighted Selection (Current Implementation)
+---------------------------------------------
+Pros:
+✓ Simple to implement (just counts + division)
+✓ Automatically balances usage over time
+✓ No pre-processing of grammar required
+✓ Memory-efficient (only stores usage counts)
+✓ Adapts dynamically during generation
+
+Cons:
+✗ May miss rare edge cases without explicit rules
+✗ Doesn't guarantee full grammar coverage
+✗ Can be "too fair" - may under-sample useful patterns
+
+2. Stratified Sampling
+---------------------
+Pros:
+✓ Guarantees all major grammar paths are represented
+✓ Good for test case generation
+✓ Clear separation of concerns
+
+Cons:
+✗ Requires manual grammar categorization
+✗ May produce unnatural combinations
+✗ Fixed strata can limit randomness
+
+3. Coverage-Based Sampling
+-------------------------
+Pros:
+✓ Ensures 100% rule coverage
+✓ Excellent for validation testing
+✓ Integrates well with existing tools
+
+Cons:
+✗ High memory overhead (tracking coverage)
+✗ Can generate many useless samples
+✗ Requires grammar instrumentation
+
+4. Length-Prioritized Sampling
+------------------------------
+Pros:
+✓ Catches edge cases (empty/giant inputs)
+✓ Good for stress testing
+✓ Simple to implement
+
+Cons:
+✗ Produces many invalid/trivial samples
+✗ Doesn't address semantic validity
+✗ Can miss medium-length bugs
+
+5. Fuzzing-Inspired Heuristics
+-----------------------------
+Pros:
+✓ Great for finding security issues
+✓ Effective with mutation operators
+✓ Works well with existing fuzzers
+
+Cons:
+✗ High computational cost
+✗ Many generated samples are invalid
+✗ Requires cleanup/validation
+
+6. Constraint-Based Filtering
+----------------------------
+Pros:
+✓ Only generates valid samples
+✓ Reduces post-generation validation
+✓ Precise control over output
+
+Cons:
+✗ Very slow (constraint solving)
+✗ Requires deep language knowledge
+✗ May over-constrain
+
+7. Diversity Metrics
+-------------------
+Pros:
+✓ Avoids duplicate-like samples
+✓ Good for dataset generation
+✓ Maximizes information per sample
+
+Cons:
+✗ Computationally expensive
+✗ Hard to define similarity metrics
+✗ May discard useful similar cases
+
+8. Incremental Generation
+-------------------------
+Pros:
+✓ Efficient coverage progression
+✓ Adapts to grammar complexity
+✓ Good for large grammars
+
+Cons:
+✗ Requires multiple generation passes
+✗ Complex batch management
+✗ Hard to parallelize
+
+9. ML-Guided Sampling
+--------------------
+Pros:
+✓ Can predict "buggy" patterns
+✓ Improves over time
+✓ Handles complex grammars well
+
+Cons:
+✗ Needs training data
+✗ Black-box decision making
+✗ High resource requirements
+
+Recommendation Matrix:
+----------------------
+| Use Case               | Best Algorithm              |
+|------------------------|-----------------------------|
+| Quick prototyping      | Weighted Selection          |
+| Grammar validation     | Coverage-Based              |
+| Security testing       | Fuzzing-Inspired            |
+| Dataset generation     | Diversity Metrics           |
+| Semantic validation    | Constraint-Based            |
+| Long-term maintenance  | ML-Guided                   |
+
+

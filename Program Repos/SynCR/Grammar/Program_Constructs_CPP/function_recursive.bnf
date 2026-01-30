@@ -1,0 +1,1 @@
+<function_recursive> ::= int <function_name> ( int num, int index ){ <statement>  if (index >= 5) { return num; }  return <function_name> (num,index-1);}

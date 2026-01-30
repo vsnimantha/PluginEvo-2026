@@ -1,0 +1,54 @@
+// Template_5.tmpl
+//constexpr and runtime equivalence
+#include <iostream>
+#include <limits>
+#include <cstdint>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+constexpr int fib_constexpr(int n) {
+    return (n <= 1) ? n : fib_constexpr(n - 1) + fib_constexpr(n - 2);
+}
+
+int fib_runtime(int n) {
+    if (n <= 1) return n;
+    int a = 0, b = 1;
+    for (int i = 2; i <= n; ++i) {
+        int t = a + b;
+        a = b;
+        b = t;
+    }
+    return b;
+}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+    {{pnt_2:PRINT_STATEMENT}}
+    {{pnt_3:PRINT_STATEMENT}}
+    {{pnt_4:PRINT_STATEMENT}}
+
+    constexpr int N = 12;
+    constexpr int cf = fib_constexpr(N);
+
+    int rf = fib_runtime(N);
+
+    int res = cf * 1000 + rf;
+    std::cout << res;
+
+    return 0;
+}
+

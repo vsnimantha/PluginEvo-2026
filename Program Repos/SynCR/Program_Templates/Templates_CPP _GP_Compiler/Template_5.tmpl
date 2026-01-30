@@ -1,0 +1,34 @@
+// Template_5.tmpl
+#if __cplusplus >= 202002L
+#include <iostream>
+#include <limits>
+#include <cstdint>
+// Additional includes
+{{INCLUDES}}
+
+
+#include <concepts>
+#include <vector>
+using namespace std;
+template<typename T>
+concept Addable = requires(T a, T b) {
+    { a + b } -> std::same_as<T>;
+};
+
+template<Addable T>
+T sum_vec(const std::vector<T>& v) {
+    T acc{};
+    for (auto x : v) acc = acc + x;
+    return acc;
+}
+
+int main() {
+        {{flp_1:FOR_LOOP}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    std::vector<int> v{1, 2, 3};
+    return sum_vec(v);
+}
+#else
+int main() { return 0; }
+#endif
+

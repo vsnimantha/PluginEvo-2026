@@ -1,0 +1,15 @@
+// Template_2.tmpl
+#include <iostream>
+#include <stdio.h>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+int main() {
+    printf("Char:%c String:%s Int:%d Percent:%%\n", 'A', "Hello", 42);
+
+    {{fid_2:FUNCTION_CALL}}
+    {{fid_3:FUNCTION_CALL}}
+    return 0;
+}

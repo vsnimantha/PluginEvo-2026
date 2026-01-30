@@ -1,0 +1,31 @@
+// Template_5.tmpl
+#include <stdio.h>
+#include <iostream>
+#include <cstdarg>
+#include <cstdio>
+#include <string>
+using namespace std;
+
+void myprintf(const char *fmt, ...) {
+    va_list ap;
+    va_start(ap, fmt);
+    std::vprintf(fmt, ap);
+    va_end(ap);
+}
+
+template <typename T>
+void log_val(const char *name, T v) {
+    myprintf("%s=%d\n", name, static_cast<int>(v));
+}
+
+int main() {
+    int x = 10;
+    std::string s = "world";
+
+    std::printf("x=%d s=%s\n", x, s.c_str());
+    myprintf("hello %s %d\n", "world", x);
+    log_val("templated", x);
+
+    {{mid_1:MATH_EXPRESSION}}
+    return 0;
+}

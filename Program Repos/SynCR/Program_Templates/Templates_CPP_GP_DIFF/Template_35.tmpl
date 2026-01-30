@@ -1,0 +1,49 @@
+// Template_35.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+struct Shape {
+    virtual int area() const { return 0; }
+    virtual ~Shape() {}
+};
+
+struct Rect : Shape {
+    int w, h;
+    Rect(int w_, int h_) : w(w_), h(h_) {}
+    int area() const override { return w * h; }
+};
+
+struct Tri : Shape {
+    int b, h;
+    Tri(int b_, int h_) : b(b_), h(h_) {}
+    int area() const override { return b * h / 2; }
+};
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+        Rect r(4, 5);
+    Tri t(6, 3);
+    Shape *arr[2] = {&r, &t};
+
+    int sum = 0;
+    for (int i = 0; i < 2; ++i) {
+        sum = sum * 13 + arr[i]->area();
+    }
+    std::cout << sum;
+
+    return 0;
+
+}

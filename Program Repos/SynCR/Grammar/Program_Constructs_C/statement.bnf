@@ -1,0 +1,1 @@
+<statement> ::= <while_loop> | <var_declaration> | <for_loop> | <array> | <do_while_loop>  | <math_expression> | <print_statement> 

@@ -1,0 +1,27 @@
+// Template_11.tmpl
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120012
+//Triggers ICEs
+#include <iostream>
+using namespace std;
+
+struct Bomb{
+};
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main(){
+    [[maybe_unused]] auto test = []( auto t){
+        return [t = std::move(t)](){t.~T();};
+    };
+    Bomb b;
+    auto test_with_bomb = test(std::move(b));
+    
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+}

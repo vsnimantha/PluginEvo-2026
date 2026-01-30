@@ -1,0 +1,32 @@
+/* Template_26.tmpl */
+/* GCC Bug */
+/*https://gcc.gnu.org/bugzilla/show_bug.cgi?id=93160*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+extern long unsigned int sub_0 ( const char * ) ; 
+
+extern void * sub_1 ( long unsigned int ) ; 
+
+extern int var_0 ; 
+
+void * var_1 = & var_0 ; 
+
+register int var_0 asm ( "%ecx" ) ; 
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    return 0;
+}

@@ -1,0 +1,31 @@
+// Template_3.tmpl
+#include <iostream>
+#include <stdio.h>
+#include <cstdarg>
+#include <cstdio>
+using namespace std;
+
+void my_log(int level, const char *fmt, ...) {
+    va_list ap;
+    va_start(ap, fmt);
+    std::vprintf(fmt, ap);
+    va_end(ap);
+}
+
+
+int main() {
+  {{dwhl_1:DO_WHILE_LOOP}}
+      {{arr_1:ARRAY}}
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    int v = 7;
+    my_log(1, "value=%d\n", v);
+    my_log(2, "start %s mid %d end%c\n", "x", v, '\n');
+    return 0;
+}

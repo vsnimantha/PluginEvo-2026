@@ -1,0 +1,100 @@
+RobustSmartGenerator - Technical Specification to Code Mapping
+==========================================================
+
+1. Recursive Descent Generation
+-------------------------------
+Purpose: Traverse and expand grammar rules recursively
+Code: _generate_node()
+- Implements depth-first traversal of grammar tree
+- Handles terminals, sequences, and combinations
+Prior Art: ANTLR, CSmith (PLDI 2011)
+
+2. Usage-Weighted Random Selection
+---------------------------------
+Purpose: Bias generation toward less-used rules
+Code: _handle_combinations()
+- Weights = 1/(usage_count + 1)
+- Selects least-used options preferentially
+Prior Art: AFL, LangFuzz (USENIX Security 2017)
+
+3. Least-Used Priority Selection
+-------------------------------
+Purpose: Ensure uniform coverage of options
+Code: (Commented _handle_data_type())
+- Tracks usage_stats["data_types"]
+- Selects minimum-used candidates first
+Prior Art: Feedback-directed randomization (ICSE 2007)
+
+4. Context-Aware Value Generation
+--------------------------------
+Purpose: Generate type-appropriate values
+Code: _generate_context_value()
+- Switch based on current_type context
+- Generates values matching declared types
+Prior Art: QuickCheck (ICFP 2000), KLEE
+
+5. Breadth-First Option Collection
+---------------------------------
+Purpose: Gather all terminal options
+Code: _collect_options()
+- Recursively collects terminal values
+- Handles nested combinations/elements
+Prior Art: Grammarinator (ICST 2020)
+
+6. Fail-Safe Generation Loop
+---------------------------
+Purpose: Prevent infinite loops
+Code: generate()
+- max_attempts = count * 2
+- try/except with graceful continuation
+Prior Art: AFL timeout mechanisms
+
+7. Weighted Backoff
+------------------
+Purpose: Fallback to simpler selection
+Code: _handle_combinations() except block
+- Falls back to random.choice if weights fail
+Prior Art: Adaptive random testing (ISSRE 2004)
+
+Implementation Comparison
+========================
+| Feature               | Prior Tools      | This Implementation          |
+|-----------------------|------------------|------------------------------|
+| Recursive descent     | CSmith           | _generate_node()             |
+| Usage weights         | LangFuzz         | Inverse-frequency weighting  |
+| Context values        | QuickCheck       | Lightweight type switching   |
+| Fail-safes           | ClusterFuzz      | max_attempts + try/except    |
+
+Key Innovations
+===============
+1. Dynamic Usage Tracking
+- Real-time usage_stats updates
+- Affects subsequent generation choices
+
+2. Lightweight Type Safety
+- self.context maintains type info
+- No heavy SMT solver required
+
+3. Grammar-Aware Fallbacks
+- Multiple fallback levels:
+  a) Weighted selection
+  b) Uniform random
+  c) Hardcoded defaults ("0")
+
+Academic Alignment
+==================
+- Grammar-Based Fuzzing (PLDI 2008)
+- Stochastic Superoptimization (ASPLOS 2013)
+- Smart Greybox Fuzzing (IEEE TSE 2019)
+
+Code Structure
+==============
+RobustSmartGenerator
+├── __init__ (grammar, usage_stats, context)
+├── generate() - Main entry point
+├── _generate_node() - Dispatcher
+├── _handle_terminal()
+├── _handle_sequence()
+├── _handle_combinations()
+├── _collect_options()
+└── _generate_context_value()

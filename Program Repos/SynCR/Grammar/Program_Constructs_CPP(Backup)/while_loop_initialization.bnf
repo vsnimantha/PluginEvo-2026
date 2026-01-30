@@ -1,0 +1,1 @@
+<while_loop_initialization> ::= <while_loop_data_type> <while_loop_identifier> = <while_loop_value> ; 

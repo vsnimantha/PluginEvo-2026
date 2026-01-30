@@ -1,0 +1,29 @@
+// Template_47.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <unordered_map>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+
+    int x = 0;
+
+    // Undefined behavior: division by zero
+    int y = 10 / x;
+
+    std::cout << "Result: " << y << std::endl;
+
+    // Explicit exit with a non-zero code
+    std::exit(42);
+
+}

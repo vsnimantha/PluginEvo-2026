@@ -1,0 +1,30 @@
+/* Template_31.tmpl */
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <math.h>
+
+struct S {
+    unsigned int a : 3;
+    unsigned int b : 5;
+    unsigned int c : 6;
+};
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+int main(void) {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    struct S s = { 5, 17, 33 };
+    printf("%u %u %u\n", s.a, s.b, s.c);
+    
+    return 0;
+}

@@ -1,0 +1,41 @@
+// Template_14.tmpl
+//Triggers ICE
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120149
+#include <iostream>
+#include <vector>
+#include <numeric>
+using namespace std;
+template<class A, class B>
+auto f(A a, B b)
+        -> decltype(accumulate(begin(a), end(a), B{},
+                [](B t, A i) -> B
+                {
+                }))
+{
+}
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main()
+{
+      vector<int> v;
+
+      int i;
+        f(v, i);
+
+
+        {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+}

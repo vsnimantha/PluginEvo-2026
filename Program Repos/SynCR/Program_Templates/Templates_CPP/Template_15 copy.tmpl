@@ -1,0 +1,9 @@
+// Template_15.tmpl
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120129
+#include <iostream>
+
+int main(int, char**)
+{
+  decltype(auto) m = {{"john", "doe"}};
+  return 0;
+}

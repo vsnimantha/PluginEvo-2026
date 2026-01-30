@@ -1,0 +1,21 @@
+// Template_60.tmpl
+#include <iostream>
+#include <vector>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+
+    std::vector<int> v;
+    v.reserve(1ULL << 40); // absurdly large allocation
+    return 0;
+
+}

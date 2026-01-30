@@ -1,0 +1,21 @@
+/* Template_16.tmpl */
+/* TRIGGERS ICE */
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+struct SelfRef {
+    struct SelfRef *next;
+    int data[1000];
+};
+
+int main() {
+    struct SelfRef s[100000]; 
+
+
+    {{arr_1:ARRAY}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    return 0;
+}

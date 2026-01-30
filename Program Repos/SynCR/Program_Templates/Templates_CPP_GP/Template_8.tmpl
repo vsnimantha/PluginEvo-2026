@@ -1,0 +1,73 @@
+#include <cstdio>
+#include <iostream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+// Exercise plugin with valid reserved specifiers
+void test_printf_functions() {
+  // Reserved and mapped specifiers
+  printf("Char: %c | String: %s | Int: %d | Percent: %%\n", 'A', "hello", 123);
+
+  // Multiple arguments and interleaved literals
+  printf("Mix: %s %d %c %% %s\n", "mix", -42, 'Z', "done");
+
+  // Width/precision removed (not mapped); use literals to trigger string-output paths
+  printf("Literal-only line\n");
+}
+
+// Avoid truly invalid cases that crash; still stress splitting and char output
+void test_edge_cases_safe() {
+  // Use puts for empty string effect (maps to %s handler via plugin for literals)
+  printf("%s", "");   // Empty content through reserved %s
+
+  // No missing/extra arg misuse; instead, many small splits
+  printf("A%cB%sC%dD%%%sE\n", '!', "X", 7, "Y");
+
+  // Unsupported specifiers: keep them out when plugin is active
+  // If you must test them, compile a separate file without the plugin.
+}
+
+// Different scopes; constant format strings are required for plugin rewrite
+namespace test {
+void nested_printf() { printf("Nested namespace printf %d\n", 10); }
+}
+
+class TestClass {
+public:
+  void member_printf() { printf("Member function printf %s\n", "ok"); }
+  static void static_printf() { printf("Static member printf %c\n", 'S'); }
+};
+
+template <typename T>
+void template_printf(T value) {
+  // Cast to int to stay on reserved %d path
+  printf("Template value: %d\n", static_cast<int>(value));
+}
+
+int main() {
+  test_printf_functions();
+  test_edge_cases_safe();
+
+  test::nested_printf();
+
+  TestClass obj;
+  obj.member_printf();
+  TestClass::static_printf();
+
+  template_printf(42);
+  template_printf(3.14); // becomes %d via cast
+
+  for (int i = 0; i < 5; i++) {
+    printf("Loop iteration: %d\n", i);
+  }
+
+  // Conditional context with constant format string
+  if (printf("Conditional printf %s\n", "start")) {
+    printf("Inside if %c\n", 'I');
+  }
+
+  // Final message
+  return printf("Final message %d %% %s %c\n", 1, "end", 'X') > 0 ? 0 : 1;
+}

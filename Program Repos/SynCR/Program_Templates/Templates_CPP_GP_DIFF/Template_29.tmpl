@@ -1,0 +1,39 @@
+// Template_29.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+template<int X, int Y>
+struct Power {
+    static const long long value = X * Power<X, Y - 1>::value;
+};
+
+template<int X>
+struct Power<X, 0> {
+    static const long long value = 1;
+};
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    const long long v1 = Power<2, 5>::value;  // 32
+    const long long v2 = Power<3, 4>::value;  // 81
+    long long result = v1 * 10 + v2;
+    std::cout << result;
+
+    return 0;
+
+}

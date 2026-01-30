@@ -1,0 +1,37 @@
+// Template_49.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <unordered_map>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+
+    const char* env = std::getenv("TEST_MODE");
+    if (!env) {
+        std::cerr << "TEST_MODE not set.\n";
+        return 11;
+    }
+
+    std::string mode(env);
+    if (mode == "baseline") {
+        std::cout << "Baseline mode.\n";
+        return 0;
+    } else if (mode == "variant") {
+        std::cerr << "Variant mode.\n";
+        return 22;
+    } else {
+        std::cerr << "Unknown mode.\n";
+        return 99;
+    }
+
+}

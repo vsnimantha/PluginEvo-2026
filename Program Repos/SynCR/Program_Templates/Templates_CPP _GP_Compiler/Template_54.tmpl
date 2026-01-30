@@ -1,0 +1,22 @@
+// Template_54.tmpl
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+
+    int x = 2147483647; // INT_MAX
+    int y = x + 1;      // UB: signed overflow
+    return y;
+
+}

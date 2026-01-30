@@ -1,0 +1,31 @@
+/* Template_15.tmpl */
+/*TRIGGERS ICES*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+typedef struct {
+    int a;
+    struct {
+        int b;
+        struct {
+            int c;
+            struct {
+                int d;
+                struct {
+                    int e;
+                } nested;
+            } deeper;
+        } deeper2;
+    } nested2;
+} ComplexStruct;
+
+
+{{fid_2:FUNCTION_DEFINITION}}
+int main() {
+    ComplexStruct cs; 
+
+    {{fid_2:FUNCTION_CALL}}
+    {{wlp_1:WHILE_LOOP}}
+    return 0;
+}

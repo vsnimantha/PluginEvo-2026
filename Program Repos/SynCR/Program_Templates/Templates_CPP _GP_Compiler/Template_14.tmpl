@@ -1,0 +1,43 @@
+// Template_14.tmpl
+#include <iostream>
+#include <vector>
+#include <numeric>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+template<int N>
+struct Pow2 {
+    static constexpr int value = 2 * Pow2<N - 1>::value;
+};
+
+template<>
+struct Pow2<0> {
+    static constexpr int value = 1;
+};
+
+template<int N>
+int compute() {
+    return Pow2<N>::value;
+}
+
+int main()
+{
+
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+
+    return compute<8>();
+}

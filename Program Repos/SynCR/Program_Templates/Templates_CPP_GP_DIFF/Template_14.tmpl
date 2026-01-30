@@ -1,0 +1,54 @@
+// Template_14.tmpl
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <cstdio>
+#include <stdio.h>
+
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+struct Tagged {
+    enum Tag { IntVal, DoubleVal } tag;
+    union {
+        int i;
+        double d;
+    } u;
+};
+
+double to_double(const Tagged &t) {
+    if (t.tag == Tagged::IntVal) return static_cast<double>(t.u.i);
+    else return t.u.d;
+}
+
+int main()
+{
+
+    Tagged a;
+    a.tag = Tagged::IntVal;
+    a.u.i = 7;
+
+    Tagged b;
+    b.tag = Tagged::DoubleVal;
+    b.u.d = 2.5;
+
+    double res = to_double(a) * 3.0 + to_double(b) * 4.0;
+    int out = static_cast<int>(res * 100.0 + 0.5);
+    std::cout << out;
+
+        {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+}

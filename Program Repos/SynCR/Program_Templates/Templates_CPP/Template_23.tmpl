@@ -1,0 +1,35 @@
+// Template_23.tmpl
+//GCC ICE
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120272
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+template<typename T>
+class Container {
+public:
+    Container(T item){
+    }
+
+
+};
+void Container<int>::print( variable_name auto func);
+
+int main(int, char**)
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    Container c{3};
+
+}
+

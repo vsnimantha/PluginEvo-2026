@@ -1,0 +1,42 @@
+// Template_11.tmpl
+#include <iostream>
+#include <type_traits>
+#include <cstdio>
+#include <stdio.h>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+template <typename T>
+typename std::enable_if<std::is_integral<T>::value, T>::type
+twist(T x) {
+    return x * 2 + 1;
+}
+
+template <typename T>
+typename std::enable_if<std::is_floating_point<T>::value, T>::type
+twist(T x) {
+    return x * 0.5 + 3.0;
+}
+
+int main(){
+    int i = 7;
+    double d = 4.0;
+
+    auto r1 = twist(i); // integral version
+    auto r2 = twist(d); // floating version
+
+    long long res = 0;
+    res = res * 31 + r1;
+    res = res * 31 + static_cast<long long>(r2 * 10.0);
+    std::cout << res;
+
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+}

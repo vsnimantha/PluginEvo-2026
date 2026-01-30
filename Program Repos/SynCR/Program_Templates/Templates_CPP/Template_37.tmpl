@@ -1,0 +1,47 @@
+// Template_37.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <type_traits>
+#include <string>
+
+using namespace std;
+
+// --- has_begin trait ---
+template <typename T, typename = void>
+struct has_begin : std::false_type {};
+
+template <typename T>
+struct has_begin<T, std::void_t<decltype(std::declval<T>().begin())>> : std::true_type {};
+
+// --- test overloads ---
+template <typename T>
+std::enable_if_t<has_begin<T>::value, void>
+test(T) {
+    std::cout << "Has begin()\n";
+}
+
+template <typename T>
+std::enable_if_t<!has_begin<T>::value, void>
+test(T) {
+    std::cout << "No begin()\n";
+}
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    test(std::string("hi"));
+    test(42);
+
+}

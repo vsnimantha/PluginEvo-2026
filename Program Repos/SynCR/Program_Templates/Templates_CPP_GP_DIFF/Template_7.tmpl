@@ -1,0 +1,37 @@
+// Template_7.tmpl
+//STL & iterators
+#include <iostream>
+
+using namespace std;
+
+struct Pair {
+    int key;
+    int value;
+};
+
+bool cmp_pair(const Pair &a, const Pair &b) {
+    if (a.key != b.key) return a.key < b.key;
+    return a.value < b.value;
+}
+
+int main() {
+    {{arr_1:ARRAY}}
+
+    std::vector<Pair> v = {
+        {3, 10}, {1, 5}, {2, 7}, {3, 2}, {1, 9}
+    };
+
+    std::sort(v.begin(), v.end(), cmp_pair);
+
+    int checksum = 0;
+    int index = 0;
+    for (auto it = v.begin(); it != v.end(); ++it, ++index) {
+        checksum = checksum * 37 + it->key * 3 + it->value + index;
+    }
+
+    std::cout << checksum;
+
+
+    return 0;
+}
+

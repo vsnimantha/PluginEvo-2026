@@ -1,0 +1,32 @@
+// Template_17.tmpl
+#include <iostream>
+#include <cstdio>
+//std::array and constexpr lookup
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+constexpr std::array<int, 6> make_table() {
+    return {{1, 1, 2, 3, 5, 8}};
+}
+
+int main() {
+
+
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+
+        constexpr auto tbl = make_table();
+    int sum = 0;
+    for (int i = 0; i < (int)tbl.size(); ++i) {
+        sum += tbl[i] * (i + 1);
+    }
+    std::cout << sum;
+
+    return 0;
+}

@@ -1,0 +1,15 @@
+// Template_12.tmpl
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120155
+// Triggers ICEc
+#include <iostream>
+void fun()
+{
+    [](auto t) -> decltype(
+        ({
+            int a = t;
+        })
+    ) {};
+}
+int main() {
+    return 0;
+}

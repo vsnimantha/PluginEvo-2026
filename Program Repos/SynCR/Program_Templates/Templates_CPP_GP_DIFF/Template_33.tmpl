@@ -1,0 +1,36 @@
+// Template_33.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int sum_recursive(int n) {
+    if (n <= 0) return 0;
+    return n + sum_recursive(n - 1);
+}
+
+int sum_loop(int n) {
+    int s = 0;
+    for (int i = 1; i <= n; ++i) s += i;
+    return s;
+}
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+int a = sum_recursive(10);
+    int b = sum_loop(10);
+    int result = a * 100 + b;
+    std::cout << result;
+    return 0;
+}

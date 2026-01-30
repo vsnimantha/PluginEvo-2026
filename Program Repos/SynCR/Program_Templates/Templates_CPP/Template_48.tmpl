@@ -1,0 +1,49 @@
+// Template_48.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <string>
+#include <cstdlib>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+
+
+int main(int argc, char* argv[])
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+
+   if (argc < 2) {
+        std::cerr << "Usage: " << argv[0] << " <mode>\n";
+        return 1; // exit code 1 = invalid usage
+    }
+
+    std::string mode = argv[1];
+
+    if (mode == "ok") {
+        std::cout << "Normal execution.\n";
+        return 0; // success
+    }
+    else if (mode == "fail") {
+        std::cerr << "Simulated failure.\n";
+        return 2; // nonzero exit code
+    }
+    else if (mode == "crash") {
+        std::cerr << "Simulated crash (division by zero).\n";
+        int x = 1 / 0; // undefined behavior, likely SIGFPE
+        return 3; // may not reach here
+    }
+    else if (mode == "random") {
+        int code = std::rand() % 5;
+        std::cout << "Random exit code: " << code << "\n";
+        return code;
+    }
+    else {
+        std::cerr << "Unknown mode: " << mode << "\n";
+        return 99; // unexpected mode
+    }
+}

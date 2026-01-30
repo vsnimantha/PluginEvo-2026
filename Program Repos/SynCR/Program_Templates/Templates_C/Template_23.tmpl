@@ -1,0 +1,29 @@
+/* Template_23.tmpl */
+/* GCC Bug but only crashes Clang*/
+/*https://gcc.gnu.org/bugzilla/show_bug.cgi?id=119207*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+struct flexible {
+  int length;
+  int data[];
+};
+struct flexible x
+= {0,{ [-2ull] = 0 }};
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    return 0;
+}

@@ -1,0 +1,26 @@
+// Template_21.tmpl
+//Triggers ICE for Clang 
+//https://github.com/llvm/llvm-project/issues/140023
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+
+char static allocd[((size_t)-1) / 256] = "\1";
+int main(void)
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    free(malloc(0));
+    allocd[32] = '\2';
+}
+

@@ -1,6 +1,9 @@
 import subprocess
 import tempfile
 import Code_Formatter.c_lang_installation_checker as clang_installation_checker
+import Utilities.program_generator_utils as program_generator_utils
+from Config.global_config import config
+from Utilities.constants import Constants
 
 def check_syntax_from_string(code_string):
     """
@@ -12,14 +15,24 @@ def check_syntax_from_string(code_string):
 
     if installed:
         try:
+            suffix = program_generator_utils.get_the_generated_program_exstension()
+            if not suffix:
+                suffix = ".cpp"  # Default to .cpp if no suffix is found
+
             # Create a temporary file to store the C++ code
-            with tempfile.NamedTemporaryFile(suffix=".cpp", delete=True) as temp_file:
+            with tempfile.NamedTemporaryFile(suffix=suffix, delete=True) as temp_file:
                 temp_file.write(code_string.encode('utf-8'))  # Write the code to the file
                 temp_file.flush()  # Ensure the content is written
                 
-                # Run clang++ to check the syntax of the temporary file
+                clang="clang++"
+                if config.PROGRAM_GENERATION.programming_language.lower() == Constants.PROGRAMMING_LANGUAGE_C:
+                    clang = "clang"
+                elif config.PROGRAM_GENERATION.programming_language.lower() == Constants.PROGRAMMING_LANGUAGE_CPP:
+                    clang = "clang++"
+                
+                
                 result = subprocess.run(
-                    ["clang++", "-fsyntax-only", temp_file.name],
+                    [clang, "-fsyntax-only", temp_file.name],
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,
                     text=True

@@ -1,0 +1,56 @@
+// Template_4.tmpl
+//Templates & overload resolution
+#include <iostream>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+template <typename T>
+T add_three(T x) {
+    return x + T(3);
+}
+
+int add_three(int x) {
+    // Non-template overload; should be preferred for int.
+    return x + 5;
+}
+
+template <typename T, typename U>
+auto combine(T x, U y) -> decltype(x + y) {
+    return x + y;
+}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+    int a = 10;
+    long b = 20;
+    double c = 1.5;
+
+    int r1 = add_three(a);              // uses non-template
+    long r2 = add_three(b);             // uses template
+    double r3 = add_three(c);           // uses template
+    auto r4 = combine(r1, r2);          // int + long
+    auto r5 = combine(r4, (int)r3);     // mixed types
+
+    long long checksum = 0;
+    checksum = checksum * 131 + r1;
+    checksum = checksum * 131 + r2;
+    checksum = checksum * 131 + (int)r3;
+    checksum = checksum * 131 + (long long)r4;
+    checksum = checksum * 131 + (long long)r5;
+
+    std::cout << checksum;
+ 
+
+    return 0;
+}
+

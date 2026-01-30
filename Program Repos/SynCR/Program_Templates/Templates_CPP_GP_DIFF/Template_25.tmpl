@@ -1,0 +1,48 @@
+// Template_25.tmpl
+
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main()
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+
+        const int R = 3, C = 4;
+    int a[R][C];
+
+    int v = 1;
+    for (int i = 0; i < R; ++i) {
+        for (int j = 0; j < C; ++j) {
+            a[i][j] = v++;
+        }
+    }
+
+    int sum_main_diag = 0;
+    int sum_other_diag = 0;
+    for (int i = 0; i < R; ++i) {
+        for (int j = 0; j < C; ++j) {
+            if (i == j) sum_main_diag += a[i][j];
+            if (i + j == C - 1) sum_other_diag += a[i][j];
+        }
+    }
+
+    int result = sum_main_diag * 101 + sum_other_diag;
+    std::cout << result;
+
+    return 0;
+
+}
+

@@ -1,0 +1,26 @@
+/* Template_11.tmpl */
+/* TRIGGER ICES */
+struct Recursive {
+    struct Recursive *next;
+    int data[1000];
+};
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+int main() {
+    struct Recursive r; 
+    
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_2:FUNCTION_CALL}}
+    {{fid_1:FUNCTION_CALL}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    return 0;
+}

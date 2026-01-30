@@ -1,0 +1,113 @@
+Relationship Between Dynamic Weighted Sampling and Reinforcement Learning
+=======================================================================
+
+1. Core Similarities
+-------------------
+Your algorithm shares these key RL characteristics:
+
+1.1 Exploration-Exploitation Tradeoff
+- Analogous to: ε-greedy policies
+- Your mechanism: Weight decay (α factor) automatically balances:
+  • Exploitation: Favors frequently used rules
+  • Exploration: Boosts under-selected rules
+
+1.2 Adaptive Feedback Loop
+- Similar to: Policy gradient methods
+- Your implementation:
+  Selection History → Weight Update → Improved Sampling
+
+2. Technical Comparison
+----------------------
+| RL Component       | Your Implementation          | Key Difference               |
+|--------------------|------------------------------|------------------------------|
+| Action Space       | Grammar production rules     | Discrete, non-sequential     |
+| Reward Signal      | Implicit (1/usage_count)     | No external environment      |
+| Policy Update      | Multiplicative weight decay  | Simpler than backpropagation |
+| State Representation| Current weight distribution | No Markovian property        |
+
+3. Algorithmic Parallels
+-----------------------
+3.1 Bandit Algorithms
+- Similar to: Thompson Sampling
+- Your advantage: No beta distribution calculations
+
+3.2 Prioritized Experience Replay
+- Similar: Importance-weighted sampling
+- Your simplification: No replay buffer needed
+
+4. Key Distinctions
+------------------
+4.1 No Value Function
+- Your method: Direct weight manipulation
+- RL: Typically uses Q/V-function approximation
+
+4.2 Episodic vs Continuous
+- Your approach: Resets weights periodically
+- RL: Often maintains long-term state
+
+5. RL-Inspired Enhancements
+--------------------------
+Potential upgrades to consider:
+
+5.1 Optimistic Initialization (UCB-style)
+weight = base_weight * (1 + √(2ln(total_selections)/selections[i]))
+
+5.2 Reward Shaping
+weights[i] += η * (external_quality_metric)
+
+5.3 Momentum Updates
+weights = [w*γ + (1-γ)*w_avg for w in weights]
+
+6. When the RL Analogy Holds
+---------------------------
+✔ Strongest for:
+   - Grammar exploration as action selection
+   - Coverage maximization as reward
+   - Weight updates as policy improvement
+
+✗ Weak for:
+   - Sequential decision making
+   - Environment interaction
+   - Delayed reward scenarios
+
+7. Theoretical Foundation
+------------------------
+Closest to: Non-stationary Multi-Armed Bandits
+- Arms = Grammar productions
+- Rewards = Coverage utility
+- Non-stationarity = Weight adaptation
+
+8. Implementation Example
+------------------------
+Python pseudocode showing RL-inspired version:
+
+def rl_enhanced_sample(options, weights, alpha=0.95):
+    # UCB-inspired exploration bonus
+    total = sum(weights)
+    scores = [w * (1 + sqrt(log(total)/usage[i])) 
+              for i,w in enumerate(weights)]
+    
+    chosen = options[argmax(scores)]
+    
+    # Policy update
+    weights[chosen] *= alpha
+    
+    return chosen, weights
+
+9. Practical Recommendations
+--------------------------
+✓ Do use when:
+   - You need lightweight adaptive sampling
+   - Grammar rules are independent
+   - Coverage matters more than sequence
+
+✗ Avoid when:
+   - Actions have long-term consequences
+   - Environment feedback is critical
+   - Precise credit assignment needed
+
+10. Further Reading
+------------------
+[1] Sutton & Barto - Reinforcement Learning (Ch. 2: Bandits)
+[2] Auer et al. - Finite-time Analysis of Multiarmed Bandits
+[3] Your Algorithm - Dynamic Weighted Sampling

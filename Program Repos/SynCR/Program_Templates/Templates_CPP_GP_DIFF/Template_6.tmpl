@@ -1,0 +1,43 @@
+// Template_6.tmpl
+#include <iostream>
+#include <vector>
+#include <numeric>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+
+int main() {
+    // Function calls
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+    {{arr_1:ARRAY}}
+
+    std::vector<int> v(10);
+    for (int i = 0; i < 10; ++i) v[i] = i + 1;
+
+    int base = 5;
+    auto add_base = [base](int x) { return x + base; };
+
+    int acc1 = 0;
+    for (int x : v) {
+        acc1 += add_base(x);
+    }
+
+    int factor = 2;
+    auto multiply_and_add = [&factor](int sum, int x) {
+        return sum + x * factor;
+    };
+
+    int acc2 = std::accumulate(v.begin(), v.end(), 0, multiply_and_add);
+
+    int result = acc1 * 31 + acc2;
+    std::cout << result;
+
+    return 0;
+}
+

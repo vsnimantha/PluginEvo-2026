@@ -1,5 +1,5 @@
 class PlaceholderInfo:
-    def __init__(self, placeholder_block,placeholder, unique_id, grammar_rule, generated_code, ast_tree,parameters=[],is_parameterised=False,is_recursive_function=False,name=None):
+    def __init__(self, placeholder_block,placeholder, unique_id, grammar_rule, generated_code, ast_tree=None,parameters=[],is_parameterised=False,is_recursive_function=False,name=None):
         self.placeholder_block = placeholder_block
         self.placeholder = placeholder
         self.unique_id = unique_id

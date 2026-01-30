@@ -1,0 +1,35 @@
+// Template_3.tmpl
+#include <iostream>
+// Additional includes
+#include <type_traits>
+{{INCLUDES}}
+
+using namespace std;
+
+{{fid_1:FUNCTION_DEFINITION_PARAM}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+template<typename T>
+auto foo(T t) -> std::enable_if_t<std::is_integral_v<T>, T> {
+    return t + 1;
+}
+
+template<typename T>
+auto foo(T t) -> std::enable_if_t<!std::is_integral_v<T>, int> {
+    return static_cast<int>(t) - 1;
+}
+
+struct X { explicit operator int() const { return 7; } };
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{wlp_1:WHILE_LOOP}}
+
+        int a = foo(41);
+    double b = foo(3.14);
+    X x;
+    int c = foo(x);
+    return a + static_cast<int>(b) + c;
+}

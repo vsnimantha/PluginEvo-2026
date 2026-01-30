@@ -1,0 +1,39 @@
+// Template_38.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+struct Base { int a = 1; };
+struct Derived1 : virtual Base {};
+struct Derived2 : virtual Base {};
+struct MostDerived : Derived1, Derived2 { int b = 2; };
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+std::vector<int> v = {3, 6, 1, 8, 5, 10, 2};
+    auto it = std::remove_if(v.begin(), v.end(), [](int x) {
+        return x % 2 == 0;
+    });
+    v.erase(it, v.end());
+
+    int checksum = 0;
+    for (int x : v) checksum = checksum * 7 + x;
+    std::cout << checksum;
+    return 0;
+
+}

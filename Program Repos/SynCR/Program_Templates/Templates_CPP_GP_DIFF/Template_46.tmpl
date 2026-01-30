@@ -1,0 +1,34 @@
+// Template_46.tmpl
+#include <iostream>
+#include <chrono>
+
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int main() {
+    // Function calls
+    {{arr_1:ARRAY}}
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+    
+    using namespace std::chrono;
+
+    duration<int, std::ratio<1>> seconds(42);
+    duration<int, std::milli> millis = seconds;
+
+    auto sum = seconds + duration<int>(18); // 60 seconds total
+    duration<int, std::ratio<60>> minutes = sum;
+
+    int result = millis.count() / 10 + minutes.count() * 1000;
+    std::cout << result;
+    return 0;
+}
+

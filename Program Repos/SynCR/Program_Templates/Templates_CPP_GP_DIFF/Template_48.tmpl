@@ -1,0 +1,31 @@
+// Template_48.tmpl
+
+#include <iostream>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+    unsigned int a = 0b10101010u;
+    unsigned int b = 0b11001100u;
+
+    unsigned int andv = a & b;
+    unsigned int orv  = a | b;
+    unsigned int xorv = a ^ b;
+
+    unsigned int result = andv * 3u + orv * 5u + xorv * 7u;
+    std::cout << result;
+    return 0;
+}
+

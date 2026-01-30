@@ -4,6 +4,7 @@ from anytree import Node, RenderTree
 import json
 from Config.global_config import config
 import os
+from collections import OrderedDict
 
 def save_ast_as_json(ast, filename):
     def convert_to_json_serializable(node):
@@ -66,28 +67,49 @@ def create_ast_tree(ast, parent=None):
 
 def save_ast(ast, rule_name):
     ast_graph = create_ast_graph(ast)
-    current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-    if not os.path.exists(config.PATHS.ast_diagrams_output):
-        os.makedirs(config.PATHS.ast_diagrams_output)
-    file_name = f'{config.PATHS.ast_diagrams_output}/ast_graph_{rule_name}_{current_time}' #todo change the save path to output directory with all the files
+    current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")[:-3]
+    if not os.path.exists(f"{config.PATHS.current_generating_code_path}/{config.PATHS.ast_diagrams_output}"):
+        os.makedirs(f"{config.PATHS.current_generating_code_path}/{config.PATHS.ast_diagrams_output}")
+    file_name = f'{config.PATHS.current_generating_code_path}/{config.PATHS.ast_diagrams_output}/ast_graph_{rule_name}_{current_time}' #todo change the save path to output directory with all the files
     ast_graph.render(file_name, format='png', view=config.PROGRAM_GENERATION.open_saved_ast_images)
+    
+    print(f"AST saved as image to {file_name}")
 
-def save_ast_as_json(ast, rule_name):
-    def convert_to_json_serializable(node):
+
+def save_ast_as_json(ast, rule_name,placeholder_name=None):
+    # def convert_to_json_serializable(node):
+    #     if isinstance(node, list) and len(node) >= 2:
+    #         return {
+    #             "type": node[0],
+    #             "value": node[1],
+    #             "children": [convert_to_json_serializable(child) for child in node[2:]]
+    #         }
+    #     else:
+    #         return {"type": "leaf", "value": str(node)}
+    def convert_to_json_serializable(node, is_root=False):
         if isinstance(node, list) and len(node) >= 2:
-            return {
-                "type": node[0],
-                "value": node[1],
-                "children": [convert_to_json_serializable(child) for child in node[2:]]
-            }
+            if is_root:
+                ordered_node = OrderedDict()
+                ordered_node["type"] = node[0]
+                if placeholder_name is not None:
+                    ordered_node["placeholder_name"] = placeholder_name
+                ordered_node["value"] = node[1]
+                ordered_node["children"] = [convert_to_json_serializable(child) for child in node[2:]]
+                return ordered_node
+            else:
+                return {
+                    "type": node[0],
+                    "value": node[1],
+                    "children": [convert_to_json_serializable(child) for child in node[2:]]
+                }
         else:
             return {"type": "leaf", "value": str(node)}
 
-    json_ast = convert_to_json_serializable(ast)
-    current_time = datetime.now().strftime("%Y%m%d_%H%M%S")
-    if not os.path.exists(config.PATHS.ast_json_output):
-        os.makedirs(config.PATHS.ast_json_output)
-    file_name = f'{config.PATHS.ast_json_output}/ast_json_{rule_name}_{current_time}.json' #todo change the save path to output directory with all the files
+    json_ast = convert_to_json_serializable(ast,is_root=True)
+    current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S-%f")[:-3]
+    if not os.path.exists(f"{config.PATHS.current_generating_code_path}/{config.PATHS.ast_json_output}"):
+        os.makedirs(f"{config.PATHS.current_generating_code_path}/{config.PATHS.ast_json_output}")
+    file_name = f'{config.PATHS.current_generating_code_path}/{config.PATHS.ast_json_output}/ast_json_{rule_name}_{placeholder_name}_{current_time}.json' #todo change the save path to output directory with all the files
     with open(file_name, 'w') as f:
         json.dump(json_ast, f, indent=2)
     

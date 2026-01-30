@@ -1,0 +1,30 @@
+// Template_15.tmpl
+//Triggers ICE
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120129
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+
+//Placeholders
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+
+int main(int, char**)
+{
+  //Native Codes
+  decltype(auto) m = {{"john", "doe"}};
+
+  //Placeholders
+  {{fid_1:FUNCTION_CALL}}
+  {{fid_2:FUNCTION_CALL}}
+  {{var_1:VAR_DECLARATION}}
+  {{if_1:IF_STATEMENTS}}
+  {{mid_1:MATH_EXPRESSION}}
+  {{wlp_1:WHILE_LOOP}}
+  {{pnt_1:PRINT_STATEMENT}}
+  {{pnt_2:PRINT_STATEMENT}}
+
+  return 0;
+}

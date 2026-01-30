@@ -1,0 +1,22 @@
+/* Template_34.tmpl */
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <math.h>
+#include <fenv.h>
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+enum E { A = 1, B = 300 };
+
+int main(void) {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+    enum E e = B;
+    printf("%zu\n", sizeof(e));
+
+    return 0;
+}

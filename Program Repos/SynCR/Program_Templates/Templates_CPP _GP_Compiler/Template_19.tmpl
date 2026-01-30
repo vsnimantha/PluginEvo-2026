@@ -1,0 +1,27 @@
+// Template_19.tmpl
+//Triggers ICE for Clang
+//https://github.com/llvm/llvm-project/issues/102106
+#include <iostream>
+using namespace std;
+
+struct A {
+  A(...);
+};
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+int main() {
+
+     A a;
+   A a2(a);
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+  return 0;
+}
+
+

@@ -1,0 +1,42 @@
+// Template_2.tmpl
+#include <iostream>
+#include <vector>
+#include <algorithm>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int combine(int x) { return x * 2; }
+double combine(double x) { return x + 0.5; }
+
+template<typename T>
+T apply_all(const std::vector<T>& v) {
+    T acc{};
+    auto op = [](T x) { return combine(x); };
+    for (auto x : v) {
+        acc += op(x);
+    }
+    return acc;
+}
+
+
+int main() {
+    // Function calls
+    {{arr_1:ARRAY}}
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+
+    std::vector<int> vi{1, 2, 3, 4};
+    std::vector<double> vd{1.0, 2.0, 3.0};
+    int si = apply_all(vi);
+    double sd = apply_all(vd);
+    return si + static_cast<int>(sd);
+
+}
+

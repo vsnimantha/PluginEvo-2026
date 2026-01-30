@@ -1,0 +1,15 @@
+// Template_6.tmpl
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+int main() {
+        {{if_1:IF_STATEMENTS}}
+    for (int i = 0; i < 3; i++) {
+        printf("Loop %d\n", i);
+    }
+    if (printf("Conditional %s\n", "branch")) {
+        printf("Inside if\n");
+    }
+    return 0;
+}

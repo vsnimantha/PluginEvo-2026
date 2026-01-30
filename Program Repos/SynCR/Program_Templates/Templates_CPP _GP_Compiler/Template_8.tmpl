@@ -1,0 +1,142 @@
+// test_plugin_coverage.cpp
+// This file is designed to maximize coverage of your GCC plugin
+//Template_8
+#include <iostream>
+#include <cstdio>
+#include <string>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+// Test cases for different log levels
+void test_log_levels() {
+    printf("Testing log levels\n");
+    // These should be controlled by plugin parameters
+}
+
+// Test cases for printf functionality
+void test_printf_functions() {
+    // Basic printf
+    printf("Standard printf: %d %f %s\n", 42, 3.14, "test");
+    
+    // Different format specifiers
+    printf("Char: %c\n", 'A');
+    printf("String: %s\n", "hello");
+    printf("Integer: %d\n", -123);
+    printf("Unsigned: %u\n", 456);
+    printf("Hex: %x\n", 0xABC);
+    printf("Float: %f\n", 3.14159);
+    printf("Scientific: %e\n", 123.456);
+    printf("Pointer: %p\n", (void*)0x12345678);
+    
+    // Width and precision
+    printf("Width: %10d\n", 42);
+    printf("Precision: %.2f\n", 3.14159);
+    printf("Combined: %10.2f\n", 3.14159);
+    
+    // Multiple args
+    printf("Multiple: %d %f %s\n", 1, 2.3, "four");
+}
+
+// Edge cases
+void test_edge_cases() {
+    // Empty string
+    printf("");
+    
+    // Missing arguments (should trigger warnings)
+    printf("%d");
+    printf("%d %d", 1);
+    
+    // Extra arguments
+    printf("%d", 1, 2, 3);
+    
+    // Invalid format specifiers
+    printf("%z\n");
+    printf("%q\n");
+}
+
+// Different scopes
+namespace test {
+    void nested_printf() {
+        printf("Nested namespace printf\n");
+    }
+}
+
+class TestClass {
+public:
+    void member_printf() {
+        printf("Member function printf\n");
+    }
+    
+    static void static_printf() {
+        printf("Static member printf\n");
+    }
+};
+
+// Template functions
+template<typename T>
+void template_printf(T value) {
+    printf("Template value: %d\n", static_cast<int>(value));
+}
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+// Main function with various test cases
+int main() {
+    // Basic tests
+    test_log_levels();
+    test_printf_functions();
+    test_edge_cases();
+    
+    // Different contexts
+    test::nested_printf();
+    
+    TestClass obj;
+    obj.member_printf();
+    TestClass::static_printf();
+    
+    // Template instantiation
+    template_printf(42);
+    template_printf(3.14);
+    
+    // Multiple calls
+    for (int i = 0; i < 5; i++) {
+        printf("Loop iteration: %d\n", i);
+    }
+    
+    // Conditional printf
+    if (printf("Conditional printf\n")) {
+        printf("Inside if\n");
+    }
+
+    {{arr_1:ARRAY}}
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+    {{pnt_2:PRINT_STATEMENT}}
+    {{pnt_3:PRINT_STATEMENT}}
+    {{pnt_4:PRINT_STATEMENT}}
+    {{var_2:VAR_DECLARATION}}
+
+        std::string s = "abcdef";
+    std::string t = "xyz";
+    std::transform(s.begin(), s.end(), s.begin(), [](char c) {
+        return static_cast<char>(c + 1);
+    });
+    s.append(t);
+    auto pos = s.find('z');
+    if (pos != std::string::npos) {
+        s.replace(pos, 1, "Z");
+    }
+    return static_cast<int>(s.size());
+
+}

@@ -1,0 +1,23 @@
+// Template_4.tmpl
+#include <stdio.h>
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+    int x = 5;
+    const char *dyn = "%d dynamic\n";
+
+    std::printf("const format %d\n", x);
+
+    std::printf(dyn, x);           // non-constant, plugin should skip
+
+    std::printf("%s\n", dyn);      // constant fmt, no varargs
+
+    if (x) {
+        std::printf("branch %d\n", x);
+    }
+    {{flp_1:FOR_LOOP}}
+
+    return 0;
+}

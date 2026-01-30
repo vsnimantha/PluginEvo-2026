@@ -1,0 +1,35 @@
+// Template_1.tmpl
+//Arithmetic & promotions
+#include <iostream>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+{{tmpl_1:TEMPLATE}}
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+    {{flp_1:FOR_LOOP}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+
+    unsigned int a = 100u;
+    int b = 20;
+    unsigned int c = 5u;
+
+    unsigned int x = a + b;        // 120
+    unsigned int y = (x * c);      // 600
+    unsigned int z = (y >> 2);     // 150
+    unsigned int w = (z & 0xFFu);  // 150
+
+    std::cout << (w + 7u);
+    return 0;
+}
+

@@ -1,0 +1,24 @@
+// Template_9.tmpl
+#include <iostream>
+#include <stdio.h>
+#include <cstdio>
+
+using namespace std;
+
+constexpr const char kFmt1[] = "cx=%c sx=%s ix=%d\n";
+static const char kFmt2[] = "static %% %d %s\n";
+
+// Handler for %d
+void putint(int i) {
+    printf("%d", i);
+}
+
+int main(void) {
+    printf("Hello %s %d %c\n", "world", 42, '!');
+        int x = 42;
+
+    std::printf(kFmt1, 'A', "hello", x);
+    std::printf(kFmt2, x, "world");
+        {{wlp_1:WHILE_LOOP}}
+    return 0;
+}

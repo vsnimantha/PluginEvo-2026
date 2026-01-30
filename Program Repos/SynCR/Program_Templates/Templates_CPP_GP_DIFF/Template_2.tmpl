@@ -1,0 +1,49 @@
+// Template_2.tmpl
+// Control-flow heavy
+#include <iostream>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int classify(int x) {
+    int score = 0;
+    if (x < -10)      score += 3;
+    else if (x < 0)   score += 5;
+    else if (x < 10)  score += 7;
+    else              score += 11;
+
+    switch ((x + 20) % 4) {
+        case 0: score += 2; break;
+        case 1: score += 4; break;
+        case 2: score += 6; break;
+        default: score += 8; break;
+    }
+
+    for (int i = 0; i < 5; ++i) {
+        if ((x + i) % 3 == 0) score += i;
+    }
+    return score;
+}
+
+int main() {
+    // Function calls
+    {{arr_1:ARRAY}}
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+
+        int res = 0;
+    for (int v = -15; v <= 15; v += 3) {
+        res = res * 31 + classify(v);
+    }
+    std::cout << res;
+
+    return 0;
+}
+

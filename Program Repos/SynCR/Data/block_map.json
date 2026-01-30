@@ -10,7 +10,10 @@
     "WHILE_LOOP": "<while_loop>|<while_loop_conditional>",
     "DO_WHILE_LOOP": "<do_while_loop>",
     "PRINT_STATEMENT": "<print_statement>",
-    "MATH_EXPRESSION":"<math_expression>"
+    "MATH_EXPRESSION":"<math_expression>",
+    "ARRAY":"<array>",
+    "PRINTF_STATEMENT":"<printf_statement>",
+    "TEMPLATE":"<template>"
 
 }
 

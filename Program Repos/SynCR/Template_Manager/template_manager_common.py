@@ -2,6 +2,7 @@ from abc import ABC, abstractmethod
 import os
 import Utilities.utils as utils
 import re
+from Config.global_config import config
 
 class TemplateManager(ABC):
 
@@ -23,7 +24,7 @@ class TemplateManager(ABC):
 
     def read_template(self,file_path):
         #this need to be later configured to read from the config file
-        file_path = os.path.join('Program_Templates',file_path)
+        file_path = os.path.join(config.PATHS.template_path,file_path)
         try:
             with open(file_path, 'r') as file:
                 return file.read()

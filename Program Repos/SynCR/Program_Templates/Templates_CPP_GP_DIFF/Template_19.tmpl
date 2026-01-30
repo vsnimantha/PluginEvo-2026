@@ -1,0 +1,38 @@
+// Template_19.tmpl
+// User-defined literal and ADL-ish pattern
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+constexpr long long operator"" _m(unsigned long long v) {
+    return static_cast<long long>(v * 60);
+}
+
+long long duration_score(long long seconds) {
+    long long m = seconds / 60;
+    long long s = seconds % 60;
+    return m * 100 + s;
+}
+
+int main() {
+
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    long long t1 = 3_m;   // 3 minutes -> 180
+    long long t2 = 5_m;   // 5 minutes -> 300
+    long long total = t1 + t2 + 42;
+    std::cout << duration_score(total);
+
+  return 0;
+}
+
+

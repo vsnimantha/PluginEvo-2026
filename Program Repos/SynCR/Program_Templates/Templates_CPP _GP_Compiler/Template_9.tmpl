@@ -1,0 +1,52 @@
+// Template_9.tmpl
+#include <stdio.h>
+#include <iostream>
+
+
+#include <type_traits>
+
+using namespace std;
+
+#define MAKE_WRAPPER(name, T)        \
+struct name {                        \
+    T value;                         \
+    explicit name(T v) : value(v) {} \
+};
+
+MAKE_WRAPPER(WInt, int)
+MAKE_WRAPPER(WDouble, double)
+
+template<typename T>
+auto plus_one(T t) -> std::enable_if_t<std::is_arithmetic_v<T>, T> {
+    return t + static_cast<T>(1);
+}
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+int main() {
+    {{arr_1:ARRAY}}
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+    {{pnt_2:PRINT_STATEMENT}}
+    {{pnt_3:PRINT_STATEMENT}}
+    {{pnt_4:PRINT_STATEMENT}}
+    {{var_2:VAR_DECLARATION}}
+
+        WInt wi{41};
+    WDouble wd{3.5};
+    return plus_one(wi.value) + static_cast<int>(plus_one(wd.value));
+
+
+}
+

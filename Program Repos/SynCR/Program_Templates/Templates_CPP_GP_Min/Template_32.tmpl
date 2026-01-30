@@ -1,0 +1,33 @@
+// Template_32.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+template <typename T>
+struct Wrapper {
+    void func() {
+        typename T::Nested n; // Missing 'typename' can break some compilers
+    }
+};
+
+struct A { struct Nested {}; };
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    Wrapper<A> w;
+    w.func();
+
+}

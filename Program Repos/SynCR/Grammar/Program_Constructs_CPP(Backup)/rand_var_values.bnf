@@ -1,0 +1,1 @@
+<rand_values> ::= <value_string> | <value_bool> 

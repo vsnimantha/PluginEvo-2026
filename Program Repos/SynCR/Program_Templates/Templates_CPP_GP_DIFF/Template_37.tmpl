@@ -1,0 +1,45 @@
+// Template_37.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+#include <vector>
+#include <algorithm>
+#include <numeric>
+using namespace std;
+
+auto test(T t) -> decltype(t.begin(), void()) {
+    std::cout << "Has begin()\n";
+}
+
+template <typename T>
+void test(...) {
+    std::cout << "No begin()\n";
+}
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+std::vector<int> v(8);
+    for (int i = 0; i < 8; ++i) v[i] = i + 1;
+
+    std::vector<int> out(8);
+    std::transform(v.begin(), v.end(), out.begin(), [](int x) {
+        return x * x + 1;
+    });
+
+    int sum = std::accumulate(out.begin(), out.end(), 0);
+    std::cout << sum;
+    return 0;
+
+}

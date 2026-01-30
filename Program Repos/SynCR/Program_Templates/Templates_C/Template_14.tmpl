@@ -1,0 +1,36 @@
+/* Template_14.tmpl */
+/* TRIGGERS ICE */
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+struct Level3 {
+    int data;
+};
+
+struct Level2 {
+    struct Level3 level3;
+};
+
+struct Level1 {
+    struct Level2 level2;
+};
+
+struct Root {
+    struct Level1 level1;
+};
+
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int main() {
+    struct Root r; 
+
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+
+    return 0;
+}

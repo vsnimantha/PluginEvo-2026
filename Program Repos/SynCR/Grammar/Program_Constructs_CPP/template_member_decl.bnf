@@ -1,0 +1,1 @@
+<template_member_decl> ::= <template_member_type_param> <template_member_type_identifier> ;

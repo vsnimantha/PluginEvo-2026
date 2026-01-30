@@ -1,0 +1,43 @@
+// Template_18.tmpl
+//Overloaded operators
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+struct Vec2 {
+    int x, y;
+};
+
+Vec2 operator+(const Vec2 &a, const Vec2 &b) {
+    return {a.x + b.x, a.y + b.y};
+}
+
+Vec2 operator*(const Vec2 &v, int k) {
+    return {v.x * k, v.y * k};
+}
+
+int dot(const Vec2 &a, const Vec2 &b) {
+    return a.x * b.x + a.y * b.y;
+}
+
+int main() {
+
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    Vec2 a{1, 2};
+    Vec2 b{3, 4};
+    Vec2 c = (a + b) * 3;  // (4,6)*3 -> (12,18)
+    int result = dot(c, a); // 12*1 + 18*2
+    std::cout << result;
+
+  return 0;
+}

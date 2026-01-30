@@ -1,0 +1,39 @@
+// Template_6.tmpl
+#include <iostream>
+#include <cstdint>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+
+int tricky(int *p, int n) {
+    int acc = 0;
+    for (int i = 0; i < n; ++i) {
+        int v = p[i] ^ (i << 1);
+        if ((v & 1) == 0) {
+            acc += v;
+        } else {
+            acc -= v;
+        }
+        if (acc == 13) {
+            acc ^= i;
+        }
+    }
+    return acc;
+}
+
+int main() {
+    // Function calls
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+    {{arr_1:ARRAY}}
+        int arr[8] = {1,2,3,4,5,6,7,8};
+    return tricky(arr, 8);
+
+    return 0;
+}
+

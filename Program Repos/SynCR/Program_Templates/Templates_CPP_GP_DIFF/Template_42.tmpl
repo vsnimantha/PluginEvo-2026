@@ -1,0 +1,37 @@
+// Template_42.tmpl
+#include <iostream>
+#include <cstdio>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+template <typename Derived>
+struct CRTPBase {
+    int interface(int x) const {
+        // Delegates to static_cast<Derived const*>(this)->impl(x)
+        return static_cast<Derived const*>(this)->impl(x) + 1;
+    }
+};
+
+struct ImplA : CRTPBase<ImplA> {
+    int impl(int x) const { return x * 2; }
+};
+
+struct ImplB : CRTPBase<ImplB> {
+    int impl(int x) const { return x * 3; }
+};
+
+int main() {
+
+    {{var_1:VAR_DECLARATION}}
+
+    ImplA a;
+    ImplB b;
+    int r1 = a.interface(5);
+    int r2 = b.interface(5);
+    std::cout << r1 * 100 + r2;
+
+    return 0;
+}
+

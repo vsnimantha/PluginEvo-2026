@@ -1,0 +1,19 @@
+// main_template.tmpl
+#include <iostream>
+// Additional includes
+{{INCLUDE}}
+
+using namespace std;
+
+{{FUNCTION_PROTOTYPE_DEFINITION}}
+
+int main() {
+    // Function calls
+    // {{FUNCTION_CALL [p-(ref),p2,p3]}}
+    {{fid_1:FUNCTION_CALL@p1(ref#var1),p2,p3}}
+
+    return 0;
+}
+
+// Function definitions
+{{FUNCTION_DEFINITION}}

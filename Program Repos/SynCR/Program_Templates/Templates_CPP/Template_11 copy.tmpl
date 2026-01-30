@@ -1,0 +1,13 @@
+// Template_11.tmpl
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120012
+//Triggers ICEs
+#include <iostream>
+struct Bomb{
+};
+int main(){
+    [[maybe_unused]] auto test = []( auto t){
+        return [t = std::move(t)](){t.~T();};
+    };
+    Bomb b;
+    auto test_with_bomb = test(std::move(b));
+}

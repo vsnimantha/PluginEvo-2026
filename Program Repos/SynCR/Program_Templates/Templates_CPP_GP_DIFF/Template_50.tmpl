@@ -1,0 +1,36 @@
+// Template_50.tmpl
+#include <iostream>
+#include <algorithm>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+// Function definitions
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+
+int main() {
+    // Function calls
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+    {{arr_1:ARRAY}}
+
+   int data[7] = {10, 3, 5, 3, 9, 1, 4};
+
+    int *begin = data;
+    int *end = data + 7;
+
+    std::sort(begin, end, [](int x, int y) {
+        if (x % 2 != y % 2) return (x % 2) < (y % 2); // odds before evens
+        return x < y;
+    });
+
+    int checksum = 0;
+    for (int i = 0; i < 7; ++i) {
+        checksum = checksum * 23 + data[i];
+    }
+    std::cout << checksum;
+    return 0;
+}
+

@@ -1,0 +1,41 @@
+// Template_26.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+using namespace std;
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main()
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    const int X = 2, Y = 3, Z = 4;
+    int a[X][Y][Z];
+
+    int v = 1;
+    for (int x = 0; x < X; ++x)
+        for (int y = 0; y < Y; ++y)
+            for (int z = 0; z < Z; ++z)
+                a[x][y][z] = v++;
+
+    int checksum = 0;
+    for (int x = 0; x < X; ++x)
+        for (int y = 0; y < Y; ++y)
+            for (int z = 0; z < Z; ++z)
+                if ((x + y + z) % 2 == 0)
+                    checksum = checksum * 7 + a[x][y][z];
+
+    std::cout << checksum;
+
+return 0;
+}
+

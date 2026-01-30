@@ -1,0 +1,44 @@
+// Template_3.tmpl
+//Aliasing & non-aliasing arrays
+#include <iostream>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+{{fid_1:FUNCTION_DEFINITION_PARAM}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+void compute(const int *a, const int *b, int *c, int n) {
+    // a, b, c do not alias in this call; compiler may optimize aggressively.
+    for (int i = 0; i < n; ++i) {
+        int t = a[i] * 3 + b[i] * 5;
+        c[i] = t - (a[i] - b[i]);
+    }
+}
+
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{wlp_1:WHILE_LOOP}}
+
+    const int N = 8;
+    int a[N], b[N], c[N];
+
+    for (int i = 0; i < N; ++i) {
+        a[i] = i + 1;
+        b[i] = (i + 1) * 2;
+    }
+
+    compute(a, b, c, N);
+
+    int checksum = 0;
+    for (int i = 0; i < N; ++i) {
+        checksum = checksum * 17 + c[i];
+    }
+    std::cout << checksum;
+
+    return 0;
+}

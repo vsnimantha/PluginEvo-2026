@@ -1,0 +1,28 @@
+
+
+// Template_43.tmpl
+#include <iostream>
+#include <cstdio>
+#include <stdio.h>
+#include <string>
+
+using namespace std;
+
+
+int main(void) {
+
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+     std::string s = "abc";
+    s += "de";
+    s.insert(2, "X");
+    s.replace(0, 1, "Z");
+
+    int checksum = 0;
+    for (char c : s) {
+        checksum = checksum * 29 + int(c);
+    }
+    std::cout << checksum;
+    return 0;
+    return 0;
+}

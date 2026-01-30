@@ -1,0 +1,36 @@
+// Template_22.tmpl
+//Triggers ICE for Clang 
+//https://github.com/llvm/llvm-project/issues/139940
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+template <typename R, typename... Args >
+constexpr auto make_lambda(const R &lambda, Args&&... args)
+    -> decltype(lambda(forward<Args>(args)...))
+{
+    return [lbd = forward<R>(lambda), args = forward<Args>(args)...]() -> decltype(lambda(args...)){
+
+    };
+}
+int main(int argc, char* argv[])
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    auto callback = [](int x, const string& y) -> bool {};
+    int a{1};
+    string b{"test"};
+    auto f = make_lambda(callback, a, b);
+
+}
+

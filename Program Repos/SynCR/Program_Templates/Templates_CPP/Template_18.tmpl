@@ -1,0 +1,27 @@
+// Template_18.tmpl
+//Triggers ICE for Clang
+//https://github.com/llvm/llvm-project/issues/139372
+#include <iostream>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main() {
+  struct alignas(16) S {
+  } b;
+  struct alignas(32) M {
+    struct alignas(1) S s1;
+    struct alignas(2) S s2;
+  } c;
+
+
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+  return 0;
+}

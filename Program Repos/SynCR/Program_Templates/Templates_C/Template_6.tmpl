@@ -1,0 +1,34 @@
+/* Template_6tmpl */
+/* Doesn't trigger ICE */
+#include <stdio.h>
+#include <stdbool.h>
+#include <limits.h>
+
+/* Function definition */
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+void test_signed_overflow() {
+    int x = INT_MAX;
+    int y = x + 1;  /* Undefined behavior */
+    printf("Result: %d\n", y);
+}
+
+#define CONCAT(a, b) a ## b
+#define EXPAND(x) x
+#define NESTED_CONCAT(a, b, c) CONCAT(CONCAT(a, b), c)
+
+int main() {
+    /* Function calls */
+    {{arr_1:ARRAY}}
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    int EXPAND(NESTED_CONCAT(v, a, lue)) = 10;
+    printf("%d\n", value);
+
+    return 0;
+}
+

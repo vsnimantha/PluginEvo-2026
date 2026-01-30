@@ -1,0 +1,35 @@
+/* Template_21.tmpl */
+/* GCC Bug and crashes clang as well*/
+/*https://gcc.gnu.org/bugzilla/show_bug.cgi?id=97986*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+#include <stdarg.h>
+
+int sum(int n, ...)
+{
+    va_list ap;
+    va_start(ap, n);
+    int *input = va_arg(ap, int[n]);
+    int rc = 0;
+    for (int i = 0; i < n; i++)
+        rc += input[i];
+    return rc;
+}
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    return 0;
+}

@@ -1,0 +1,38 @@
+// Template_49.tmpl
+#include <iostream>
+#include <string>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+    {{pnt_2:PRINT_STATEMENT}}
+    {{pnt_3:PRINT_STATEMENT}}
+    {{pnt_4:PRINT_STATEMENT}}
+
+    std::string s = "12";
+    s += "34";
+    s.insert(2, "_");
+    // s is "12_34"
+    int a = (s[0] - '0') * 10 + (s[1] - '0');
+    int b = (s[3] - '0') * 10 + (s[4] - '0');
+
+    int result = a * 100 + b;
+    std::cout << result;
+    return 0;
+}
+

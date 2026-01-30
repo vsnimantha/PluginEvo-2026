@@ -1,0 +1,30 @@
+// Template_46.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <unordered_map>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    std::map<int, int> m = {{2, 20}, {1, 10}};
+    std::unordered_map<int, int> um = {{2, 20}, {1, 10}};
+
+    std::cout << "std::map:\n";
+    for (auto& [k, v] : m) std::cout << k << " ";
+
+    std::cout << "\nstd::unordered_map:\n";
+    for (auto& [k, v] : um) std::cout << k << " ";
+
+}

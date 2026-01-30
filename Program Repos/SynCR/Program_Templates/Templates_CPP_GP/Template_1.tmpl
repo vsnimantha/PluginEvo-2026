@@ -1,0 +1,25 @@
+// Template_1.tmpl
+#include <iostream>
+#include <cstdio>
+// Additional includes
+{{INCLUDES}}
+
+using namespace std;
+{{tmpl_1:TEMPLATE}}
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int main() {
+    // Function calls
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+    {{flp_1:FOR_LOOP}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+
+    return 0;
+}
+

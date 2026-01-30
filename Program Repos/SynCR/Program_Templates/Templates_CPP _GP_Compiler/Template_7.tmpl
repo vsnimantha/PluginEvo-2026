@@ -1,0 +1,32 @@
+// Template_7.tmpl
+#include <iostream>
+
+using namespace std;
+
+
+struct Guard {
+    int* p;
+    explicit Guard(int* ptr) : p(ptr) { if (p) (*p)++; }
+    ~Guard() { if (p) (*p)--; }
+};
+
+int risky(bool b) {
+    int counter = 0;
+    Guard g(&counter);
+    if (b) {
+        throw std::runtime_error("boom");
+    }
+    return counter;
+}
+
+int main() {
+    {{arr_1:ARRAY}}
+
+    try {
+        risky(false);
+    } catch (...) {
+        return 1;
+    }
+    return 0;
+}
+

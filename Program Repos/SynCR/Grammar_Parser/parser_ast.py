@@ -16,24 +16,10 @@ class GrammarParserAst(GrammarParser):
         if not hasattr(self, 'initialized'):  # Prevent reinitialization
             super().__init__(file_path)
             self.initialized = True
+            self.visited=set()
 
     def parse(self):
-        pass
-        # for lhs, rhs in self.grammar.items():
-        #     self.rules[lhs.strip('<>')] = rhs
-
-        # for key, value in self.rules.items():
-        #     for sublist in value:
-        #         for item in sublist:
-        #             if item.startswith('<') and item.endswith('>'):
-        #                 print(item)
-
-        #                 key_check = item[1:-1]
-
-        #                 grammarPath = f"Grammar/Program_Constructs/{key_check}.bnf"
-        #                 grammar = self.read_bnf_grammar(grammarPath)
-
-        #                 print(grammar)
+        pass  
 
     def generate_code(self, element):
         root = ASTNode("root")
@@ -227,17 +213,19 @@ class GrammarParserAst(GrammarParser):
                                     elif is_var_declaration_processing and str_item =="<rand_var_values>":
                                         str_item = grammar_parser_utils.process_variable_data_type(var_data_type,self.grammar)
                                         stack.append((str_item, True, indent_level, set(), rule_node))
-                                    else:    
+                                    elif is_array_processing and str_item=="<rand>":
+                                        str_item=grammar_parser_utils.process_random_data_values("int")
+                                        stack.append((str_item, True, indent_level, set(), rule_node))
+                                    else:
                                         stack.append((str_item, False, indent_level, set(), rule_node))
 
                                 else:
-
 
                                     if is_function and current_element == "<return_type>":
                                         current_return_type = str_item
                                         # print(f"Current return type Single: {current_return_type}") # Debug print
 
-                                        #adding parameters of the function to the list, to be used in the function call
+                                    #adding parameters of the function to the list, to be used in the function call
                                     if is_param_function and is_param_processing:
                                         if current_element == "<data_type>":
                                             param_code += f"{str_item} "
@@ -312,7 +300,10 @@ class GrammarParserAst(GrammarParser):
                                             stack.append((str_item, True, indent_level, set(), rule_node))
                                         elif is_var_declaration_processing and str_item =="<rand_var_values>":
                                             str_item = grammar_parser_utils.process_variable_data_type(var_data_type,self.grammar)
-                                            stack.append((str_item, True, indent_level, set(), rule_node))     
+                                            stack.append((str_item, True, indent_level, set(), rule_node)) 
+                                        elif is_array_processing and str_item=="<rand>":
+                                            str_item=grammar_parser_utils.process_random_data_values("int")
+                                            stack.append((str_item, True, indent_level, set(), rule_node))    
                                         else:    
                                          stack.append((str_item, False, indent_level, set(), rule_node))
                                     else:

@@ -1,0 +1,8 @@
+// Template_13.tmpl
+//Triggers ICE 
+typedef void (*FuncPtr)(void);
+
+int main() {
+    FuncPtr funcs[1000000]; // This may cause an internal compiler error due to size
+    return 0;
+}

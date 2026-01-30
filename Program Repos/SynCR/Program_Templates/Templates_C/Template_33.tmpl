@@ -1,0 +1,16 @@
+/* Template_33.tmpl */
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <locale.h>
+
+{{fid_1:FUNCTION_DEFINITION}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+
+    setlocale(LC_NUMERIC, "");
+    printf("%'d\n", 1234567);
+
+    return 0;
+}

@@ -1,0 +1,153 @@
+Grammar Sampling Strategies Overview
+===================================
+
+1. Stratified Sampling (Grammar-Aware)
+-------------------------------------
+Approach:
+- Group grammar productions into categories (strata)
+- Sample at least once from each stratum
+
+Pros:
+✓ Guarantees coverage of all major grammar paths
+✓ Easy to understand and implement for small grammars
+
+Cons:
+✗ Requires manual grammar analysis for stratification
+✗ May produce unnatural combinations at stratum boundaries
+
+Example:
+<expr> ::= <term> "+" <expr> | <term> "-" <term>
+Strata: [Additive], [Subtractive]
+
+2. Coverage-Based Sampling
+-------------------------
+Approach:
+- Track which rules have been exercised
+- Bias selection toward uncovered rules
+
+Tools:
+- grammarinator
+- BNF tracer utilities
+
+Pros:
+✓ Ensures 100% rule coverage eventually
+✓ Good for grammar validation
+
+Cons:
+✗ High memory overhead for tracking
+✗ May generate many useless samples
+
+3. Length-Prioritized Sampling
+-----------------------------
+Approach:
+- Explicitly generate:
+  a) Minimal-length expansions
+  b) Maximal-length expansions (within bounds)
+
+Pros:
+✓ Catches parser edge cases
+✓ Good for stress testing
+
+Cons:
+✗ Many trivial/impractical outputs
+✗ Doesn't address semantic validity
+
+4. Fuzzing-Inspired Heuristics
+-----------------------------
+Techniques:
+- Mutation: Swap/repeat grammar elements
+- Value injection: "", extreme values, special chars
+
+Example for arithmetic:
+Must include: 0, -1, MAX_INT, 3.14159
+
+Pros:
+✓ Excellent for finding security issues
+✓ Works with existing fuzzers
+
+Cons:
+✗ High invalid sample rate
+✗ Requires cleanup filters
+
+5. Constraint-Based Filtering
+----------------------------
+Approach:
+- Define validity predicates
+- Discard invalid samples early
+
+Tools:
+- ANTLR visitors
+- Custom validators
+
+Pros:
+✓ Only generates valid samples
+✓ Reduces post-processing
+
+Cons:
+✗ Constraint solving is expensive
+✗ May over-constrain outputs
+
+6. Diversity Metrics
+-------------------
+Methods:
+- Similarity hashing of subtrees
+- Penalize overused patterns
+
+Pros:
+✓ Avoids duplicate-like samples
+✓ Good for dataset generation
+
+Cons:
+✗ Computationally intensive
+✗ Hard to tune metrics
+
+7. Incremental Generation
+------------------------
+Workflow:
+1. Generate initial batch
+2. Analyze coverage
+3. Adapt next batch
+4. Repeat
+
+Pros:
+✓ Efficient coverage progression
+✓ Adapts to grammar complexity
+
+Cons:
+✗ Requires multiple passes
+✗ Complex to implement
+
+8. ML-Guided Sampling
+--------------------
+Approach:
+- Train model on "interesting" samples
+- Active learning for diversity
+
+Pros:
+✓ Improves over time
+✓ Handles complex patterns
+
+Cons:
+✗ Needs quality training data
+✗ Black-box decisions
+
+Implementation Cheatsheet
+-------------------------
+# Stratified example
+strata = {
+  'arithmetic': ['+', '-', '*', '/'],
+  'literals': ['number', 'string'] 
+}
+
+# Coverage tracking
+covered_rules = set()
+def mark_covered(rule):
+    covered_rules.add(rule)
+
+# Length targets
+SHORT = 1  # token count
+LONG = 100 
+
+# Constraint example
+def is_valid(node):
+    return has_else(node) if is_if(node) else True

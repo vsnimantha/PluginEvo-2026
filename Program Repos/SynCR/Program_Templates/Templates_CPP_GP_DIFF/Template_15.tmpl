@@ -1,0 +1,54 @@
+// Template_15.tmpl
+//Exceptions and inheritance
+#include <iostream>
+#include <cstdio>
+#include <stdio.h>
+#include <stdexcept>
+
+using namespace std;
+
+
+//Placeholders
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION_PARAM}}
+
+struct MyError : std::runtime_error {
+    int code;
+    MyError(const std::string &msg, int c)
+        : std::runtime_error(msg), code(c) {}
+};
+
+int may_throw(int x) {
+    if (x % 2 == 0) {
+        throw MyError("even", x);
+    }
+    return x * 3;
+}
+
+
+
+int main()
+{
+
+    int sum = 0;
+    for (int i = 1; i <= 7; ++i) {
+        try {
+            sum += may_throw(i);
+        } catch (const MyError &e) {
+            sum += e.code;
+        }
+    }
+    std::cout << sum;
+
+  //Placeholders
+  {{fid_1:FUNCTION_CALL}}
+  {{fid_2:FUNCTION_CALL}}
+  {{var_1:VAR_DECLARATION}}
+  {{if_1:IF_STATEMENTS}}
+  {{mid_1:MATH_EXPRESSION}}
+  {{wlp_1:WHILE_LOOP}}
+  {{pnt_1:PRINT_STATEMENT}}
+  {{pnt_2:PRINT_STATEMENT}}
+
+  return 0;
+}

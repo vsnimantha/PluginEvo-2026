@@ -1,0 +1,38 @@
+// Template_27.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <cstdio>
+#include <map>
+using namespace std;
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main()
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+std::map<int, int> m;
+    m[5] = 10;
+    m[2] = 3;
+    m[9] = 7;
+    m[2] += 4;
+
+    int checksum = 0;
+    int idx = 1;
+    for (auto const &p : m) {
+        checksum = checksum * 31 + p.first * 3 + p.second * idx;
+        ++idx;
+    }
+    std::cout << checksum;
+
+    return 0;
+
+}
+

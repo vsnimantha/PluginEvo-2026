@@ -1,0 +1,38 @@
+// Template_10.tmpl
+#include <iostream>
+#include <variant>
+#include <string>
+using namespace std;
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{mid_1:MATH_EXPRESSION}}
+    {{wlp_1:WHILE_LOOP}}
+    {{pnt_1:PRINT_STATEMENT}}
+    {{pnt_2:PRINT_STATEMENT}}
+    {{pnt_3:PRINT_STATEMENT}}
+    {{pnt_4:PRINT_STATEMENT}}
+    {{var_2:VAR_DECLARATION}}
+
+
+        std::variant<int, std::string> v = 5;
+    int result = 0;
+    auto visitor = [&result](auto&& x) {
+        using X = std::decay_t<decltype(x)>;
+        if constexpr (std::is_same_v<X, int>) {
+            result = x * 2;
+        } else {
+            result = static_cast<int>(x.size());
+        }
+    };
+    std::visit(visitor, v);
+    v = std::string("hello");
+    std::visit(visitor, v);
+    return result;
+
+    return 0;
+}

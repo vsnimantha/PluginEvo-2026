@@ -1,0 +1,36 @@
+/* Template_22.tmpl */
+/* GCC Bug*/
+/*https://gcc.gnu.org/bugzilla/show_bug.cgi?id=117245*/
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+
+void a() {
+  int b;
+  struct {
+    char c[b];
+  } bar() {
+  }
+  struct bar {
+    __attribute__((vector_size(4))) char c[b];
+  } (*d)();
+  struct bar e() { struct bar f; }
+  d = e;
+  sizeof(d());
+}
+
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+int main() {
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{pnt_1:PRINT_STATEMENT}}
+        {{var_1:VAR_DECLARATION}}
+    {{if_1:IF_STATEMENTS}}
+
+    {{arr_1:ARRAY}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    return 0;
+}

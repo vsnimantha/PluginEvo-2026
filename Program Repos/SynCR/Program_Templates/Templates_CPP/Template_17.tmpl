@@ -1,0 +1,42 @@
+// Template_17.tmpl
+// Triggers ICE
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=118388
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+template<typename T>
+struct X {
+    typedef int value;
+    int compute();
+    struct Y {};
+    struct Z : Y {
+        int process() {
+            auto result = [&]() {
+                return compute();
+            }();
+            return result;
+        }
+    };
+};
+
+template<> struct X<int>::Y : X<int> {}; // Specialized base class
+
+
+// Function definitions
+{{fid_1:FUNCTION_DEFINITION}}
+{{fid_2:FUNCTION_DEFINITION}}
+
+int main() {
+    X<int>::Z instance;
+    X<int>::value v = instance.process();
+    std::cout << "Processed value: " << v << std::endl;
+
+    {{fid_1:FUNCTION_CALL}}
+    {{fid_2:FUNCTION_CALL}}
+    {{var_1:VAR_DECLARATION}}
+    {{IF_STATEMENTS}}
+
+    return 0;
+}

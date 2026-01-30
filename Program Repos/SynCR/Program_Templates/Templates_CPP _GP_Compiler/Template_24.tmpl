@@ -1,0 +1,28 @@
+// Template_24.tmpl
+//GCC ICE
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120199
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+template<size_t N>
+void kernel1() {
+        __builtin_addressof(kernel1);
+}
+
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+int main(int, char**)
+{
+      {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+}
+

@@ -1,0 +1,29 @@
+// Template_36.tmpl
+#include <iostream>
+#include <stdlib.h>
+#include <thread>
+using namespace std;
+
+int x = 0;
+
+void inc() { for (int i = 0; i < 1000; ++i) ++x; }
+
+{{fid_2:FUNCTION_DEFINITION_RECURSIVE}}
+{{fid_3:FUNCTION_DEFINITION}}
+{{fid_4:FUNCTION_DEFINITION_PARAM}}
+
+
+int main()
+{
+    {{fid_2:FUNCTION_CALL}}
+    {{dwhl_1:DO_WHILE_LOOP}}
+    {{flp_1:FOR_LOOP}}
+
+    {{fid_3:FUNCTION_CALL}}
+    {{fid_4:FUNCTION_CALL}}
+
+    std::thread t1(inc), t2(inc);
+    t1.join(); t2.join();
+    std::cout << x << "\n";
+
+}

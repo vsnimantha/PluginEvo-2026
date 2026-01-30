@@ -1,0 +1,1 @@
+<function_return_int> ::= 0 | <rand>

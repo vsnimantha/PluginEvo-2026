@@ -1,0 +1,23 @@
+// Template_14.tmpl
+//Triggers ICE
+//https://gcc.gnu.org/bugzilla/show_bug.cgi?id=120149
+#include <iostream>
+#include <vector>
+#include <numeric>
+using namespace std;
+template<class A, class B>
+auto f(A a, B b)
+        -> decltype(accumulate(begin(a), end(a), B{},
+                [](B t, A i) -> B
+                {
+                }))
+{
+}
+int main()
+{
+      vector<int> v;
+
+      int i;
+        f(v, i);
+
+}

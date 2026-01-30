@@ -1,0 +1,16 @@
+// Template_7.tmpl
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+// Handler for %c
+void putchar(char c) {
+    fputc(c, stdout);
+}
+
+int main(void) {
+    printf("Hello %s %d %c\n", "world", 42, '!');
+        {{arr_1:ARRAY}}
+    return 0;
+}
