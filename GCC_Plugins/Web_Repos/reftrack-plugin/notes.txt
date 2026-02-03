@@ -1,0 +1,1 @@
+plugin compiles but gets an error when trying to attach it with the cpp program compilation

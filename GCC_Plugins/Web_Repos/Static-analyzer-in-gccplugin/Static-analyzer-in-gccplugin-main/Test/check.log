@@ -1,0 +1,33 @@
+../Compiler/newplugin.so 14.2.0 
+test2.c: In function ‘foo2’:
+test2.c:3:7: error: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+    3 |     d=malloc(10);
+      |       ^~~~~~
+test2.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | int *foo2(void){
+test2.c:3:7: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+    3 |     d=malloc(10);
+      |       ^~~~~~
+test2.c:3:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+
+Time variable                                   usr           sys          wall           GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)  1849k ( 91%)
+ phase lang. deferred               :   0.01 (100%)   0.00 (  0%)   0.00 (  0%)    96  (  0%)
+ parser (global)                    :   0.01 (100%)   0.00 (  0%)   0.00 (  0%)   151k (  7%)
+ TOTAL                              :   0.01          0.00          0.00         2031k
+../Compiler/newplugin.so 14.2.0 
+
+Time variable                                   usr           sys          wall           GGC
+ phase setup                        :   0.00 (  0%)   0.00 (  0%)   0.00 (  0%)  1849k ( 49%)
+ phase parsing                      :   0.02 (100%)   0.04 (100%)   0.06 ( 86%)  1794k ( 48%)
+ phase opt and generate             :   0.00 (  0%)   0.00 (  0%)   0.01 ( 14%)   114k (  3%)
+ callgraph ipa passes               :   0.00 (  0%)   0.00 (  0%)   0.01 ( 14%)    55k (  1%)
+ ipa modref                         :   0.00 (  0%)   0.00 (  0%)   0.01 ( 14%)   584  (  0%)
+ preprocessing                      :   0.00 (  0%)   0.01 ( 25%)   0.01 ( 14%)   508k ( 14%)
+ lexical analysis                   :   0.00 (  0%)   0.01 ( 25%)   0.04 ( 57%)     0  (  0%)
+ parser (global)                    :   0.01 ( 50%)   0.00 (  0%)   0.01 ( 14%)   794k ( 21%)
+ parser function body               :   0.00 (  0%)   0.01 ( 25%)   0.00 (  0%)    22k (  1%)
+ varconst                           :   0.01 ( 50%)   0.00 (  0%)   0.00 (  0%)     0  (  0%)
+ symout                             :   0.00 (  0%)   0.01 ( 25%)   0.00 (  0%)   260k (  7%)
+ TOTAL                              :   0.02          0.04          0.07         3759k

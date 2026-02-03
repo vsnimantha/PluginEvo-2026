@@ -1,0 +1,1 @@
+cc1plus: error: cannot load plugin ./compiled_plugin.so: ./compiled_plugin.so: undefined symbol: _Z12print_numberi

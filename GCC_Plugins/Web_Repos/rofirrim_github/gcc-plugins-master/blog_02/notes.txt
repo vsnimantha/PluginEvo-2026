@@ -1,0 +1,2 @@
+plugin compiles and program can be attached after fixing few issues with the code to be compatible with current gcc version.
+refer to the config file for the configurations

@@ -1,0 +1,2 @@
+fixed the code issues and works with gcc-10
+refer to the config file for the running version

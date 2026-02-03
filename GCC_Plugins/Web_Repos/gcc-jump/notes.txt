@@ -1,0 +1,2 @@
+Plugin does not compile properly, it gives errors.
+cannot use directly, need to remove the main app to another folder since we are using our own
