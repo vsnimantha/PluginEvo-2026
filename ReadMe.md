@@ -1,6 +1,7 @@
 # Setup & Usage Guide
 
 ## Downloading the Repository
+We noticed that some files cannot be opened by the annonymous repo. Therefore we recommend downloading the repo.
 Clone or download this repository to your local machine.  
 All **Test_Programs** and **Configs** are included and can be used directly with the **program_repos** and the **PluginSight application** without running the full loop.
 
