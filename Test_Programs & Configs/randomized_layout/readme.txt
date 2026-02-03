@@ -1,0 +1,1 @@
+seems to work for gcc not g++ and c++ programs

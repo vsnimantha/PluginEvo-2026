@@ -1,0 +1,30 @@
+//the tpp file
+#include <vector>
+#include <typeinfo>
+
+template<typename T>
+std::string get_type_name() {
+    return typeid(T).name();
+}
+
+template<typename T>
+std::string arg_info(const char* var_name, const T& var) {
+    std::ostringstream oss;
+    oss << var_name << " (" << get_type_name<T>() << ") = " << var;
+    return oss.str();
+}
+
+template <typename... Args>
+std::string args_to_string(const Args&... args) {
+    std::ostringstream stream;
+    std::vector<std::string> arg_list = {arg_info("arg", args)...};
+    for (const auto& arg : arg_list) {
+        stream << arg << ", ";
+    }
+    std::string result = stream.str();
+    if (!result.empty()) {
+        result.pop_back();
+        result.pop_back(); // Remove trailing comma and space
+    }
+    return result;
+}
