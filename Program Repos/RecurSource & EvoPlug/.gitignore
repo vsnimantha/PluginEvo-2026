@@ -1,0 +1,9 @@
+GP_Runs/ 
+GP_Compiler_Runs/
+seeds/
+seeds_compilation_test/
+seeds_plugin_crash_test/
+
+__pycache__/
+*.py[codz]
+*$py.class

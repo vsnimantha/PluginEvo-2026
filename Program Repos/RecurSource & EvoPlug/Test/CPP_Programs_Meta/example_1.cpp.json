@@ -1,0 +1,8 @@
+{
+  "filename": "example_1.cpp",
+  "coverage": 0.67,
+  "lines_covered": 34,
+  "lines_total": 51,
+  "branches_covered": 8,
+  "branches_total": 14
+}
