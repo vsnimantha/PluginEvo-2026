@@ -40,3 +40,9 @@ Note: This setup has been tested only on Ubuntu 22.04 and Ubuntu 24.04.
 ## GCC Plugin Setup
 The required GCC plugins are located in the **GCC_Plugins** folder.  
 Ensure these plugins are correctly set up in your environment before running any tests.
+
+
+## Prototype Status
+All applications included in this repository are prototypes and experimental versions.
+They are intended for testing, research, and evaluation purposes only.
+Functionality, stability, and compatibility may change as development continues.
