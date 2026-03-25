@@ -46,3 +46,25 @@ Ensure these plugins are correctly set up in your environment before running any
 All applications included in this repository are prototypes and experimental versions.
 They are intended for testing, research, and evaluation purposes only.
 Functionality, stability, and compatibility may change as development continues.
+
+## GP hyperparameters (defaults from evolve)
+pop_size = 50
+generations = 50
+crossover_prob = 0.8
+mutation_prob = 0.01
+elitism = 1
+selection_method = TOURNAMENT_SELECT
+tournament_k = 3
+crossover_method = SUBTREE
+include_decl_mut_prob = 0.0
+enable_mutation = False
+max_reuse = 2
+save_runs = False
+outdir = const.GP_RUNS_DIR
+target_fitness = 0.95
+rng_seed = None
+stagnation_patience = 100
+compile_check_offspring = True
+fitness_mode = PLUGIN
+case_results = None
+# Note: fitness weights and time budget are set in per-plugin cfg files.
