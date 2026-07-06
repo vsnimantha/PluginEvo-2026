@@ -21,6 +21,7 @@ PluginEvo/
 ├── templates/                 # Per-plugin SynCR template files
 ├── Test_Programs/             # Seed programs for each plugin
 ├── results/                   # Pre-computed coverage results for all 16 plugins
+├── Triage_Reports/            # Per-bug triage notes and confirmation status
 └── requirements/              # Dependency lists
 ```
 
@@ -218,6 +219,31 @@ All applications included in this repository are research prototypes
 and experimental versions. They are intended for testing, research, and
 evaluation purposes only. Functionality, stability, and compatibility
 may change as development continues.
+
+---
+
+## Triage Reports
+
+The `Triage_Reports/` directory contains the triage documentation for the
+10 bugs confirmed by PluginEvo, organised as one subdirectory per affected
+plugin (7 plugins total: `funcp_encrypt`, `gcc_assert_introspect`,
+`stack_leak`, `cprintf`, `DFED`, `SecRetAddress`, `static_analyzer`). Each
+subdirectory contains:
+
+- `reproducer.c` / `reproducer.cpp` — a minimal program that triggers the
+  failure
+- `stack_trace.txt` — the compiler diagnostic or internal compiler error
+  (ICE) trace pointing to the plugin or registered pass
+- `triage_notes.md` — the manual triage notes recording how the bug
+  classification criteria were applied (compiles successfully without the
+  plugin; fails when the plugin is enabled; diagnostic or stack trace
+  points to plugin code)
+- `status.json` — current status (`reported` or `confirmed`) and, where
+  applicable, the developer's response
+
+As reported in the paper, the `DFED` bug has been confirmed by its
+developer; the remaining nine are marked `reported` and are awaiting
+response.
 
 ---
 
