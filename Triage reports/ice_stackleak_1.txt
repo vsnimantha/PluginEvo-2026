@@ -1,0 +1,9 @@
+during GIMPLE pass: stackleak_instrument
+test.cpp: In function 'void alpha()':
+test.cpp:3:6: internal compiler error: in add_stack_tracking_gasm, at stackleak_plugin.c:131
+0x... add_stack_tracking_gasm   stackleak_plugin.c:131
+0x... add_stack_tracking        stackleak_plugin.c:172
+0x... stackleak_instrument_execute  stackleak_plugin.c:265
+0x... execute                   gcc-generate-gimple-pass.h:100
+COMMAND: g++-10 -fplugin=compiled_plugin.so -fplugin-arg-compiled_plugin-track-min-size=1024 -g test.cpp -o test.o
+(NOTE: arch=x86 argument NOT passed -> build_for_x86 stayed false -> assert fired)

@@ -1,0 +1,5 @@
+SAME BUG as stackleak #1 (add_stack_tracking_gasm:131 assert).
+program: test_bug_found_1.2.cpp (pure_leaf_1)
+ice_location: stackleak_plugin.c:131 (identical trace to run 1)
+args: track-min-size=1024 (arch=x86 not passed)
+Deduplicates to stackleak #1.

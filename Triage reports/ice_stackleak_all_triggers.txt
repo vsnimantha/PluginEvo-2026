@@ -1,0 +1,20 @@
+stack_leak — ONE distinct bug (add_stack_tracking_gasm:131 assert), multiple triggers:
+
+| Trigger program        | Function          | ice_location | middle frame |
+|------------------------|-------------------|--------------|--------------|
+| test.cpp               | alpha             | :131         | :265         |
+| test_bug_found_1.1.cpp | frame_size_edge   | :131         | :220         |
+| test_bug_found_1.2.cpp | pure_leaf_1       | :131         | :265         |
+| test_bug_found_1.3.cpp | ctor_stress       | :131         | :265         |
+| test_bug_found_1.4.cpp | main              | :131         | :265         |
+
+ALL terminate at gcc_assert(build_for_x86) at stackleak_plugin.c:131.
+Cause (all): plugin invoked with track-min-size=1024 but WITHOUT arch=x86,
+so build_for_x86 stays false, assert fires.
+:220 vs :265 = two call sites of add_stack_tracking within
+stackleak_instrument_execute — same crashing function, same assert.
+
+DEDUP VERDICT: 1 distinct bug, 5 trigger programs. NOT 5 bugs, NOT 2 bugs.
+The wide set of triggers shows the bug is easy to hit (any function gets
+instrumented → any function triggers the missing-arch assert), but it is
+still a SINGLE defect.

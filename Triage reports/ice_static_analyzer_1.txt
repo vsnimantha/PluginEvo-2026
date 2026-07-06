@@ -1,0 +1,10 @@
+during IPA pass: static_analyzer
+test_static_analyser_bug_found.cpp:37:1: internal compiler error: Illegal instruction
+0x... fprintf2(_IO_FILE*, char const*, ...)   unit.h:293
+0x... PointerConstraint(ptb*, ptb*)           Algorithm.h:357
+0x... detect(plugin_argument*, int)           Algorithm.h:191
+0x... execute_detect                          gcc_plugin.c:95
+0x... execute                                 gcc_plugin.c:118
+Signal: SIGILL (Illegal instruction). Origin: PLUGIN (confirmed by frames).
+gcc: 13.3.0 x86_64. args: symbolicexecution/ipa/threadmod/memoryleakcheck/freemod=1.
+ROOT CAUSE pending plugin source (Algorithm.h, unit.h, gcc_plugin.c).

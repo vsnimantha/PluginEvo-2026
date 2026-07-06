@@ -1,0 +1,10 @@
+during GIMPLE pass: *build_cgraph_edges
+test_cprintf_bug_found_1.cpp: In function 'void test_arg_mismatch_few()':
+  std::printf("few: x=%d y=%d\n", 1);   // 2 specifiers, 1 arg
+test_cprintf_bug_found_1.cpp:37:6: internal compiler error: Segmentation fault
+(trace shows only libc frames; root cause = gcc_hell.cpp build_spec_function
+ gimple_call_arg(printf_stmt, fmt_pos+cur_spec) with no num_args bounds check)
+COMMAND: g++ -fplugin=compiled_plugin.so -fplugin-arg-compiled_plugin-log_level=Err \
+  -fplugin-arg-compiled_plugin-printf='printf(0):%c putchar %s puts %d printf %% fwrite' \
+  -g test_cprintf_bug_found_1.cpp
+gcc: 13, x86_64

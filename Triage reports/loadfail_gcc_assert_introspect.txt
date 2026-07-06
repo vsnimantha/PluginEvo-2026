@@ -1,0 +1,6 @@
+cc1plus: error: cannot load plugin compiled_plugin.so:
+  undefined symbol: c_build_function_call_vec (C front-end symbol)
+NOT a crash — plugin load failure. Cause: C-frontend plugin loaded into g++ (cc1plus).
+Command used: g++-10 -c -O0 -fplugin=compiled_plugin.so -g test_bug_found_1.c
+Correct: gcc-10 (C compiler) — c_build_function_call_vec lives in cc1, not cc1plus.
+EXCLUDED: toolchain mismatch, not a plugin bug.

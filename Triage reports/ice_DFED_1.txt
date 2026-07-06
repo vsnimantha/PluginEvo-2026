@@ -1,0 +1,19 @@
+*** WARNING *** there are active plugins, do not report this as a bug unless you can reproduce it without enabling any plugins.
+Event                            | Plugins
+PLUGIN_ATTRIBUTES                | myDFEDPlugin
+test.cpp: In function 'void alpha()':
+test.cpp:5:1: internal compiler error: Segmentation fault
+ }
+ ^
+0x...  DFED_PLUGIN::isAllowedToRun(char const*)
+        /home/nimantha/FIRES/dfed_plugin/DFED_Plugin.cpp:167
+0x...  DFED_PLUGIN::gate(function*)
+        /home/nimantha/FIRES/dfed_plugin/DFED_Plugin.cpp:58
+Please submit a full bug report, with preprocessed source if appropriate.
+
+COMMAND:
+arm-none-eabi-g++ -mlittle-endian -mthumb -mcpu=cortex-m3 -march=armv7-m \
+  -specs=nosys.specs -fplugin=compiled_plugin.so \
+  -fplugin-arg-compiled_plugin-function=main \
+  -fplugin-arg-compiled_plugin-techniqueSpecific=FDFC \
+  -g test.cpp -o test.o

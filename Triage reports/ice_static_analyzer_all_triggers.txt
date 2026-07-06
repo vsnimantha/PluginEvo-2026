@@ -1,0 +1,8 @@
+static_analyzer — ONE distinct bug (fprintf2 missing return, unit.h:293), triggers:
+  _1: ...bug_found.cpp   -> fprintf2:293 via PointerConstraint:357
+  _2: ...bug_found_2.cpp -> fprintf2:293 via PointerConstraint:357
+  _4: ...bug_found_4.cpp -> fprintf2:293 via PointerConstraint:357
+  _5: ...bug_found_5.cpp -> fprintf2:293 via walk_function_path:767 -> dump_fucntion:989 -> PointerConstraint:391
+  _6: ...bug_found_6.cpp -> fprintf2:293 via PointerConstraint:357
+All: leaf = fprintf2 unit.h:293 (falls off end of non-void). SIGILL. gcc 13.3.0.
+Dedup -> 1 distinct bug, 5 triggers. (_5 differs only in caller chain.)

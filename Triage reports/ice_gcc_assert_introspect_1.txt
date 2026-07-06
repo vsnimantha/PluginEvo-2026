@@ -1,0 +1,11 @@
+assert_introspect loaded, compiled for GCC 10.5.0
+unhandled integer type!
+test_bug_found_1.1.c: In function 'main':
+internal compiler error: in get_format_for_expr, at plugin.c:498  (-> gcc_unreachable at :521)
+Full plugin call chain (13 frames): get_format_for_expr:498 -> make_decl_subexpression_repr:712
+ -> make_subexpressions_repr:802 -> make_conditional_expr_repr:904/900 -> make_assert_failed_body:992
+ -> patch_assert:1041 -> maybe_patch_statement:1062 -> iterate_function_body:1099/1086
+ -> pre_genericize_callback:1113
+Command: gcc-10 -c -O0 -fplugin=compiled_plugin.so -g test_bug_found_1.1.c
+Root cause: integer type not matched by name list or size {1,2,4,8} -> gcc_unreachable.
+gcc: 10.5.0 (C compiler). CONFIRMED plugin bug.

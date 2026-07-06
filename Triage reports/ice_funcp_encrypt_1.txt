@@ -1,0 +1,9 @@
+during GIMPLE pass: funcp_plugin
+test_bug_found_1.cpp: In constructor 'std::allocator<...>::allocator() [with _Tp = char]':
+internal compiler error: in pointer_to_record_contains_funcp_p, at funcp-encrypt.cc:288
+0x... pointer_to_record_contains_funcp_p   funcp-encrypt.cc:288
+0x... prop_finalize                        funcp-encrypt.cc:362
+0x... funcp_pass::execute(function*)       funcp-encrypt.cc:433
+Root cause: gcc_assert(TREE_CODE(fld)==FIELD_DECL) in a TYPE_FIELDS loop;
+C++ class TYPE_FIELDS contains non-FIELD_DECL members -> assert fires.
+gcc: 10, x86_64. Trigger: ordinary C++ (std::allocator), no plugin args.
