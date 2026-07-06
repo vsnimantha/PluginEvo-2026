@@ -1,5 +1,4 @@
 # GCC Plugin ICE Confirmation — Master Report
-## Nimantha Kariyakarawana, DistriNet, KU Leuven
 
 Confirmation and static-backtrack analysis of the crash/ICE bugs reported by the
 activation (GP-based) testing stage. Each bug was (1) confirmed as a real,
