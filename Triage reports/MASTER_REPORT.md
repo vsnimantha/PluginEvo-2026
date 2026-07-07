@@ -270,12 +270,3 @@ edges. Crashes on ordinary C++ with multiple returns, plugin used with defaults.
 Static backtrack: cppcheck NOT flagged; g++ -Wall NOT flagged. GCC-API
 precondition not modelled by static tools. Same CATEGORY as cprintf.
 2x2: CONFIRMED + STATICALLY-MISSED.
-
-===============================================================================
-# OPTIONAL STRENGTHENING (not blocking)
-===============================================================================
-- DFED: capture exact `arm-none-eabi-g++ --version` and 3/3 reproducibility.
-- funcp_encrypt: confirm :288 against original (uninstrumented) committed source.
-- cprintf: run-1 origin already confirmed by run-2 full plugin frames.
-- Check whether any "2-bug" plugin has a genuinely DIFFERENT second crash site
-  (so far none do — all deduplicate to a single defect each).
