@@ -46,13 +46,13 @@ dynamic activation testing finds the domain-specific crashes it misses.
 | Plugin | Raw crash runs | Distinct bugs |
 |---|---|---|
 | DFED | 1 | 1 |
-| stack_leak | 6 | 1 (all crash at :131) |
+| stack_leak | 5 | 1 (all crash at :131) |
 | cprintf | 2 | 1 (both at build_spec_function:309) |
 | funcp_encrypt | 1 | 1 |
-| gcc_assert_introspect | 2 | 1 (1 excluded g++ load-fail + 1 real ICE under gcc) |
+| gcc_assert_introspect | 1 (+1 excluded g++ load-fail, not counted) | 1 (real ICE under gcc) |
 | static_analyzer | 5 | 1 (all fprintf2:293) |
 | SecRetAddress | 1 | 1 |
-| **TOTAL** | **18** | **7** |
+| **TOTAL** | **16** | **7** |
 
 PluginEvo headline was 10 bugs; deduplication (stack_leak 5->1, cprintf 2->1,
 static_analyzer 5->1, gcc_assert_introspect 1 excluded + 1 real ICE) yields 7
