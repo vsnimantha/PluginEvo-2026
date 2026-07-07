@@ -11,7 +11,7 @@ caught it.
 
 ## HEADLINE RESULT
 
-**7 distinct confirmed bugs across 7 plugins** (18 raw crash runs deduplicated).
+**7 distinct confirmed bugs across 7 plugins** (16 raw crash runs deduplicated).
 **Static-detectability: 2 caught / 5 missed.**
 
 The 2 statically-caught bugs are BOTH the same generic C++ defect (missing
@@ -42,6 +42,7 @@ dynamic activation testing finds the domain-specific crashes it misses.
 - **D. gcc_unreachable / incomplete dispatch:** gcc_assert_introspect -> static MISSES (1)
 
 ## DEDUPLICATION (honest counting)
+
 | Plugin | Raw crash runs | Distinct bugs |
 |---|---|---|
 | DFED | 1 | 1 |
@@ -53,8 +54,9 @@ dynamic activation testing finds the domain-specific crashes it misses.
 | SecRetAddress | 1 | 1 |
 | **TOTAL** | **18** | **7** |
 
-PluginEvo headline was 10 bugs; deduplication (stack_leak 2->1, cprintf 2->1,
-static_analyzer 2->1) yields 7 distinct defects — one genuine bug per plugin.
+PluginEvo headline was 10 bugs; deduplication (stack_leak 5->1, cprintf 2->1,
+static_analyzer 5->1, gcc_assert_introspect 1 excluded + 1 real ICE) yields 7
+distinct defects — one genuine bug per plugin.
 
 ## EXCLUDED (correctly, not counted as a bug)
 - gcc_assert_introspect first run: loaded into g++ (cc1plus) and failed with
@@ -176,7 +178,7 @@ non-FIELD_DECL entry -> assert fires -> ICE. Correct code: skip non-fields
 no special args.
 
 Note: source copies on hand were INSTRUMENTED (line numbers shifted); the body
-was verified by function name; :288 to be confirmed against original committed
+was verified by function name;:288 to be confirmed against original committed
 source.
 
 Static backtrack: cppcheck NOT flagged; g++ -Wall NOT flagged.
@@ -265,7 +267,7 @@ segfault. Correct code: check single_pred_p() first or iterate predecessor
 edges. Crashes on ordinary C++ with multiple returns, plugin used with defaults.
 
 Static backtrack: cppcheck NOT flagged; g++ -Wall NOT flagged. GCC-API
-precondition not modeled by static tools. Same CATEGORY as cprintf.
+precondition not modelled by static tools. Same CATEGORY as cprintf.
 2x2: CONFIRMED + STATICALLY-MISSED.
 
 ===============================================================================
