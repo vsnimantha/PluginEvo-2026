@@ -54,7 +54,8 @@ dynamic activation testing finds the domain-specific crashes it misses.
 | SecRetAddress | 1 | 1 |
 | **TOTAL** | **16** | **7** |
 
-PluginEvo headline was 10 bugs; deduplication (stack_leak 5->1, cprintf 2->1,
+The activation testing stage initially flagged 10 crash-triggering test
+programs as candidate bugs; deduplication (stack_leak 5->1, cprintf 2->1,
 static_analyzer 5->1, gcc_assert_introspect 1 excluded + 1 real ICE) yields 7
 distinct defects — one genuine bug per plugin.
 
